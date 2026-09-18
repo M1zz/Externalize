@@ -1,0 +1,842 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld/%lld" : {
+      "shouldTranslate" : false
+    },
+    "+%lld" : {
+      "shouldTranslate" : false
+    },
+    "+24h" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+24시간"
+          }
+        }
+      }
+    },
+    "1h" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1시간"
+          }
+        }
+      }
+    },
+    "24h" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "24시간"
+          }
+        }
+      }
+    },
+    "8h" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8시간"
+          }
+        }
+      }
+    },
+    "Add the Externalize widget" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "뇌모리 위젯 추가하기"
+          }
+        }
+      }
+    },
+    "Add the widget and see it without unlocking your phone." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "위젯을 추가하면 잠금을 풀지 않아도 바로 보여요."
+          }
+        }
+      }
+    },
+    "Anything short-lived" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "잠깐만 기억할 것"
+          }
+        }
+      }
+    },
+    "Assign the Remember shortcut to the Action Button" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "동작 버튼에 ‘기억하기’ 단축어 지정하기"
+          }
+        }
+      }
+    },
+    "B3 · Pillar 12" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "B3 · 12번 기둥"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "취소"
+          }
+        }
+      }
+    },
+    "Choose Lock Screen, then tap the widget area" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "‘잠금 화면’을 고른 뒤 위젯 영역 탭하기"
+          }
+        }
+      }
+    },
+    "Choose when to forget: 1h, 8h, or 24h" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "잊을 시간 고르기: 1시간, 8시간, 24시간"
+          }
+        }
+      }
+    },
+    "Close" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "닫기"
+          }
+        }
+      }
+    },
+    "Code" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "코드"
+          }
+        }
+      }
+    },
+    "Copied" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "복사됨"
+          }
+        }
+      }
+    },
+    "Couldn't reach the App Store. Try again later." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Store에 연결할 수 없어요. 잠시 후 다시 시도해 주세요."
+          }
+        }
+      }
+    },
+    "Don't spend your brain on it" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기억은 맡기고, 머리는 비우세요"
+          }
+        }
+      }
+    },
+    "Don't spend your brain on things you don't need to remember.\nEverything you save here deletes itself." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기억할 필요 없는 일에 머리 쓰지 마세요.\n여기 저장한 건 모두 알아서 사라져요."
+          }
+        }
+      }
+    },
+    "Door and gate codes" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "현관·공동현관 비밀번호"
+          }
+        }
+      }
+    },
+    "Double-tap to copy" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "두 번 탭하면 복사돼요"
+          }
+        }
+      }
+    },
+    "Everything on your Lock Screen widget" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "잠금화면 위젯에 전부 표시"
+          }
+        }
+      }
+    },
+    "Externalize" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "뇌모리"
+          }
+        }
+      }
+    },
+    "Externalize holds the things you only need for a few hours, then forgets them for you." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "뇌모리는 몇 시간만 필요한 정보를 대신 기억하고, 때가 되면 알아서 잊어요."
+          }
+        }
+      }
+    },
+    "Forget" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "잊기"
+          }
+        }
+      }
+    },
+    "Forget after" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "잊을 시간"
+          }
+        }
+      }
+    },
+    "Forgets in %@" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 후 삭제"
+          }
+        }
+      }
+    },
+    "Free keeps %lld items at a time. Unlock unlimited anytime." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "무료는 한 번에 %lld개까지 보관해요. 언제든 무제한으로 풀 수 있어요."
+          }
+        }
+      }
+    },
+    "Free keeps %lld things at a time. Lifetime keeps as many as your day needs — parking, locker, room, gate code, all at once." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "무료는 한 번에 %lld개까지 보관해요. 평생 이용권이면 주차 위치, 사물함, 방 번호, 현관 비밀번호까지 하루에 필요한 만큼 한꺼번에 담을 수 있어요."
+          }
+        }
+      }
+    },
+    "Free slots used" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사용 중인 무료 슬롯"
+          }
+        }
+      }
+    },
+    "Get Started" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "시작하기"
+          }
+        }
+      }
+    },
+    "Got it. I'll forget %@ in 24 hours." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "알겠어요. %@, 24시간 뒤에 잊을게요."
+          }
+        }
+      }
+    },
+    "How it works" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사용 방법"
+          }
+        }
+      }
+    },
+    "It deletes itself. No archive, no history." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "알아서 삭제돼요. 보관함도, 기록도 남지 않아요."
+          }
+        }
+      }
+    },
+    "It forgets for you" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "알아서 잊어요"
+          }
+        }
+      }
+    },
+    "Keep it on your Lock Screen" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "잠금화면에 띄워두세요"
+          }
+        }
+      }
+    },
+    "Label" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이름"
+          }
+        }
+      }
+    },
+    "Label (optional)" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이름 (선택)"
+          }
+        }
+      }
+    },
+    "Loading…" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "불러오는 중…"
+          }
+        }
+      }
+    },
+    "Locker" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사물함"
+          }
+        }
+      }
+    },
+    "Long-press the Lock Screen and tap Customize" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "잠금화면을 길게 누르고 ‘사용자화’ 탭하기"
+          }
+        }
+      }
+    },
+    "Long-press the Lock Screen → Customize → Lock Screen → add the Externalize widget." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "잠금화면 길게 누르기 → 사용자화 → 잠금 화면 → 뇌모리 위젯 추가"
+          }
+        }
+      }
+    },
+    "Next" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "다음"
+          }
+        }
+      }
+    },
+    "No previous purchase found for this Apple ID." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이 Apple ID로 구입한 내역이 없어요."
+          }
+        }
+      }
+    },
+    "Note" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "메모"
+          }
+        }
+      }
+    },
+    "Nothing to remember" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기억할 게 없어요"
+          }
+        }
+      }
+    },
+    "One payment. No subscription. Ever." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "한 번 결제로 끝. 구독은 없어요."
+          }
+        }
+      }
+    },
+    "Or add it to any shortcut in the Shortcuts app" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "단축어 앱에서 원하는 단축어에 넣을 수도 있어요"
+          }
+        }
+      }
+    },
+    "Parking" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "주차"
+          }
+        }
+      }
+    },
+    "Pick a type — parking, locker, room, code" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "종류 고르기 — 주차, 사물함, 방, 코드"
+          }
+        }
+      }
+    },
+    "Put it on your Lock Screen" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "잠금화면에 띄워두세요"
+          }
+        }
+      }
+    },
+    "Remember" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기억하기"
+          }
+        }
+      }
+    },
+    "Remember ${value} as ${kind}" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "${value} 기억하기 (${kind})"
+          }
+        }
+      }
+    },
+    "Remember Something" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기억해두기"
+          }
+        }
+      }
+    },
+    "Remember something" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기억할 것 추가"
+          }
+        }
+      }
+    },
+    "Restore Purchase" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "구입 내역 복원"
+          }
+        }
+      }
+    },
+    "Room" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "방"
+          }
+        }
+      }
+    },
+    "Save" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "저장"
+          }
+        }
+      }
+    },
+    "Save it in seconds" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "몇 초 만에 저장"
+          }
+        }
+      }
+    },
+    "Save without opening the app" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앱을 열지 않고 저장"
+          }
+        }
+      }
+    },
+    "Say “Remember in Externalize”" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri에게 “뇌모리에 기억해”라고 말하기"
+          }
+        }
+      }
+    },
+    "Skip" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "건너뛰기"
+          }
+        }
+      }
+    },
+    "Store a short-lived value that deletes itself in 24 hours." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "24시간 뒤 스스로 삭제되는 값을 저장해요."
+          }
+        }
+      }
+    },
+    "Swipe left to forget it now" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "왼쪽으로 밀면 바로 삭제"
+          }
+        }
+      }
+    },
+    "Swipe right to keep it 24 more hours" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오른쪽으로 밀면 24시간 더 보관"
+          }
+        }
+      }
+    },
+    "Tap + in the top corner, then:" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오른쪽 위 + 버튼을 누르고"
+          }
+        }
+      }
+    },
+    "Tap a card to copy the value" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "카드를 탭하면 값이 복사돼요"
+          }
+        }
+      }
+    },
+    "Tap to copy. Swipe right to keep it another 24 hours. Everything else disappears on its own." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "탭하면 복사돼요. 오른쪽으로 밀면 24시간 더 보관하고, 나머지는 알아서 사라져요."
+          }
+        }
+      }
+    },
+    "Type" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "종류"
+          }
+        }
+      }
+    },
+    "Type the value (a label is optional)" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "값 입력하기 (이름은 선택)"
+          }
+        }
+      }
+    },
+    "Unlimited active items" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "보관 개수 무제한"
+          }
+        }
+      }
+    },
+    "Unlimited slots" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "무제한 슬롯"
+          }
+        }
+      }
+    },
+    "Unlock Lifetime — %@" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "평생 이용권 — %@"
+          }
+        }
+      }
+    },
+    "Unlocked. Thank you." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "잠금 해제됐어요. 고마워요."
+          }
+        }
+      }
+    },
+    "Use Siri, the Shortcuts app, or the Action Button." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri, 단축어 앱, 동작 버튼으로 바로 저장할 수 있어요."
+          }
+        }
+      }
+    },
+    "Value" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "값"
+          }
+        }
+      }
+    },
+    "What should I remember?" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "무엇을 기억할까요?"
+          }
+        }
+      }
+    },
+    "What to remember" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기억할 것"
+          }
+        }
+      }
+    },
+    "What you don't need to remember, right on your Lock Screen." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기억할 필요 없는 것들을 잠금화면에 바로."
+          }
+        }
+      }
+    },
+    "When time runs out, it deletes itself. No archive, no history." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "시간이 다 되면 스스로 삭제돼요. 보관함도, 기록도 남지 않아요."
+          }
+        }
+      }
+    },
+    "Where you parked" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "주차한 위치"
+          }
+        }
+      }
+    },
+    "Your free slots are full. Open Externalize to unlock unlimited slots." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "무료 슬롯이 가득 찼어요. 뇌모리를 열어 무제한으로 풀어 주세요."
+          }
+        }
+      }
+    },
+    "Your hotel room number" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "호텔 방 번호"
+          }
+        }
+      }
+    },
+    "Your locker code" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사물함 비밀번호"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

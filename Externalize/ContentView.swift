@@ -6,6 +6,8 @@ struct ContentView: View {
     @Environment(PurchaseManager.self) private var purchases
     @Environment(\.scenePhase) private var scenePhase
 
+    @AppStorage(OnboardingKey.completed) private var hasCompletedOnboarding = false
+    @State private var isShowingOnboarding = !UserDefaults.standard.bool(forKey: OnboardingKey.completed)
     @State private var isAdding = false
     @State private var isShowingPaywall = false
     @State private var copiedID: UUID?
@@ -35,7 +37,14 @@ struct ContentView: View {
                         .accessibilityLabel("Free slots used")
                     }
                 }
-                ToolbarItem(placement: .topBarTrailing) {
+                ToolbarItemGroup(placement: .topBarTrailing) {
+                    Button {
+                        isShowingOnboarding = true
+                    } label: {
+                        Image(systemName: "questionmark.circle")
+                    }
+                    .accessibilityLabel("How it works")
+
                     Button(action: addTapped) {
                         Image(systemName: "plus.circle.fill")
                             .font(.title2)
@@ -50,6 +59,12 @@ struct ContentView: View {
             .sheet(isPresented: $isShowingPaywall) {
                 PaywallView()
                     .environment(purchases)
+            }
+            .fullScreenCover(isPresented: $isShowingOnboarding) {
+                OnboardingView {
+                    hasCompletedOnboarding = true
+                    isShowingOnboarding = false
+                }
             }
         }
         .sensoryFeedback(.success, trigger: copyCount)
@@ -137,6 +152,10 @@ struct ContentView: View {
             }
         }
     }
+}
+
+private enum OnboardingKey {
+    static let completed = "onboarding.completed"
 }
 
 // MARK: - Card

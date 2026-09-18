@@ -12,11 +12,11 @@ enum MemoKind: String, Codable, CaseIterable, Identifiable, Sendable {
 
     var title: String {
         switch self {
-        case .parking: return "Parking"
-        case .locker: return "Locker"
-        case .room: return "Room"
-        case .code: return "Code"
-        case .other: return "Note"
+        case .parking: return String(localized: "Parking")
+        case .locker: return String(localized: "Locker")
+        case .room: return String(localized: "Room")
+        case .code: return String(localized: "Code")
+        case .other: return String(localized: "Note")
         }
     }
 
@@ -32,11 +32,11 @@ enum MemoKind: String, Codable, CaseIterable, Identifiable, Sendable {
 
     var placeholder: String {
         switch self {
-        case .parking: return "B3 · Pillar 12"
+        case .parking: return String(localized: "B3 · Pillar 12")
         case .locker: return "0424"
         case .room: return "507"
         case .code: return "4719#"
-        case .other: return "Anything short-lived"
+        case .other: return String(localized: "Anything short-lived")
         }
     }
 
@@ -57,9 +57,9 @@ enum MemoLifetime: TimeInterval, CaseIterable, Identifiable, Sendable {
 
     var label: String {
         switch self {
-        case .oneHour: return "1h"
-        case .eightHours: return "8h"
-        case .oneDay: return "24h"
+        case .oneHour: return String(localized: "1h")
+        case .eightHours: return String(localized: "8h")
+        case .oneDay: return String(localized: "24h")
         }
     }
 }

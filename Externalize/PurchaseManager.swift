@@ -31,7 +31,7 @@ final class PurchaseManager {
         do {
             product = try await Product.products(for: [Self.lifetimeProductID]).first
         } catch {
-            errorMessage = "Couldn't reach the App Store. Try again later."
+            errorMessage = String(localized: "Couldn't reach the App Store. Try again later.")
         }
     }
 
@@ -65,7 +65,7 @@ final class PurchaseManager {
         }
         await refreshEntitlements()
         if !isUnlocked {
-            errorMessage = "No previous purchase found for this Apple ID."
+            errorMessage = String(localized: "No previous purchase found for this Apple ID.")
         }
     }
 

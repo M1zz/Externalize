@@ -85,12 +85,12 @@ struct PaywallView: View {
 
     private var buyTitle: String {
         if let product = purchases.product {
-            return "Unlock Lifetime — \(product.displayPrice)"
+            return String(localized: "Unlock Lifetime — \(product.displayPrice)")
         }
-        return "Loading…"
+        return String(localized: "Loading…")
     }
 
-    private func feature(_ symbol: String, _ text: String) -> some View {
+    private func feature(_ symbol: String, _ text: LocalizedStringKey) -> some View {
         Label {
             Text(text)
         } icon: {
