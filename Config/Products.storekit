@@ -1,0 +1,38 @@
+{
+  "identifier" : "8F3C2A10",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : true,
+      "internalID" : "6740000001",
+      "localizations" : [
+        {
+          "description" : "Unlimited active items. One payment, forever.",
+          "displayName" : "Externalize Lifetime",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.devkoan.externalize.lifetime",
+      "referenceName" : "Lifetime Unlock",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}
