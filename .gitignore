@@ -16,3 +16,4 @@ build/
 # SwiftPM
 .build/
 .swiftpm/
+.marketing-build/
