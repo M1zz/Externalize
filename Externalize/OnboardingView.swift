@@ -94,7 +94,6 @@ struct OnboardingPage {
                 Point(symbol: "square.grid.2x2.fill", text: "Pick a type — parking, locker, room, code"),
                 Point(symbol: "keyboard", text: "Type the value (a label is optional)"),
                 Point(symbol: "timer", text: "Choose when to forget: 1h, 8h, or 24h"),
-                Point(symbol: "gift.fill", text: "Free keeps \(ProAccess.freeSlotLimit) items at a time. Unlock unlimited anytime."),
             ]
         ),
         OnboardingPage(

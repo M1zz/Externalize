@@ -40,13 +40,7 @@ struct RememberIntent: AppIntent {
             throw $value.needsValueError("What should I remember?")
         }
 
-        let repository = MemoRepository.shared
-        let live = repository.purgeExpired()
-        guard ProAccess.canAdd(currentCount: live.count) else {
-            return .result(dialog: "Your free slots are full. Open Externalize to unlock unlimited slots.")
-        }
-
-        repository.add(Memo(kind: kind, label: label ?? "", value: trimmed))
+        MemoRepository.shared.add(Memo(kind: kind, label: label ?? "", value: trimmed))
         return .result(dialog: "Got it. I'll forget \(trimmed) in 24 hours.")
     }
 }

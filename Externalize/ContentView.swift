@@ -3,19 +3,13 @@ import UIKit
 
 struct ContentView: View {
     @Environment(MemoModel.self) private var model
-    @Environment(PurchaseManager.self) private var purchases
     @Environment(\.scenePhase) private var scenePhase
 
     @AppStorage(OnboardingKey.completed) private var hasCompletedOnboarding = false
     @State private var isShowingOnboarding = !UserDefaults.standard.bool(forKey: OnboardingKey.completed)
     @State private var isAdding = false
-    @State private var isShowingPaywall = false
     @State private var copiedID: UUID?
     @State private var copyCount = 0
-
-    private var canAdd: Bool {
-        purchases.isUnlocked || model.memos.count < ProAccess.freeSlotLimit
-    }
 
     var body: some View {
         NavigationStack {
@@ -28,15 +22,6 @@ struct ContentView: View {
             }
             .navigationTitle("Externalize")
             .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    if !purchases.isUnlocked {
-                        Button("\(model.memos.count)/\(ProAccess.freeSlotLimit)") {
-                            isShowingPaywall = true
-                        }
-                        .font(.subheadline.monospacedDigit())
-                        .accessibilityLabel("Free slots used")
-                    }
-                }
                 ToolbarItemGroup(placement: .topBarTrailing) {
                     Button {
                         isShowingOnboarding = true
@@ -55,10 +40,6 @@ struct ContentView: View {
             .sheet(isPresented: $isAdding) {
                 AddMemoView()
                     .environment(model)
-            }
-            .sheet(isPresented: $isShowingPaywall) {
-                PaywallView()
-                    .environment(purchases)
             }
             .fullScreenCover(isPresented: $isShowingOnboarding) {
                 OnboardingView {
@@ -133,11 +114,7 @@ struct ContentView: View {
     // MARK: - Actions
 
     private func addTapped() {
-        if canAdd {
-            isAdding = true
-        } else {
-            isShowingPaywall = true
-        }
+        isAdding = true
     }
 
     @MainActor
@@ -227,5 +204,4 @@ struct WidgetTip: View {
 #Preview {
     ContentView()
         .environment(MemoModel())
-        .environment(PurchaseManager())
 }

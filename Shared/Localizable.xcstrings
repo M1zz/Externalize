@@ -127,16 +127,6 @@
         }
       }
     },
-    "Close" : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "닫기"
-          }
-        }
-      }
-    },
     "Code" : {
       "localizations" : {
         "ko" : {
@@ -153,16 +143,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "복사됨"
-          }
-        }
-      }
-    },
-    "Couldn't reach the App Store. Try again later." : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "App Store에 연결할 수 없어요. 잠시 후 다시 시도해 주세요."
           }
         }
       }
@@ -203,16 +183,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "두 번 탭하면 복사돼요"
-          }
-        }
-      }
-    },
-    "Everything on your Lock Screen widget" : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "잠금화면 위젯에 전부 표시"
           }
         }
       }
@@ -263,36 +233,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ 후 삭제"
-          }
-        }
-      }
-    },
-    "Free keeps %lld items at a time. Unlock unlimited anytime." : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "무료는 한 번에 %lld개까지 보관해요. 언제든 무제한으로 풀 수 있어요."
-          }
-        }
-      }
-    },
-    "Free keeps %lld things at a time. Lifetime keeps as many as your day needs — parking, locker, room, gate code, all at once." : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "무료는 한 번에 %lld개까지 보관해요. 평생 이용권이면 주차 위치, 사물함, 방 번호, 현관 비밀번호까지 하루에 필요한 만큼 한꺼번에 담을 수 있어요."
-          }
-        }
-      }
-    },
-    "Free slots used" : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "사용 중인 무료 슬롯"
           }
         }
       }
@@ -377,16 +317,6 @@
         }
       }
     },
-    "Loading…" : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "불러오는 중…"
-          }
-        }
-      }
-    },
     "Locker" : {
       "localizations" : {
         "ko" : {
@@ -427,16 +357,6 @@
         }
       }
     },
-    "No previous purchase found for this Apple ID." : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "이 Apple ID로 구입한 내역이 없어요."
-          }
-        }
-      }
-    },
     "Note" : {
       "localizations" : {
         "ko" : {
@@ -453,16 +373,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "기억할 게 없어요"
-          }
-        }
-      }
-    },
-    "One payment. No subscription. Ever." : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "한 번 결제로 끝. 구독은 없어요."
           }
         }
       }
@@ -543,16 +453,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "기억할 것 추가"
-          }
-        }
-      }
-    },
-    "Restore Purchase" : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "구입 내역 복원"
           }
         }
       }
@@ -697,46 +597,6 @@
         }
       }
     },
-    "Unlimited active items" : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "보관 개수 무제한"
-          }
-        }
-      }
-    },
-    "Unlimited slots" : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "무제한 슬롯"
-          }
-        }
-      }
-    },
-    "Unlock Lifetime — %@" : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "평생 이용권 — %@"
-          }
-        }
-      }
-    },
-    "Unlocked. Thank you." : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "잠금 해제됐어요. 고마워요."
-          }
-        }
-      }
-    },
     "Use Siri, the Shortcuts app, or the Action Button." : {
       "localizations" : {
         "ko" : {
@@ -803,16 +663,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "주차한 위치"
-          }
-        }
-      }
-    },
-    "Your free slots are full. Open Externalize to unlock unlimited slots." : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "무료 슬롯이 가득 찼어요. 뇌모리를 열어 무제한으로 풀어 주세요."
           }
         }
       }

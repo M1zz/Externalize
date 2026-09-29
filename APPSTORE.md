@@ -35,7 +35,15 @@ DeployBar 가 이 파일을 읽어 App Store Connect 의 스토어 페이지를 
 
 ### 지원 URL
 
-https://github.com/M1zz/Externalize
+https://m1zz.github.io/Externalize/support.html?lang=ko
+
+### 마케팅 URL
+
+https://m1zz.github.io/Externalize/?lang=ko
+
+### 개인정보 처리방침 URL
+
+https://m1zz.github.io/Externalize/privacy.html?lang=ko
 
 ## English (en-US)
 
@@ -69,7 +77,15 @@ parking,locker,passcode,temporary,notes,widget,lockscreen,siri,shortcut,expire
 
 ### 지원 URL
 
-https://github.com/M1zz/Externalize
+https://m1zz.github.io/Externalize/support.html?lang=en
+
+### 마케팅 URL
+
+https://m1zz.github.io/Externalize/?lang=en
+
+### 개인정보 처리방침 URL
+
+https://m1zz.github.io/Externalize/privacy.html?lang=en
 
 ## 연령 등급
 

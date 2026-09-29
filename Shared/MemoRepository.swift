@@ -10,22 +10,6 @@ enum AppGroup {
     }
 }
 
-/// Free tier gate. The flag is cached in the App Group so the widget and
-/// App Intents can read it without touching StoreKit.
-enum ProAccess {
-    static let freeSlotLimit = 2
-    private static let key = "pro.unlocked"
-
-    static var isUnlocked: Bool {
-        get { AppGroup.defaults.bool(forKey: key) }
-        set { AppGroup.defaults.set(newValue, forKey: key) }
-    }
-
-    static func canAdd(currentCount: Int) -> Bool {
-        isUnlocked || currentCount < freeSlotLimit
-    }
-}
-
 /// JSON-in-App-Group storage shared by the app, the widget and App Intents.
 /// Expired memos are filtered on every read and physically removed on purge.
 struct MemoRepository: Sendable {
