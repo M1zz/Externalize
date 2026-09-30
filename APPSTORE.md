@@ -7,7 +7,7 @@ DeployBar 가 이 파일을 읽어 App Store Connect 의 스토어 페이지를 
 
 ### 이름
 
-뇌모리
+뇌모리 (Externalize)
 
 ### 부제
 
@@ -49,11 +49,11 @@ https://m1zz.github.io/Externalize/privacy.html?lang=ko
 
 ### 이름
 
-Externalize: Expiring Notes
+Externalize (뇌모리)
 
 ### 부제
 
-Park. Save it. Forget it.
+Notes that expire on their own
 
 ### 설명
 
