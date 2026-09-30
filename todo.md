@@ -13,4 +13,5 @@
 - [ ] App Store Connect: 가격 무료, 앱 개인정보 '데이터 수집 안 함', 연령 등급 설문
 - [x] 리젝 대응 2.3.8: 스토어 이름에 두 이름 병기 (ko 뇌모리 (Externalize), en Externalize (뇌모리))
 - [x] 리젝 대응 1.5: 지원 페이지에 이메일 문의 추가
-- [ ] App Store Connect: 이름·부제 반영, 지원 URL을 Pages 주소로 교체, 새 빌드로 재제출
+- [x] 빌드 번호 4로 올리고 아카이브 (1.0 (4))
+- [ ] App Store Connect: 이름·부제 반영, 지원 URL을 Pages 주소로 교체, 1.0 (4) 업로드 후 재제출
