@@ -26,9 +26,9 @@ enum ExternalizeSpec: LeeoAppSpec {
 
     /// 개인정보·지원 페이지 (LeeoKit 3.x 부터 필수). APPSTORE.md (한국어 절) 에 적힌 주소를 그대로 쓴다.
     static let legal = LeeoLegalConfig(
-        privacyURL: URL(string: "https://m1zz.github.io/Externalize/privacy.html?lang=ko")!,
-        supportURL: URL(string: "https://m1zz.github.io/Externalize/support.html?lang=ko")!,
-        marketingURL: URL(string: "https://m1zz.github.io/Externalize/?lang=ko")!
+        privacyURL: URL(string: "https://m1zz.github.io/Externalize/privacy.html")!,
+        supportURL: URL(string: "https://m1zz.github.io/Externalize/support.html")!,
+        marketingURL: URL(string: "https://m1zz.github.io/Externalize/")!
     )
 
     /// 수익모델 (LeeoKit 3.x 부터 필수) — 인앱 결제가 없는 무료 앱.
