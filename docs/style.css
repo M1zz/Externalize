@@ -30,14 +30,14 @@ header img { width: 64px; height: 64px; border-radius: 15px; }
 header h1 { margin: 0; font-size: 28px; line-height: 1.2; }
 header p { margin: 2px 0 0; color: var(--muted); font-size: 15px; }
 nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
-nav a, .lang button {
+nav a {
   padding: 6px 14px; border-radius: 999px; background: var(--card);
   color: var(--text); text-decoration: none; font-size: 15px; border: 1px solid var(--line);
 }
 nav a[aria-current="page"] { background: var(--accent); color: #fff; border-color: var(--accent); }
-.lang { display: flex; gap: 6px; margin-bottom: 16px; }
-.lang button { cursor: pointer; font: inherit; font-size: 14px; }
-.lang button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+nav.lang { gap: 6px; margin-bottom: 16px; }
+nav.lang a { font-size: 14px; }
+nav.lang a[aria-current="true"] { border-color: var(--accent); color: var(--accent); }
 section.card { background: var(--card); border-radius: 16px; padding: 24px; margin-bottom: 16px; }
 h2 { font-size: 20px; margin: 0 0 12px; }
 h3 { font-size: 17px; margin: 24px 0 6px; }
@@ -49,5 +49,3 @@ a { color: var(--accent); }
 .shots { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 8px; }
 .shots img { width: 180px; flex: none; border-radius: 16px; }
 footer { color: var(--muted); font-size: 13px; text-align: center; margin-top: 32px; }
-[data-lang] { display: none; }
-html[lang="ko"] [data-lang="ko"], html[lang="en"] [data-lang="en"] { display: block; }

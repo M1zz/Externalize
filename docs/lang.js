@@ -1,20 +1,9 @@
-// 한국어/영어 전환. ?lang=en 이 있으면 그것을, 없으면 브라우저 언어를 따른다.
+// 예전 주소(?lang=en)로 들어온 사람을 그 언어의 페이지로 보낸다.
+// 언어마다 정적 페이지가 따로 있다: 한국어는 루트(·/ko/), 영어는 /en/.
 (function () {
-  var param = new URLSearchParams(location.search).get("lang");
-  var lang = param || ((navigator.language || "").toLowerCase().indexOf("ko") === 0 ? "ko" : "en");
-  function apply(l) {
-    document.documentElement.lang = l;
-    document.querySelectorAll(".lang button").forEach(function (b) {
-      b.setAttribute("aria-pressed", String(b.dataset.set === l));
-    });
-    document.querySelectorAll("nav a").forEach(function (a) {
-      a.href = a.getAttribute("href").split("?")[0] + "?lang=" + l;
-    });
+  var l = new URLSearchParams(location.search).get("lang");
+  if (l && l.toLowerCase().indexOf("en") === 0) {
+    var page = location.pathname.split("/").pop() || "";
+    location.replace("en/" + page + location.hash);
   }
-  document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".lang button").forEach(function (b) {
-      b.addEventListener("click", function () { apply(b.dataset.set); });
-    });
-    apply(lang === "en" ? "en" : "ko");
-  });
 })();
