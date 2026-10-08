@@ -1,98 +1,73 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "%lld/%lld" : {
+    "%lld" : {
       "shouldTranslate" : false
     },
-    "+%lld" : {
-      "shouldTranslate" : false
-    },
-    "+24h" : {
+    "%lld of %lld" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "+24시간"
+            "value" : "%1$lld / %2$lld"
           }
         }
       }
     },
-    "1h" : {
+    "%lld on your mind" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "1시간"
+            "value" : "%lld개 남음"
           }
         }
       }
     },
-    "24h" : {
+    "%lld things you wrote down are still open. Settle them now?" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "24시간"
+            "value" : "적어 둔 것 %lld개가 남았어요. 지금 끝내 볼까요?"
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld thing you wrote down is still open. Settle it now?"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld things you wrote down are still open. Settle them now?"
+                }
+              }
+            }
           }
         }
       }
     },
-    "8h" : {
+    "At 9 PM you get one reminder if anything is still open. Each one gets an ending:" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "8시간"
+            "value" : "남은 게 있으면 밤 9시에 한 번 알려 드려요. 하나씩 결말을 정하세요."
           }
         }
       }
     },
-    "Add the Externalize widget" : {
+    "Buy batteries" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "뇌모리 위젯 추가하기"
-          }
-        }
-      }
-    },
-    "Add the widget and see it without unlocking your phone." : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "위젯을 추가하면 잠금을 풀지 않아도 바로 보여요."
-          }
-        }
-      }
-    },
-    "Anything short-lived" : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "잠깐만 기억할 것"
-          }
-        }
-      }
-    },
-    "Assign the Remember shortcut to the Action Button" : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "동작 버튼에 ‘기억하기’ 단축어 지정하기"
-          }
-        }
-      }
-    },
-    "B3 · Pillar 12" : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "B3 · 12번 기둥"
+            "value" : "건전지 사기"
           }
         }
       }
@@ -107,82 +82,122 @@
         }
       }
     },
-    "Choose Lock Screen, then tap the widget area" : {
+    "Change the reminder time in Settings" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "‘잠금 화면’을 고른 뒤 위젯 영역 탭하기"
+            "value" : "알림 시각은 설정에서 바꿀 수 있어요"
           }
         }
       }
     },
-    "Choose when to forget: 1h, 8h, or 24h" : {
+    "Close" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "잊을 시간 고르기: 1시간, 8시간, 24시간"
+            "value" : "닫기"
           }
         }
       }
     },
-    "Code" : {
+    "Do it now" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "코드"
+            "value" : "지금 하기"
           }
         }
       }
     },
-    "Copied" : {
+    "Do it now — if it takes two minutes" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "복사됨"
+            "value" : "지금 하기 — 2분이면 끝나는 일"
           }
         }
       }
     },
-    "Don't spend your brain on it" : {
+    "Done" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "기억은 맡기고, 머리는 비우세요"
+            "value" : "했어요"
           }
         }
       }
     },
-    "Don't spend your brain on things you don't need to remember.\nEverything you save here deletes itself." : {
+    "Done — it's handled" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "기억할 필요 없는 일에 머리 쓰지 마세요.\n여기 저장한 건 모두 알아서 사라져요."
+            "value" : "했어요 — 끝난 일"
           }
         }
       }
     },
-    "Door and gate codes" : {
+    "Double-tap to decide what to do with it" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "현관·공동현관 비밀번호"
+            "value" : "두 번 탭해서 어떻게 할지 정하세요"
           }
         }
       }
     },
-    "Double-tap to copy" : {
+    "Drop it" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "두 번 탭하면 복사돼요"
+            "value" : "버리기"
+          }
+        }
+      }
+    },
+    "Drop it — doesn't need doing" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "버리기 — 안 해도 되는 일"
+          }
+        }
+      }
+    },
+    "Drop it — if it doesn't really need doing" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "버리기 — 사실 안 해도 되는 일"
+          }
+        }
+      }
+    },
+    "Each one needs an ending: do it, schedule it, or drop it." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "모든 항목은 결말이 필요해요. 하거나, 시간을 정하거나, 버리세요."
+          }
+        }
+      }
+    },
+    "Evening reminder" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "저녁 정리 알림"
           }
         }
       }
@@ -197,42 +212,22 @@
         }
       }
     },
-    "Externalize holds the things you only need for a few hours, then forgets them for you." : {
+    "Get a thought out of your head. You'll decide what to do with it in the evening." : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "뇌모리는 몇 시간만 필요한 정보를 대신 기억하고, 때가 되면 알아서 잊어요."
+            "value" : "머릿속 생각을 꺼내 둡니다. 어떻게 할지는 저녁에 정하면 돼요."
           }
         }
       }
     },
-    "Forget" : {
+    "Get it out of your head" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "잊기"
-          }
-        }
-      }
-    },
-    "Forget after" : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "잊을 시간"
-          }
-        }
-      }
-    },
-    "Forgets in %@" : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ 후 삭제"
+            "value" : "머릿속에서 꺼내 두세요"
           }
         }
       }
@@ -247,12 +242,32 @@
         }
       }
     },
-    "Got it. I'll forget %@ in 24 hours." : {
+    "Go do it. Come back when it's done." : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "알겠어요. %@, 24시간 뒤에 잊을게요."
+            "value" : "지금 하고 오세요. 끝나면 눌러 주세요."
+          }
+        }
+      }
+    },
+    "Got it. You can let go of %@ for now." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "‘%@’ 적어 뒀어요. 이제 잊으셔도 돼요."
+          }
+        }
+      }
+    },
+    "Head clear" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "머리 비움"
           }
         }
       }
@@ -267,82 +282,52 @@
         }
       }
     },
-    "It deletes itself. No archive, no history." : {
+    "If it takes two minutes, just do it" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "알아서 삭제돼요. 보관함도, 기록도 남지 않아요."
+            "value" : "2분이면 끝날 일이라면 바로 처리"
           }
         }
       }
     },
-    "It forgets for you" : {
+    "In an hour" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "알아서 잊어요"
+            "value" : "1시간 뒤"
           }
         }
       }
     },
-    "Keep it on your Lock Screen" : {
+    "In the evening, settle them" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "잠금화면에 띄워두세요"
+            "value" : "저녁에 하나씩 끝내요"
           }
         }
       }
     },
-    "Label" : {
+    "It's time. Do it, reschedule it, or drop it." : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "이름"
+            "value" : "할 시간이에요. 하거나, 다시 미루거나, 버리세요."
           }
         }
       }
     },
-    "Label (optional)" : {
+    "Long-press the Lock Screen → Customize → Lock Screen → add the Externalize widget. One tap opens a blank line." : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "이름 (선택)"
-          }
-        }
-      }
-    },
-    "Locker" : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "사물함"
-          }
-        }
-      }
-    },
-    "Long-press the Lock Screen and tap Customize" : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "잠금화면을 길게 누르고 ‘사용자화’ 탭하기"
-          }
-        }
-      }
-    },
-    "Long-press the Lock Screen → Customize → Lock Screen → add the Externalize widget." : {
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "잠금화면 길게 누르기 → 사용자화 → 잠금 화면 → 뇌모리 위젯 추가"
+            "value" : "잠금화면 길게 누르기 → 사용자화 → 잠금 화면 → 뇌모리 위젯 추가. 탭 한 번이면 바로 적을 수 있어요."
           }
         }
       }
@@ -357,152 +342,202 @@
         }
       }
     },
-    "Note" : {
+    "Next week" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "메모"
+            "value" : "다음 주"
           }
         }
       }
     },
-    "Nothing to remember" : {
+    "Not now — back to choices" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "기억할 게 없어요"
+            "value" : "지금은 못 해요 — 돌아가기"
           }
         }
       }
     },
-    "Or add it to any shortcut in the Shortcuts app" : {
+    "Nothing is left to rot" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "단축어 앱에서 원하는 단축어에 넣을 수도 있어요"
+            "value" : "쌓여서 썩는 건 없어요"
           }
         }
       }
     },
-    "Parking" : {
+    "Notifications are off, so reminders can't reach you." : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "주차"
+            "value" : "알림이 꺼져 있어서 정리 알림을 보낼 수 없어요."
           }
         }
       }
     },
-    "Pick a type — parking, locker, room, code" : {
+    "On your mind" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "종류 고르기 — 주차, 사물함, 방, 코드"
+            "value" : "머릿속에 남은 것"
           }
         }
       }
     },
-    "Put it on your Lock Screen" : {
+    "Once a day, if anything is still open, you'll get a nudge to settle it. Nothing open, no nudge." : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "잠금화면에 띄워두세요"
+            "value" : "하루 한 번, 남은 게 있을 때만 알려 드려요. 다 끝냈으면 울리지 않아요."
           }
         }
       }
     },
-    "Remember" : {
+    "Or put it on the Action Button" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "기억하기"
+            "value" : "액션 버튼에 연결해도 돼요"
           }
         }
       }
     },
-    "Remember ${value} as ${kind}" : {
+    "Or say “Remember in Externalize”" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "${value} 기억하기 (${kind})"
+            "value" : "“뇌모리에 기억해”라고 말해도 돼요"
           }
         }
       }
     },
-    "Remember Something" : {
+    "Other time" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "기억해두기"
+            "value" : "다른 시간"
           }
         }
       }
     },
-    "Remember something" : {
+    "Pick a time" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "기억할 것 추가"
+            "value" : "시간 정하기"
           }
         }
       }
     },
-    "Room" : {
+    "Pick a time — you'll be reminded then" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "방"
+            "value" : "시간 정하기 — 그때 다시 알려 드려요"
           }
         }
       }
     },
-    "Save" : {
+    "Pick up the dry cleaning" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "저장"
+            "value" : "세탁소 옷 찾기"
           }
         }
       }
     },
-    "Save it in seconds" : {
+    "Remind me" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "몇 초 만에 저장"
+            "value" : "알림 시각"
           }
         }
       }
     },
-    "Save without opening the app" : {
+    "Remind me then" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "앱을 열지 않고 저장"
+            "value" : "이때 알려 주세요"
           }
         }
       }
     },
-    "Say “Remember in Externalize”" : {
+    "Reply to that email" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Siri에게 “뇌모리에 기억해”라고 말하기"
+            "value" : "그 메일 답장하기"
+          }
+        }
+      }
+    },
+    "Schedule" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "미루기"
+          }
+        }
+      }
+    },
+    "Scheduled" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "예약됨"
+          }
+        }
+      }
+    },
+    "Scheduled ones come back on time" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "예약한 건 그 시간에 다시 돌아와요"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "설정"
+          }
+        }
+      }
+    },
+    "Settle them now (%lld)" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "지금 끝내기 (%lld)"
           }
         }
       }
@@ -517,172 +552,308 @@
         }
       }
     },
-    "Store a short-lived value that deletes itself in 24 hours." : {
+    "Tap the Lock Screen widget to open a blank line" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "24시간 뒤 스스로 삭제되는 값을 저장해요."
+            "value" : "잠금화면 위젯을 탭하면 바로 적을 수 있어요"
           }
         }
       }
     },
-    "Swipe left to forget it now" : {
+    "Tap to get a thought out of your head. See how many are still open." : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "왼쪽으로 밀면 바로 삭제"
+            "value" : "탭해서 떠오른 걸 바로 적고, 남은 개수를 확인하세요."
           }
         }
       }
     },
-    "Swipe right to keep it 24 more hours" : {
+    "Tap to write it down" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "오른쪽으로 밀면 24시간 더 보관"
+            "value" : "탭해서 적기"
           }
         }
       }
     },
-    "Tap + in the top corner, then:" : {
+    "Things waiting over a day are marked" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "오른쪽 위 + 버튼을 누르고"
+            "value" : "하루 넘게 남은 건 표시돼요"
           }
         }
       }
     },
-    "Tap a card to copy the value" : {
+    "This evening" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "카드를 탭하면 값이 복사돼요"
+            "value" : "오늘 저녁"
           }
         }
       }
     },
-    "Tap to copy. Swipe right to keep it another 24 hours. Everything else disappears on its own." : {
+    "This weekend" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "탭하면 복사돼요. 오른쪽으로 밀면 24시간 더 보관하고, 나머지는 알아서 사라져요."
+            "value" : "이번 주말"
           }
         }
       }
     },
-    "Type" : {
+    "Thought" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "종류"
+            "value" : "생각"
           }
         }
       }
     },
-    "Type the value (a label is optional)" : {
+    "Three seconds, then let go" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "값 입력하기 (이름은 선택)"
+            "value" : "3초 적고, 잊어버리세요"
           }
         }
       }
     },
-    "Use Siri, the Shortcuts app, or the Action Button." : {
+    "Time" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Siri, 단축어 앱, 동작 버튼으로 바로 저장할 수 있어요."
+            "value" : "시각"
           }
         }
       }
     },
-    "Value" : {
+    "Time to clear your head" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "값"
+            "value" : "머리 비울 시간"
           }
         }
       }
     },
-    "What should I remember?" : {
+    "Tomorrow morning" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "무엇을 기억할까요?"
+            "value" : "내일 아침"
           }
         }
       }
     },
-    "What to remember" : {
+    "Turn on notifications in Settings" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "기억할 것"
+            "value" : "설정에서 알림 켜기"
           }
         }
       }
     },
-    "What you don't need to remember, right on your Lock Screen." : {
+    "Type a few words and you're done. No lists, no folders, no due dates." : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "기억할 필요 없는 것들을 잠금화면에 바로."
+            "value" : "몇 글자 적으면 끝. 목록도, 폴더도, 마감일도 없어요."
           }
         }
       }
     },
-    "When time runs out, it deletes itself. No archive, no history." : {
+    "Unlike a notes app, nothing piles up here. A clear list means a clear head." : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "시간이 다 되면 스스로 삭제돼요. 보관함도, 기록도 남지 않아요."
+            "value" : "메모 앱과 달리 여기엔 쌓이지 않아요. 목록이 비면 머리도 비어요."
           }
         }
       }
     },
-    "Where you parked" : {
+    "Waiting over a day" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "주차한 위치"
+            "value" : "하루 넘게 남아 있어요"
           }
         }
       }
     },
-    "Your hotel room number" : {
+    "What's on your mind?" : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "호텔 방 번호"
+            "value" : "뭐가 떠올랐어요?"
           }
         }
       }
     },
-    "Your locker code" : {
+    "When something pops into your head, write it below and let it go.\nTonight you'll decide what to do with it." : {
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "사물함 비밀번호"
+            "value" : "뭔가 떠오르면 아래에 적고 잊어버리세요.\n어떻게 할지는 저녁에 정하면 돼요."
+          }
+        }
+      }
+    },
+    "When will you do it?" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "언제 할까요?"
+          }
+        }
+      }
+    },
+    "Write down ${value}" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "${value} 적어 두기"
+          }
+        }
+      }
+    },
+    "Write It Down" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "꺼내 두기"
+          }
+        }
+      }
+    },
+    "Write it down" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "적기"
+          }
+        }
+      }
+    },
+    "Write it down from your Lock Screen" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "잠금화면에서 바로 적기"
+          }
+        }
+      }
+    },
+    "You settled %lld things today." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오늘 %lld개를 끝냈어요."
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "You settled %lld thing today."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "You settled %lld things today."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "You settled %lld things. Nothing is left hanging." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld개를 끝냈어요. 걸려 있는 게 하나도 없어요."
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "You settled %lld thing. Nothing is left hanging."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "You settled %lld things. Nothing is left hanging."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Your head is clear" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "머리가 비었어요"
+          }
+        }
+      }
+    },
+    "· Put off %lld times" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "· %lld번 미룸"
+          }
+        }
+      }
+    },
+    "“Oh right, I need to…” — write it down here and stop holding onto it." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“아 맞다, 그거 해야 하는데…” 여기 적고 붙잡고 있지 마세요."
           }
         }
       }

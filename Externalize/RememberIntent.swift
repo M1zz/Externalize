@@ -1,47 +1,29 @@
 import AppIntents
 import Foundation
 
-extension MemoKind: AppEnum {
-    static let typeDisplayRepresentation: TypeDisplayRepresentation = "Type"
-
-    static let caseDisplayRepresentations: [MemoKind: DisplayRepresentation] = [
-        .parking: DisplayRepresentation(title: "Parking", image: .init(systemName: "car.fill")),
-        .locker: DisplayRepresentation(title: "Locker", image: .init(systemName: "lock.fill")),
-        .room: DisplayRepresentation(title: "Room", image: .init(systemName: "bed.double.fill")),
-        .code: DisplayRepresentation(title: "Code", image: .init(systemName: "number")),
-        .other: DisplayRepresentation(title: "Note", image: .init(systemName: "brain.head.profile")),
-    ]
-}
-
 /// "Hey Siri, remember in Externalize" / Action Button / Shortcuts.
+/// Writes the thought down without opening the app; the evening review takes it from there.
 struct RememberIntent: AppIntent {
-    static var title: LocalizedStringResource { "Remember Something" }
-    static var description: IntentDescription { "Store a short-lived value that deletes itself in 24 hours." }
+    static var title: LocalizedStringResource { "Write It Down" }
+    static var description: IntentDescription { "Get a thought out of your head. You'll decide what to do with it in the evening." }
 
-    @Parameter(title: "Value")
+    @Parameter(title: "Thought")
     var value: String
 
-    @Parameter(title: "Type", default: .other)
-    var kind: MemoKind
-
-    @Parameter(title: "Label")
-    var label: String?
-
     static var parameterSummary: some ParameterSummary {
-        Summary("Remember \(\.$value) as \(\.$kind)") {
-            \.$label
-        }
+        Summary("Write down \(\.$value)")
     }
 
     @MainActor
     func perform() async throws -> some IntentResult & ProvidesDialog {
         let trimmed = value.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty else {
-            throw $value.needsValueError("What should I remember?")
+            throw $value.needsValueError("What's on your mind?")
         }
 
-        MemoRepository.shared.add(Memo(kind: kind, label: label ?? "", value: trimmed))
-        return .result(dialog: "Got it. I'll forget \(trimmed) in 24 hours.")
+        MemoRepository.shared.add(Memo(text: trimmed))
+        NotificationCenter.default.post(name: .memosDidChangeExternally, object: nil)
+        return .result(dialog: "Got it. You can let go of \(trimmed) for now.")
     }
 }
 
@@ -53,7 +35,7 @@ struct ExternalizeShortcuts: AppShortcutsProvider {
                 "Remember in \(.applicationName)",
                 "\(.applicationName) this",
             ],
-            shortTitle: "Remember",
+            shortTitle: "Write It Down",
             systemImageName: "brain.head.profile"
         )
     }

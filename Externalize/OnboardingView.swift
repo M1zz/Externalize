@@ -77,53 +77,42 @@ struct OnboardingPage {
     static let all: [OnboardingPage] = [
         OnboardingPage(
             symbol: "brain.head.profile",
-            title: "Don't spend your brain on it",
-            message: "Externalize holds the things you only need for a few hours, then forgets them for you.",
+            title: "Get it out of your head",
+            message: "“Oh right, I need to…” — write it down here and stop holding onto it.",
             points: [
-                Point(symbol: "car.fill", text: "Where you parked"),
-                Point(symbol: "lock.fill", text: "Your locker code"),
-                Point(symbol: "bed.double.fill", text: "Your hotel room number"),
-                Point(symbol: "number", text: "Door and gate codes"),
+                Point(symbol: "tshirt.fill", text: "Pick up the dry cleaning"),
+                Point(symbol: "envelope.fill", text: "Reply to that email"),
+                Point(symbol: "cart.fill", text: "Buy batteries"),
             ]
         ),
         OnboardingPage(
-            symbol: "plus.circle.fill",
-            title: "Save it in seconds",
-            message: "Tap + in the top corner, then:",
+            symbol: "square.and.pencil",
+            title: "Three seconds, then let go",
+            message: "Type a few words and you're done. No lists, no folders, no due dates.",
             points: [
-                Point(symbol: "square.grid.2x2.fill", text: "Pick a type — parking, locker, room, code"),
-                Point(symbol: "keyboard", text: "Type the value (a label is optional)"),
-                Point(symbol: "timer", text: "Choose when to forget: 1h, 8h, or 24h"),
+                Point(symbol: "lock.iphone", text: "Tap the Lock Screen widget to open a blank line"),
+                Point(symbol: "waveform", text: "Or say “Remember in Externalize”"),
+                Point(symbol: "bolt.fill", text: "Or put it on the Action Button"),
             ]
         ),
         OnboardingPage(
-            symbol: "hourglass",
-            title: "It forgets for you",
-            message: "When time runs out, it deletes itself. No archive, no history.",
+            symbol: "moon.stars.fill",
+            title: "In the evening, settle them",
+            message: "At 9 PM you get one reminder if anything is still open. Each one gets an ending:",
             points: [
-                Point(symbol: "hand.tap.fill", text: "Tap a card to copy the value"),
-                Point(symbol: "arrow.right", text: "Swipe right to keep it 24 more hours"),
-                Point(symbol: "arrow.left", text: "Swipe left to forget it now"),
+                Point(symbol: "checkmark.circle.fill", text: "Do it now — if it takes two minutes"),
+                Point(symbol: "calendar.badge.clock", text: "Pick a time — you'll be reminded then"),
+                Point(symbol: "trash.fill", text: "Drop it — if it doesn't really need doing"),
             ]
         ),
         OnboardingPage(
-            symbol: "lock.iphone",
-            title: "Keep it on your Lock Screen",
-            message: "Add the widget and see it without unlocking your phone.",
+            symbol: "sparkles",
+            title: "Nothing is left to rot",
+            message: "Unlike a notes app, nothing piles up here. A clear list means a clear head.",
             points: [
-                Point(symbol: "hand.point.up.left.fill", text: "Long-press the Lock Screen and tap Customize"),
-                Point(symbol: "rectangle.stack.fill", text: "Choose Lock Screen, then tap the widget area"),
-                Point(symbol: "plus.square.fill", text: "Add the Externalize widget"),
-            ]
-        ),
-        OnboardingPage(
-            symbol: "mic.fill",
-            title: "Save without opening the app",
-            message: "Use Siri, the Shortcuts app, or the Action Button.",
-            points: [
-                Point(symbol: "waveform", text: "Say “Remember in Externalize”"),
-                Point(symbol: "bolt.fill", text: "Assign the Remember shortcut to the Action Button"),
-                Point(symbol: "square.on.square", text: "Or add it to any shortcut in the Shortcuts app"),
+                Point(symbol: "exclamationmark.circle", text: "Things waiting over a day are marked"),
+                Point(symbol: "bell.fill", text: "Scheduled ones come back on time"),
+                Point(symbol: "gearshape.fill", text: "Change the reminder time in Settings"),
             ]
         ),
     ]

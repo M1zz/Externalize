@@ -1,21 +1,28 @@
 import SwiftUI
 import UIKit
+import UserNotifications
 
 struct ContentView: View {
     @Environment(MemoModel.self) private var model
+    @Environment(AppRouter.self) private var router
     @Environment(\.scenePhase) private var scenePhase
 
     @AppStorage(OnboardingKey.completed) private var hasCompletedOnboarding = false
     @State private var isShowingOnboarding = !UserDefaults.standard.bool(forKey: OnboardingKey.completed)
-    @State private var isAdding = false
-    @State private var copiedID: UUID?
-    @State private var copyCount = 0
+    @State private var isReviewing = false
+    @State private var isShowingSettings = false
+    @State private var deciding: Memo?
+    @State private var scheduling: Memo?
+    @State private var draft = ""
+    @State private var captureCount = 0
+    @State private var resolveCount = 0
+    @FocusState private var isCaptureFocused: Bool
 
     var body: some View {
         NavigationStack {
             Group {
-                if model.memos.isEmpty {
-                    emptyState
+                if model.open.isEmpty && model.scheduled.isEmpty {
+                    clearState
                 } else {
                     memoList
                 }
@@ -30,15 +37,33 @@ struct ContentView: View {
                     }
                     .accessibilityLabel("How it works")
 
-                    Button(action: addTapped) {
-                        Image(systemName: "plus.circle.fill")
-                            .font(.title2)
+                    Button {
+                        isShowingSettings = true
+                    } label: {
+                        Image(systemName: "gearshape")
                     }
-                    .accessibilityLabel("Remember something")
+                    .accessibilityLabel("Settings")
                 }
             }
-            .sheet(isPresented: $isAdding) {
-                AddMemoView()
+            .safeAreaInset(edge: .bottom) { captureBar }
+            .sheet(item: $deciding) { memo in
+                DecisionSheet(memo: memo) { decision in
+                    deciding = nil
+                    apply(decision, to: memo)
+                }
+            }
+            .sheet(item: $scheduling) { memo in
+                SchedulePicker { date in
+                    scheduling = nil
+                    model.schedule(memo, at: date)
+                }
+            }
+            .sheet(isPresented: $isShowingSettings) {
+                SettingsView()
+                    .environment(model)
+            }
+            .fullScreenCover(isPresented: $isReviewing) {
+                ReviewView()
                     .environment(model)
             }
             .fullScreenCover(isPresented: $isShowingOnboarding) {
@@ -48,14 +73,25 @@ struct ContentView: View {
                 }
             }
         }
-        .sensoryFeedback(.success, trigger: copyCount)
+        .sensoryFeedback(.impact(weight: .light), trigger: captureCount)
+        .sensoryFeedback(.success, trigger: resolveCount)
         .onChange(of: scenePhase) { _, phase in
             if phase == .active {
                 model.refresh()
+                model.resyncReminders()
+                UNUserNotificationCenter.current().setBadgeCount(model.open.count)
+                routeIfNeeded()
             }
         }
+        .onChange(of: router.pending) { _, _ in routeIfNeeded() }
+        .onChange(of: model.open.count) { _, count in
+            UNUserNotificationCenter.current().setBadgeCount(count)
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .memosDidChangeExternally)) { _ in
+            model.refresh()
+        }
         .task {
-            // Items vanish on screen as they expire.
+            // Scheduled memos come back into the open list when their time arrives.
             while !Task.isCancelled {
                 try? await Task.sleep(for: .seconds(30))
                 model.refresh()
@@ -65,68 +101,154 @@ struct ContentView: View {
 
     // MARK: - Sections
 
-    private var emptyState: some View {
+    private var clearState: some View {
         ContentUnavailableView {
-            Label("Nothing to remember", systemImage: "brain.head.profile")
+            Label("Your head is clear", systemImage: "brain.head.profile")
         } description: {
-            Text("Don't spend your brain on things you don't need to remember.\nEverything you save here deletes itself.")
-        } actions: {
-            Button("Remember something", action: addTapped)
-                .buttonStyle(.borderedProminent)
+            if model.resolvedToday > 0 {
+                Text("You settled \(model.resolvedToday) things today.")
+            } else {
+                Text("When something pops into your head, write it below and let it go.\nTonight you'll decide what to do with it.")
+            }
         }
     }
 
     private var memoList: some View {
         List {
-            Section {
-                ForEach(model.memos) { memo in
-                    MemoCard(memo: memo, isCopied: copiedID == memo.id)
-                        .contentShape(Rectangle())
-                        .onTapGesture { copy(memo) }
-                        .swipeActions(edge: .trailing) {
-                            Button(role: .destructive) {
-                                model.delete(memo)
-                            } label: {
-                                Label("Forget", systemImage: "trash")
-                            }
-                        }
-                        .swipeActions(edge: .leading) {
-                            Button {
-                                model.extend(memo)
-                            } label: {
-                                Label("+24h", systemImage: "clock.arrow.circlepath")
-                            }
-                            .tint(.blue)
-                        }
+            if !model.open.isEmpty {
+                Section {
+                    Button {
+                        isReviewing = true
+                    } label: {
+                        Label("Settle them now (\(model.open.count))", systemImage: "checklist")
+                            .font(.headline)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 6)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .listRowInsets(EdgeInsets())
+                    .listRowBackground(Color.clear)
                 }
-            } footer: {
-                Text("Tap to copy. Swipe right to keep it another 24 hours. Everything else disappears on its own.")
+
+                Section {
+                    ForEach(model.open) { memo in
+                        row(for: memo)
+                    }
+                } header: {
+                    Text("On your mind")
+                } footer: {
+                    Text("Each one needs an ending: do it, schedule it, or drop it.")
+                }
             }
 
-            Section {
-                WidgetTip()
+            if !model.scheduled.isEmpty {
+                Section("Scheduled") {
+                    ForEach(model.scheduled) { memo in
+                        row(for: memo)
+                    }
+                }
+            }
+
+            if model.open.count + model.scheduled.count <= 2 {
+                Section {
+                    WidgetTip()
+                }
             }
         }
         .listStyle(.insetGrouped)
-        .animation(.default, value: model.memos)
+        .animation(.default, value: model.open)
+        .animation(.default, value: model.scheduled)
+        .scrollDismissesKeyboard(.interactively)
+    }
+
+    private func row(for memo: Memo) -> some View {
+        Button {
+            deciding = memo
+        } label: {
+            MemoRow(memo: memo)
+        }
+        .tint(.primary)
+        .swipeActions(edge: .leading, allowsFullSwipe: true) {
+            Button {
+                apply(.done, to: memo)
+            } label: {
+                Label("Done", systemImage: "checkmark")
+            }
+            .tint(.green)
+        }
+        .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+            Button(role: .destructive) {
+                apply(.drop, to: memo)
+            } label: {
+                Label("Drop it", systemImage: "trash")
+            }
+            Button {
+                scheduling = memo
+            } label: {
+                Label("Schedule", systemImage: "calendar")
+            }
+            .tint(.blue)
+        }
+    }
+
+    private var captureBar: some View {
+        HStack(spacing: 10) {
+            TextField("What's on your mind?", text: $draft, axis: .vertical)
+                .lineLimit(1...4)
+                .focused($isCaptureFocused)
+                .submitLabel(.done)
+                .onSubmit(capture)
+                .padding(.horizontal, 14)
+                .padding(.vertical, 10)
+                .background(Color(uiColor: .secondarySystemBackground), in: RoundedRectangle(cornerRadius: 20))
+
+            Button(action: capture) {
+                Image(systemName: "arrow.up.circle.fill")
+                    .font(.system(size: 34))
+            }
+            .disabled(draft.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+            .accessibilityLabel("Write it down")
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 8)
+        .background(.bar)
     }
 
     // MARK: - Actions
 
-    private func addTapped() {
-        isAdding = true
+    private func capture() {
+        let text = draft.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !text.isEmpty else { return }
+        model.capture(text)
+        draft = ""
+        captureCount += 1
+        isCaptureFocused = true
+        NotificationPermission.requestIfNeeded()
     }
 
-    @MainActor
-    private func copy(_ memo: Memo) {
-        UIPasteboard.general.string = memo.value
-        copyCount += 1
-        withAnimation { copiedID = memo.id }
-        Task { @MainActor in
-            try? await Task.sleep(for: .seconds(1.5))
-            if copiedID == memo.id {
-                withAnimation { copiedID = nil }
-            }
+    private func apply(_ decision: Decision, to memo: Memo) {
+        switch decision {
+        case .done:
+            model.complete(memo)
+            resolveCount += 1
+        case .drop:
+            model.drop(memo)
+            resolveCount += 1
+        case .schedule(let date):
+            model.schedule(memo, at: date)
+        }
+    }
+
+    private func routeIfNeeded() {
+        guard scenePhase == .active, let destination = router.pending else { return }
+        router.pending = nil
+        isShowingOnboarding = false
+        switch destination {
+        case .capture:
+            isReviewing = false
+            isCaptureFocused = true
+        case .review:
+            isReviewing = !model.open.isEmpty
         }
     }
 }
@@ -135,50 +257,189 @@ private enum OnboardingKey {
     static let completed = "onboarding.completed"
 }
 
-// MARK: - Card
+enum Decision: Equatable {
+    case done
+    case drop
+    case schedule(Date)
+}
 
-struct MemoCard: View {
+enum NotificationPermission {
+    /// Asked right after the first capture — the moment the evening reminder starts to matter.
+    static func requestIfNeeded() {
+        Task {
+            let center = UNUserNotificationCenter.current()
+            guard await center.notificationSettings().authorizationStatus == .notDetermined else { return }
+            _ = try? await center.requestAuthorization(options: [.alert, .sound, .badge])
+            ReminderScheduler.sync(MemoRepository.shared.load())
+        }
+    }
+}
+
+// MARK: - Row
+
+struct MemoRow: View {
     let memo: Memo
-    let isCopied: Bool
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            HStack {
-                Label(memo.displayTitle, systemImage: memo.kind.symbol)
-                    .font(.subheadline.weight(.semibold))
-                    .foregroundStyle(.secondary)
-                Spacer()
-                if isCopied {
-                    Label("Copied", systemImage: "checkmark")
-                        .font(.caption.weight(.semibold))
-                        .foregroundStyle(.green)
-                        .transition(.opacity)
+        TimelineView(.periodic(from: .now, by: 60)) { context in
+            VStack(alignment: .leading, spacing: 4) {
+                Text(memo.text)
+                    .font(.body)
+                    .multilineTextAlignment(.leading)
+                MemoMeta(memo: memo, now: context.date)
+            }
+            .padding(.vertical, 2)
+        }
+        .accessibilityElement(children: .combine)
+        .accessibilityHint("Double-tap to decide what to do with it")
+    }
+}
+
+/// "3 hours ago", "Tomorrow 9:00 AM", "Waiting over a day".
+struct MemoMeta: View {
+    let memo: Memo
+    let now: Date
+
+    var body: some View {
+        HStack(spacing: 4) {
+            if let remindAt = memo.remindAt, remindAt > now {
+                Image(systemName: "bell")
+                Text(remindAt, format: .relative(presentation: .named))
+                Text(remindAt, style: .time)
+            } else if memo.isStale(at: now) {
+                Image(systemName: "exclamationmark.circle")
+                Text("Waiting over a day")
+            } else {
+                Image(systemName: "clock")
+                Text(memo.waitingSince, format: .relative(presentation: .named))
+            }
+            if memo.postponeCount >= 2 {
+                Text("· Put off \(memo.postponeCount) times")
+            }
+        }
+        .font(.caption)
+        .foregroundStyle(memo.isStale(at: now) || memo.postponeCount >= 3 ? Color.orange : Color.secondary)
+    }
+}
+
+// MARK: - Decision
+
+/// Tap a memo anywhere → the same three endings.
+struct DecisionSheet: View {
+    let memo: Memo
+    let onDecide: (Decision) -> Void
+
+    @State private var isPickingTime = false
+
+    var body: some View {
+        VStack(spacing: 20) {
+            VStack(spacing: 6) {
+                Text(memo.text)
+                    .font(.title2.bold())
+                    .multilineTextAlignment(.center)
+                MemoMeta(memo: memo, now: .now)
+            }
+            .padding(.top, 28)
+            .padding(.horizontal)
+
+            DecisionButtons(
+                onDone: { onDecide(.done) },
+                onSchedule: { isPickingTime = true },
+                onDrop: { onDecide(.drop) }
+            )
+            .padding(.horizontal)
+
+            Spacer(minLength: 0)
+        }
+        .presentationDetents([.medium])
+        .presentationDragIndicator(.visible)
+        .sheet(isPresented: $isPickingTime) {
+            SchedulePicker { date in
+                isPickingTime = false
+                onDecide(.schedule(date))
+            }
+        }
+    }
+}
+
+struct DecisionButtons: View {
+    var doneTitle: LocalizedStringKey = "Done — it's handled"
+    let onDone: () -> Void
+    let onSchedule: () -> Void
+    let onDrop: () -> Void
+
+    var body: some View {
+        VStack(spacing: 10) {
+            Button(action: onDone) {
+                Label(doneTitle, systemImage: "checkmark.circle.fill")
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 8)
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(.green)
+
+            Button(action: onSchedule) {
+                Label("Pick a time", systemImage: "calendar.badge.clock")
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 8)
+            }
+            .buttonStyle(.bordered)
+            .tint(.blue)
+
+            Button(role: .destructive, action: onDrop) {
+                Label("Drop it — doesn't need doing", systemImage: "trash")
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 8)
+            }
+            .buttonStyle(.bordered)
+        }
+        .font(.headline)
+    }
+}
+
+// MARK: - Schedule
+
+struct SchedulePicker: View {
+    let onPick: (Date) -> Void
+
+    @Environment(\.dismiss) private var dismiss
+    @State private var custom = Date.now.addingTimeInterval(3_600)
+
+    var body: some View {
+        NavigationStack {
+            List {
+                Section {
+                    ForEach(ScheduleOption.allCases) { option in
+                        if let date = option.date() {
+                            Button {
+                                onPick(date)
+                            } label: {
+                                HStack {
+                                    Label(option.title, systemImage: option.symbol)
+                                    Spacer()
+                                    Text(date, format: .dateTime.weekday(.abbreviated).hour().minute())
+                                        .foregroundStyle(.secondary)
+                                }
+                            }
+                            .tint(.primary)
+                        }
+                    }
+                }
+
+                Section("Other time") {
+                    DatePicker("Remind me", selection: $custom, in: Date.now..., displayedComponents: [.date, .hourAndMinute])
+                    Button("Remind me then") { onPick(custom) }
                 }
             }
-
-            Text(memo.value)
-                .font(.system(size: 40, weight: .bold, design: .rounded))
-                .monospacedDigit()
-                .lineLimit(2)
-                .minimumScaleFactor(0.5)
-
-            TimelineView(.periodic(from: .now, by: 60)) { context in
-                let fraction = memo.remainingFraction(at: context.date)
-                VStack(alignment: .leading, spacing: 6) {
-                    ProgressView(value: fraction)
-                        .tint(fraction < 0.15 ? Color.orange : Color.accentColor)
-                    HStack(spacing: 4) {
-                        Image(systemName: "hourglass")
-                        Text("Forgets in \(memo.expiresAt, style: .relative)")
-                    }
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+            .navigationTitle("When will you do it?")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel") { dismiss() }
                 }
             }
         }
-        .padding(.vertical, 6)
-        .accessibilityElement(children: .combine)
-        .accessibilityHint("Double-tap to copy")
+        .presentationDetents([.medium, .large])
     }
 }
 
@@ -188,9 +449,9 @@ struct WidgetTip: View {
     var body: some View {
         Label {
             VStack(alignment: .leading, spacing: 2) {
-                Text("Put it on your Lock Screen")
+                Text("Write it down from your Lock Screen")
                     .font(.subheadline.weight(.semibold))
-                Text("Long-press the Lock Screen → Customize → Lock Screen → add the Externalize widget.")
+                Text("Long-press the Lock Screen → Customize → Lock Screen → add the Externalize widget. One tap opens a blank line.")
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
@@ -204,4 +465,5 @@ struct WidgetTip: View {
 #Preview {
     ContentView()
         .environment(MemoModel())
+        .environment(AppRouter.shared)
 }
