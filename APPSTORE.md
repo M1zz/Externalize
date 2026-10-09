@@ -11,27 +11,42 @@ DeployBar 가 이 파일을 읽어 App Store Connect 의 스토어 페이지를 
 
 ### 부제
 
-24시간 뒤 사라지는 임시 기억
+떠오른 할 일, 적고 잊기
+
+### 프로모션 텍스트
+
+“아 맞다, 그거 해야 하는데.” 떠오른 순간 몇 글자 적고 잊으세요. 저녁에 남은 것만 하나씩 끝내면 머리가 가벼워집니다.
 
 ### 설명
 
-주차한 층, 사물함 번호, 호텔 방 번호. 몇 시간만 기억하면 되는데 그 몇 시간이 제일 잘 안 됩니다.
+“아 맞다, 그거 해야 하는데.” 떠오른 순간 적어 두고 잊으세요.
+저녁에 한 번, 남은 것마다 하기, 시간 정하기, 버리기 중 하나로 결말을 냅니다.
 
-뇌모리는 그런 정보만 담는 메모장입니다. 저장한 메모는 정해진 시간이 지나면 스스로 사라집니다. 지우는 것을 잊어도 목록이 쌓이지 않습니다.
+머릿속에 붙잡고 있는 일은 작아도 자리를 차지합니다. 뇌모리는 그 일을 머리 밖으로 꺼내 두는 곳입니다. 목록도 폴더도 마감일도 없습니다. 몇 글자 적으면 끝입니다.
 
-잠금화면 위젯에 늘 떠 있습니다. 앱을 열지 않아도, 손을 쓰지 않아도 바로 보입니다.
+3초 적고, 잊어버리기
+화면 아래 입력줄에 바로 적습니다.
+잠금화면 위젯을 탭하면 앱이 빈 줄로 열립니다.
+시리에게 “뇌모리에 기억해”라고 말하거나 액션 버튼에 연결해 두면 앱을 열지 않고도 적을 수 있습니다.
 
-기억할 것이 생기면 시리에게 말하면 됩니다. "뇌모리에 기억해" 한마디로 저장됩니다. 액션 버튼에 연결해 두면 버튼 한 번으로 열립니다.
+저녁에 하나씩 끝내기
+남은 게 있으면 밤 9시에 한 번 알려 드립니다. 다 끝냈으면 울리지 않습니다. 알림 시각은 설정에서 바꿀 수 있습니다.
+정리를 시작하면 하나씩 크게 보여 줍니다.
+지금 하기: 2분이면 끝날 일이라면 타이머를 켜고 바로 처리합니다.
+시간 정하기: 1시간 뒤, 오늘 저녁, 내일 아침, 이번 주말, 다음 주 중에 고르거나 직접 시각을 정합니다. 그때 다시 알려 드립니다.
+버리기: 사실 안 해도 되는 일이라면 지웁니다.
 
-메모를 탭하면 바로 복사됩니다. 비밀번호나 번호를 옮겨 적을 일이 없습니다.
+쌓여서 썩는 건 없습니다
+하루 넘게 남은 것과 여러 번 미룬 것은 표시됩니다.
+예약한 일이 돌아오면 알림에서 바로 했어요, 내일 아침, 버리기 중에 고를 수 있습니다.
+앱 아이콘 배지와 위젯에 남은 개수가 보입니다.
+목록이 비면 머리도 비어 있는 겁니다.
 
-만료 시간은 1시간, 8시간, 24시간 중에 고릅니다. 더 필요하면 스와이프 한 번으로 24시간을 더합니다.
-
-저장한 내용은 기기 밖으로 나가지 않습니다. 계정도 로그인도 없습니다.
+모든 기능이 무료입니다. 계정도 로그인도 없고, 적은 내용은 이 기기에만 저장됩니다.
 
 ### 키워드
 
-주차위치,사물함,비밀번호,임시메모,잠금화면,위젯,시리,단축어,메모,망각
+투두,체크리스트,메모,생각정리,머리비우기,브레인덤프,GTD,미루기,알림,위젯,잠금화면,시리,단축어,정리,집중,ADHD,건망증,리마인더,습관,생산성,마음정리
 
 ### 지원 URL
 
@@ -49,31 +64,46 @@ https://m1zz.github.io/Externalize/privacy.html
 
 ### 이름
 
-Externalize (뇌모리)
+Externalize: Brain Dump
 
 ### 부제
 
-Notes that expire on their own
+Jot it down, settle it tonight
+
+### 프로모션 텍스트
+
+"Oh right, I need to..." Get it out of your head in a few words and let it go. Tonight, give everything left an ending, one at a time.
 
 ### 설명
 
-Where you parked. The locker code. Your hotel room number. You only need it for a few hours, and those are exactly the hours your memory gives up on.
+"Oh right, I need to..." Write it down the moment it pops up, then let it go.
+Once in the evening, every item gets an ending: do it, schedule it, or drop it.
 
-Externalize holds that kind of thing and nothing else. Every note deletes itself when its time runs out, so the list never turns into a graveyard of old codes.
+Small things you are trying to hold on to still take up room. Externalize is where they go instead. No lists, no folders, no due dates. A few words and you are done.
 
-It lives on your Lock Screen. The widget keeps what you saved in plain sight, so you never have to open the app to read it back.
+THREE SECONDS, THEN LET GO
+Type into the line at the bottom of the screen.
+Tap the Lock Screen widget and the app opens on a blank line.
+Say "Remember in Externalize" to Siri, or put it on the Action Button, and it is saved without opening the app.
 
-Saving is one sentence to Siri. Map it to the Action Button and it opens with a single press.
+SETTLE THEM IN THE EVENING
+If anything is still open, you get one reminder at 9 PM. Nothing open, no nudge. Change the time in Settings.
+Start settling and items come up one at a time, large and clear.
+Do it now: if it takes two minutes, start the timer and get it done.
+Pick a time: in an hour, this evening, tomorrow morning, this weekend, next week, or any time you choose. It comes back then.
+Drop it: if it does not really need doing, let it go.
 
-Tap a note and it is copied. No squinting, no retyping a password one character at a time.
+NOTHING IS LEFT TO ROT
+Things waiting over a day, and things you keep putting off, are marked.
+When a scheduled item comes back, the notification lets you mark it done, move it to tomorrow morning, or drop it.
+The app icon badge and the widget show how many are left.
+A clear list means a clear head.
 
-Choose one hour, eight hours, or a full day. Need longer? Swipe to add another 24 hours.
-
-Everything stays on your device. No account, no sign-in, nothing to leak.
+Every feature is free. No account, no sign-in, and what you write stays on this device.
 
 ### 키워드
 
-parking,locker,passcode,temporary,notes,widget,lockscreen,siri,shortcut,expire
+todo,checklist,reminder,gtd,procrastination,adhd,focus,inbox,notes,widget,siri,errands,thoughts,task
 
 ### 지원 URL
 

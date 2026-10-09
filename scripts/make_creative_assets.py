@@ -33,16 +33,16 @@ SPEC = {
 # (검색에서 본 말이 페이지에서도 이어져야 한다, docs/marketing/ASO_2026-10.md).
 # 눈썹글은 그 나라 검색어다.
 SEARCH = {
-    "ko": ("임시 메모", "24시간 뒤<br>스스로 사라져요", "주차 위치, 사물함, 방 번호만 잠깐"),
-    "en": ("Temporary notes", "Gone in<br>24 hours", "Parking spots, locker codes,<br>room numbers"),
+    "ko": ("할 일 메모", "떠오른 할 일,<br>적고 잊으세요", "저녁에 하나씩 결말을 내요"),
+    "en": ("To-do list", "Get it out<br>of your head", "Settle it all in the evening"),
 }
 
 # 헤더는 처음 온 사람에게 **한 가지 약속**만 한다(Apple: 단일한 생각, 빽빽하지 않게).
 # 앱이 무엇을 해 주는지를 한 문장으로: 한 번 써 두면 그다음은 누르기만 한다.
 # ⚠️ 기계번역하지 않는다. 각 언어에서 짧게 읽히는 말로 따로 쓴다. 높임은 그 언어 스크린샷과 맞춘다.
 HEADER = {
-    "ko": ("주차 위치, 사물함 번호", "잠깐 기억할 것만 맡기면<br>알아서 잊어 줘요"),
-    "en": ("Parking spots, locker codes", "Save it for now.<br>It forgets for you."),
+    "ko": ("“아 맞다, 그거 해야 하는데”", "적어 두고 잊으세요.<br>저녁에 하나씩 끝내요."),
+    "en": ("“Oh right, I need to…”", "Write it down, let it go.<br>Settle it tonight."),
 }
 
 # ⚠️ 바탕 · 글자색은 기존 스크린샷(make_marketing_screenshots.py)과 같다. 다르면 페이지에서
@@ -102,17 +102,6 @@ def phone(img, left, top, width, rotate=0):
             f'transform:rotate({rotate}deg)"><img src="{img}"></div>')
 
 
-def hourglass(lang, x, y, w, opacity):
-    """온보딩(04-forget)의 모래시계 동그라미를 오려 점점 흐려지게 놓는다 - 시간이 지나면 사라진다는 뜻.
-    안전 영역 밖 장식이다."""
-    cx, cy, cw = 500, 344, 320                    # 1320x2868 화면에서 동그라미 자리
-    k = w / cw
-    img = (RAW / lang / "04-forget.png").as_uri()
-    return (f'<div class="glass" style="left:{x}px;top:{y}px;width:{w}px;height:{w}px;'
-            f'background-image:url({img});background-size:{1320 * k:.0f}px auto;'
-            f'background-position:{-cx * k:.0f}px {-cy * k:.0f}px;opacity:{opacity}"></div>')
-
-
 def search_html(lang):
     W, H, (l, t, r, b) = SPEC["search"]
     eyebrow, headline, sub = SEARCH[lang]
@@ -120,7 +109,7 @@ def search_html(lang):
     col = int(sw * 0.56)
     ph_w = 1040
     ph_left = l + col + int(sw * 0.04)
-    img = (RAW / lang / "01-list.png").as_uri()
+    img = (RAW / lang / "01-main.png").as_uri()
     return f"""
 <div class="glow" style="left:{ph_left - 300}px;top:500px;width:1700px;height:1700px;background:rgba(91,91,240,.12)"></div>
 {phone(img, ph_left, t - 360, ph_w, 0)}
@@ -135,13 +124,10 @@ def header_html(lang):
     W, H, (l, t, r, b) = SPEC["header"]
     eyebrow, headline = HEADER[lang]
     sw, sh = r - l, b - t
-    left_img = (RAW / lang / "02-add.png").as_uri()
-    right_img = (RAW / lang / "01-list.png").as_uri()
-    glasses = [(1200, 1250, 250, .9), (1750, 1310, 210, .55), (2230, 1270, 180, .3), (2640, 1330, 150, .14)]
-    glasses_html = "".join(hourglass(lang, *g) for g in glasses)
+    left_img = (RAW / lang / "03-review.png").as_uri()
+    right_img = (RAW / lang / "01-main.png").as_uri()
     return f"""
 <div class="glow" style="left:{l - 200}px;top:{t - 400}px;width:{sw + 400}px;height:{sh + 800}px;background:rgba(91,91,240,.08)"></div>
-{glasses_html}
 {phone(left_img, 300, 360, 640, -9)}
 {phone(right_img, 2900, 360, 640, 9)}
 <div class="text" style="left:{l}px;top:{t}px;width:{sw}px;height:{sh}px;align-items:center;text-align:center">

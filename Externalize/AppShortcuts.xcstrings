@@ -28,7 +28,7 @@
         },
         "ko" : {
           "stringSet" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "values" : [
               "${applicationName}에 기억해",
               "${applicationName}에 기억해 줘"

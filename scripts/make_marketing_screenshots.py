@@ -19,16 +19,20 @@ W, H = 1242, 2688          # App Store 제출 규격 (6.5")
 # 언어별 (파일명, 레이아웃, 헤드라인, 서브카피)
 SHOTS = {
     "ko": [
-        ("01-list.png",       "hero-bleed",  "24시간 뒤<br>스스로 사라져요", "주차 위치, 사물함, 방 번호만 잠깐"),
-        ("02-add.png",        "left-text",   "몇 초면 저장", "종류 고르고 값만 적으면 끝"),
-        ("03-onboarding.png", "text-bottom", "머리는 비우고<br>앱에 맡기세요", "기억할 필요 없는 것만 담는 메모"),
-        ("04-forget.png",     "dark",        "탭하면 복사<br>밀면 연장", "지울 일도, 쌓일 일도 없어요"),
+        ("01-main.png",     "hero-bleed",  "떠오른 할 일,<br>적고 잊으세요", "“아 맞다, 그거 해야 하는데” 할 때 바로"),
+        ("02-typing.png",   "left-text",   "몇 글자면 끝", "목록도 폴더도 마감일도 없어요"),
+        ("03-review.png",   "text-bottom", "저녁에 하나씩<br>결말을 내요", "하기, 시간 정하기, 버리기 중 하나로"),
+        ("04-schedule.png", "flat-rotate", "미룰 거면<br>시간을 정해요", "그 시간에 다시 알려 드려요"),
+        ("05-donow.png",    "left-text",   "2분이면 끝날 일은<br>지금 바로", "타이머 켜고 하고 오세요"),
+        ("06-clear.png",    "dark",        "목록이 비면<br>머리도 비어요", "쌓여서 썩는 건 없어요"),
     ],
     "en": [
-        ("01-list.png",       "hero-bleed",  "Gone in<br>24 hours", "Parking spots, locker codes, room numbers"),
-        ("02-add.png",        "left-text",   "Saved in seconds", "Pick a type, type the value"),
-        ("03-onboarding.png", "text-bottom", "Let the app<br>hold it", "For what you need for a few hours"),
-        ("04-forget.png",     "dark",        "Tap to copy,<br>swipe to keep", "Nothing to delete. Nothing piles up."),
+        ("01-main.png",     "hero-bleed",  "Get it out<br>of your head", "Write it down the moment it pops up"),
+        ("02-typing.png",   "left-text",   "A few words<br>and you're done", "No lists, no folders, no due dates"),
+        ("03-review.png",   "text-bottom", "Settle them<br>in the evening", "Do it, schedule it, or drop it"),
+        ("04-schedule.png", "flat-rotate", "Not now?<br>Pick a time", "It comes back right when you said"),
+        ("05-donow.png",    "left-text",   "Two minutes?<br>Just do it", "Start the timer and come back"),
+        ("06-clear.png",    "dark",        "Clear list,<br>clear head", "Nothing is left to rot"),
     ],
 }
 
@@ -62,6 +66,12 @@ LAYOUTS = {
 .headline { text-align:center; margin-top:110px; padding:0 70px; }
 .sub { text-align:center; margin-top:42px; padding:0 80px; }
 """,
+    "flat-rotate": """
+.headline { text-align:center; margin-top:250px; padding:0 70px; }
+.sub { text-align:center; margin-top:46px; padding:0 80px; }
+.wrap { position:absolute; left:150px; top:900px; }
+.phone { width:900px; transform:rotate(-5deg); }
+""",
     "dark": """
 body { background:#131316; }
 .headline { color:#f5f5f7; text-align:center; margin-top:250px; padding:0 70px; }
@@ -93,10 +103,21 @@ def render(locale):
         body = body_tpl.format(headline=headline, sub=sub, img=img.as_uri())
         html_path = WORK / f"{locale}-{fname.replace('.png', '.html')}"
         html_path.write_text(HTML.format(base=BASE_CSS, layout=LAYOUTS[layout], body=body), encoding="utf-8")
-        subprocess.run([CHROME, "--headless=new", f"--screenshot={out / fname}",
-                        f"--window-size={W},{H}", "--force-device-scale-factor=1",
-                        "--hide-scrollbars", "--disable-gpu", html_path.as_uri()],
-                       check=True, capture_output=True)
+        # 다른 세션의 Chrome 과 겹치면 가끔 실패하거나 끝나지 않는다 — 새 프로필로 다시 시도한다.
+        for attempt in range(4):
+            (out / fname).unlink(missing_ok=True)
+            try:
+                subprocess.run([CHROME, "--headless=new", f"--screenshot={out / fname}",
+                                f"--window-size={W},{H}", "--force-device-scale-factor=1",
+                                "--hide-scrollbars", "--disable-gpu", "--no-first-run",
+                                f"--user-data-dir={WORK / f'chrome-{attempt}'}", html_path.as_uri()],
+                               capture_output=True, timeout=40)
+            except subprocess.TimeoutExpired:
+                pass
+            if (out / fname).exists() and (out / fname).stat().st_size > 0:
+                break
+        else:
+            sys.exit(f"렌더 실패: {out / fname}")
         print(f"  {out.relative_to(ROOT)}/{fname}")
 
 
