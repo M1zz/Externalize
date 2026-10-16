@@ -41,11 +41,11 @@ docs/                 GitHub Pages — 소개·지원·개인정보처리방침,
 - **무료**: 결제·광고 없음. 개수 제한 없이 모든 기능 사용.
 - **입력 최소화**: 단축어 "Remember in Externalize" → 액션 버튼에 걸면 앱 안 열고 저장.
 - **지역화**: 영어 원문 + 한국어. 문자열 카탈로그는 `Shared/`에 하나만 둬서 앱·위젯이 같이 씀 (각 타깃에 따로 두면 `Localizable.strings` 출력이 겹침). `String`을 반환하는 곳은 `String(localized:)`로 감쌈.
-- **Privacy manifest** 포함 (UserDefaults: CA92.1, 1C8F.1). 수집 데이터 없음.
+- **Privacy manifest** 포함 (UserDefaults: CA92.1, 1C8F.1). 수집 데이터: 익명 사용 통계·설치 ID·크래시 진단 (사용자와 연결 안 됨, 추적 없음 → FeedbackHub CloudKit).
 
 ## 출시 전 체크
 - 가격: 무료 (App Store Connect ▸ 가격 및 사용 가능 여부)
 - 지원 URL `https://m1zz.github.io/Externalize/support.html`, 개인정보 처리방침 URL `https://m1zz.github.io/Externalize/privacy.html` (원본은 `docs/`)
-- 앱 개인정보 보호 ▸ 데이터 수집: "데이터를 수집하지 않음"
+- 앱 개인정보 보호 ▸ 데이터 수집: 사용 데이터(제품 상호작용)·진단(충돌 데이터)·식별자(기기 ID) — 모두 "사용자와 연결되지 않음", 추적 아님
 - "Externalize" / "뇌모리" 이름 선점 여부 확인 (App Store Connect 한국어 현지화에 앱 이름 뇌모리 입력)
 - 앱 아이콘은 임시(PIL로 생성). 교체 필요
