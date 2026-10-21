@@ -34,6 +34,204 @@
               "${applicationName}에 기억해 줘"
             ]
           }
+        },
+        "en-GB" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Remember in ${applicationName}",
+              "Remember this in ${applicationName}"
+            ]
+          }
+        },
+        "zh-Hans" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "在${applicationName}中记一下",
+              "在${applicationName}里记住"
+            ]
+          }
+        },
+        "zh-Hant" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "在${applicationName}中記一下",
+              "在${applicationName}裡記住"
+            ]
+          }
+        },
+        "ja" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "${applicationName}に覚えて",
+              "${applicationName}にメモして"
+            ]
+          }
+        },
+        "ru" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Запомни в ${applicationName}",
+              "Запомни это в ${applicationName}"
+            ]
+          }
+        },
+        "es" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Recuerda en ${applicationName}",
+              "Recuérdalo en ${applicationName}"
+            ]
+          }
+        },
+        "de" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "In ${applicationName} merken",
+              "Merk dir das in ${applicationName}"
+            ]
+          }
+        },
+        "fr" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Mémorise dans ${applicationName}",
+              "Retiens ça dans ${applicationName}"
+            ]
+          }
+        },
+        "it" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Ricorda in ${applicationName}",
+              "Annota in ${applicationName}"
+            ]
+          }
+        },
+        "pt-BR" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Lembre no ${applicationName}",
+              "Lembrar no ${applicationName}"
+            ]
+          }
+        },
+        "th" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "จำไว้ใน ${applicationName}",
+              "ช่วยจำไว้ใน ${applicationName}"
+            ]
+          }
+        },
+        "vi" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Ghi nhớ trong ${applicationName}",
+              "Hãy ghi nhớ trong ${applicationName}"
+            ]
+          }
+        },
+        "cs" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Zapamatuj si v ${applicationName}",
+              "Zapiš si do ${applicationName}"
+            ]
+          }
+        },
+        "da" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Husk i ${applicationName}",
+              "Husk det i ${applicationName}"
+            ]
+          }
+        },
+        "el" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Θυμήσου στο ${applicationName}",
+              "Θυμήσου το στο ${applicationName}"
+            ]
+          }
+        },
+        "fi" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Muista ${applicationName}-sovelluksessa",
+              "Muista sovelluksessa ${applicationName}"
+            ]
+          }
+        },
+        "id" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Ingat di ${applicationName}",
+              "Tolong ingat di ${applicationName}"
+            ]
+          }
+        },
+        "nb" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Husk i ${applicationName}",
+              "Husk dette i ${applicationName}"
+            ]
+          }
+        },
+        "nl" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Onthoud in ${applicationName}",
+              "Onthoud dit in ${applicationName}"
+            ]
+          }
+        },
+        "pl" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Zapamiętaj w ${applicationName}",
+              "Zapamiętaj to w ${applicationName}"
+            ]
+          }
+        },
+        "sv" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Kom ihåg i ${applicationName}",
+              "Kom ihåg det i ${applicationName}"
+            ]
+          }
+        },
+        "tr" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "${applicationName} ile hatırla",
+              "${applicationName} uygulamasında hatırla"
+            ]
+          }
         }
       }
     }

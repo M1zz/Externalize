@@ -21,7 +21,7 @@ OUT = ROOT / "docs" / "screenshots" / "creative"
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 # 앱 언어 코드 → App Store Connect 로케일 (make_marketing_screenshots.py 와 같다)
-STORE = {"en": "en-US"}
+STORE = {"en": "en-US", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "nb": "no", "nl": "nl-NL"}
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
@@ -35,6 +35,28 @@ SPEC = {
 SEARCH = {
     "ko": ("할 일 메모", "떠오른 할 일,<br>적고 잊으세요", "저녁에 하나씩 결말을 내요"),
     "en": ("To-do list", "Get it out<br>of your head", "Settle it all in the evening"),
+    "en-GB": ("To-do list", "Get it out<br>of your head", "Sort it all out in the evening"),
+    "zh-Hans": ("待办清单", "想到就记，<br>然后忘掉", "晚上逐项给个了结"),
+    "zh-Hant": ("待辦清單", "想到就記，<br>然後忘掉", "晚上逐項給個了結"),
+    "ja": ("ToDo メモ", "思いついたら、<br>書いて忘れよう", "夜にひとつずつ結論を出す"),
+    "ru": ("список дел", "Вынесите это<br>из головы", "Вечером разберите всё по одному"),
+    "es": ("Lista de tareas", "Sácalo<br>de tu cabeza", "Resuélvelo todo por la noche"),
+    "de": ("To-do-Liste", "Raus aus<br>dem Kopf", "Am Abend alles abschließen"),
+    "fr": ("Liste de tâches", "Sortez-le<br>de votre tête", "Tout régler le soir"),
+    "it": ("Lista di cose da fare", "Toglilo<br>dalla testa", "Chiudi tutto la sera"),
+    "pt-BR": ("Lista de tarefas", "Tire isso<br>da cabeça", "Resolva tudo à noite"),
+    "th": ("สิ่งที่ต้องทำ", "ดึงออกจากหัว<br>ก่อนลืม", "ตอนเย็นค่อยสะสางให้หมด"),
+    "vi": ("Danh sách việc cần làm", "Đưa việc vừa nghĩ ra<br>khỏi đầu", "Tối đến giải quyết hết"),
+    "cs": ("seznam úkolů", "Dostaňte to<br>z hlavy", "Večer vyřešte vše po jedné"),
+    "da": ("Huskeliste", "Få det ud<br>af hovedet", "Afgør alt om aftenen"),
+    "el": ("Λίστα εργασιών", "Βγάλε το από<br>το μυαλό σου", "Κλείσε τα όλα το βράδυ"),
+    "fi": ("tehtävälista", "Pois päästä,<br>talteen", "Päätä kaikki illalla"),
+    "id": ("Daftar tugas", "Keluarkan dari<br>kepalamu", "Selesaikan semuanya di malam hari"),
+    "nb": ("Gjøremålsliste", "Få det ut<br>av hodet", "Avgjør alt om kvelden"),
+    "nl": ("to-do lijst", "Haal het uit<br>je hoofd", "Los alles 's avonds op"),
+    "pl": ("lista zadań", "Wyrzuć to<br>z głowy", "Wieczorem załatw wszystko po kolei"),
+    "sv": ("att göra-lista", "Få det ur<br>huvudet", "Avgör allt på kvällen"),
+    "tr": ("Yapılacaklar listesi", "Aklındakini<br>dışarı çıkar", "Hepsini akşam sonuçlandır"),
 }
 
 # 헤더는 처음 온 사람에게 **한 가지 약속**만 한다(Apple: 단일한 생각, 빽빽하지 않게).
@@ -43,6 +65,28 @@ SEARCH = {
 HEADER = {
     "ko": ("“아 맞다, 그거 해야 하는데”", "적어 두고 잊으세요.<br>저녁에 하나씩 끝내요."),
     "en": ("“Oh right, I need to…”", "Write it down, let it go.<br>Settle it tonight."),
+    "en-GB": ("“Oh, I must remember to…”", "Jot it down, let it go.<br>Sort it out tonight."),
+    "zh-Hans": ("“啊对了，我得……”", "记下来，放心忘掉。<br>晚上逐项了结。"),
+    "zh-Hant": ("「啊對了，我得……」", "記下來，放心忘掉。<br>晚上逐項了結。"),
+    "ja": ("「あ、あれやらなきゃ」", "書いて、忘れる。<br>夜に、ひとつずつ片付ける。"),
+    "ru": ("«Ах да, нужно же…»", "Запишите и забудьте.<br>Вечером всё закроете."),
+    "es": ("“Ay, es verdad, tengo que…”", "Anótalo y olvídalo.<br>Ciérralo esta noche."),
+    "de": ("„Ach ja, das muss ich noch …“", "Aufschreiben, loslassen.<br>Am Abend abhaken."),
+    "fr": ("« Ah oui, il faut que je… »", "Notez-le, oubliez-le.<br>Réglez tout ce soir."),
+    "it": ("«Ah già, devo…»", "Scrivilo e lascialo andare.<br>Stasera chiudi tutto."),
+    "pt-BR": ("“Ah, é verdade, preciso…”", "Anote e esqueça.<br>Resolva hoje à noite."),
+    "th": ("“อ้าว ลืมไปเลย ต้อง…”", "จดไว้แล้วปล่อยวาง<br>คืนนี้ค่อยสะสาง"),
+    "vi": ("“À đúng rồi, mình phải…”", "Ghi lại rồi buông.<br>Tối nay giải quyết."),
+    "cs": ("„Jé, vždyť musím…“", "Zapište a zapomeňte.<br>Večer vše vyřešíte."),
+    "da": ("“Nåh ja, det skal jeg jo …”", "Skriv det ned, og glem det.<br>Afgør det i aften."),
+    "el": ("«Α, ναι, πρέπει να…»", "Σημείωσέ το και ξέχνα το.<br>Κλείσε το απόψε."),
+    "fi": ("”Ai niin, pitäisi vielä…”", "Kirjaa ylös ja unohda.<br>Päätä illalla."),
+    "id": ("“Oh iya, aku harus…”", "Catat, lalu lepaskan.<br>Selesaikan malam ini."),
+    "nb": ("«Å ja, jeg må jo …»", "Skriv det ned, glem det.<br>Avgjør det i kveld."),
+    "nl": ("“O ja, ik moet nog…”", "Noteer het, laat het los.<br>Beslis vanavond."),
+    "pl": ("„Ach, muszę przecież…”", "Zapisz i zapomnij.<br>Wieczorem to załatwisz."),
+    "sv": ("”Just det, jag måste…”", "Skriv ner det, släpp det.<br>Avgör det ikväll."),
+    "tr": ("“Aa doğru, şunu yapmam lazım…”", "Not al, unut.<br>Akşam hepsini bitir."),
 }
 
 # ⚠️ 바탕 · 글자색은 기존 스크린샷(make_marketing_screenshots.py)과 같다. 다르면 페이지에서
