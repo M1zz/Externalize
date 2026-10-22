@@ -221,15 +221,15 @@ App 图标角标和小组件会显示还剩几项。
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/zh-Hans/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/zh-Hans/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/zh-Hans/privacy.html
 
 ## 繁體中文 (zh-Hant)
 
@@ -278,15 +278,15 @@ App 圖像角標和小工具會顯示還剩幾項。
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/zh-Hant/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/zh-Hant/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/zh-Hant/privacy.html
 
 ## 日本語 (ja)
 
@@ -335,15 +335,15 @@ ToDo,タスク,リマインダー,チェックリスト,先延ばし,ブレイ�
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/ja/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/ja/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/ja/privacy.html
 
 ## Русский (ru)
 
@@ -392,15 +392,15 @@ Externalize: список дел
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/ru/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/ru/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/ru/privacy.html
 
 ## Español (es)
 
@@ -449,15 +449,15 @@ tareas,pendientes,lista,recordatorio,notas,ideas,tdah,olvidos,enfoque,widget,sir
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/es/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/es/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/es/privacy.html
 
 ## Deutsch (de)
 
@@ -506,15 +506,15 @@ Aufgaben,ToDo,Liste,Checkliste,Erinnerung,Merkzettel,Widget,Siri,aufschieben,ADH
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/de/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/de/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/de/privacy.html
 
 ## Français (fr)
 
@@ -563,15 +563,15 @@ tâches,todo,liste,checklist,rappels,mémo,pense-bête,widget,siri,procrastinati
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/fr/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/fr/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/fr/privacy.html
 
 ## Italiano (it)
 
@@ -620,15 +620,15 @@ attività,todo,lista,checklist,promemoria,appunti,pensieri,widget,siri,rimandare
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/it/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/it/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/it/privacy.html
 
 ## Português do Brasil (pt-BR)
 
@@ -677,15 +677,15 @@ tarefas,pendências,lista,lembrete,notas,ideias,tdah,esquecimento,foco,widget,si
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/pt-BR/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/pt-BR/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/pt-BR/privacy.html
 
 ## ไทย (th)
 
@@ -734,15 +734,15 @@ Externalize: จดแล้วลืม
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/th/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/th/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/th/privacy.html
 
 ## Tiếng Việt (vi)
 
@@ -791,15 +791,15 @@ todo,checklist,gtd,adhd,widget,nhắc việc,hoãn việc,kế hoạch,tập tru
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/vi/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/vi/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/vi/privacy.html
 
 ## Čeština (cs)
 
@@ -848,15 +848,15 @@ připomínky,poznámky,plánovač,checklist,prokrastinace,ADHD,soustředění,wi
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/cs/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/cs/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/cs/privacy.html
 
 ## Dansk (da)
 
@@ -905,15 +905,15 @@ huskeliste,to-do,opgaver,noter,påmindelse,udsætte,fokus,widget,siri,tanker,ADH
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/da/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/da/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/da/privacy.html
 
 ## Ελληνικά (el)
 
@@ -962,15 +962,15 @@ Externalize: Άδειασε το μυαλό
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/el/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/el/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/el/privacy.html
 
 ## Suomi (fi)
 
@@ -1019,15 +1019,15 @@ tehtävälista,muistilista,muistiinpanot,muistutus,tehtävät,lykkääminen,widg
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/fi/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/fi/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/fi/privacy.html
 
 ## Bahasa Indonesia (id)
 
@@ -1076,15 +1076,15 @@ todo,checklist,pengingat,catatan,gtd,adhd,fokus,widget,siri,tugas,menunda,pelupa
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/id/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/id/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/id/privacy.html
 
 ## Norsk bokmål (nb)
 
@@ -1133,15 +1133,15 @@ gjøremål,huskeliste,sjekkliste,notater,påminnelse,utsette,fokus,widget,siri,t
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/nb/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/nb/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/nb/privacy.html
 
 ## Nederlands (nl)
 
@@ -1190,15 +1190,15 @@ to-do,takenlijst,checklist,notities,herinnering,taken,focus,widget,toegangsscher
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/nl/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/nl/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/nl/privacy.html
 
 ## Polski (pl)
 
@@ -1247,15 +1247,15 @@ przypomnienia,notatki,planer,checklista,odkładanie,ADHD,skupienie,widżet,siri,
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/pl/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/pl/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/pl/privacy.html
 
 ## Svenska (sv)
 
@@ -1304,15 +1304,15 @@ att-göra,checklista,anteckningar,påminnelse,uppgifter,fokus,widget,låsskärm,
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/sv/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/sv/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/sv/privacy.html
 
 ## Türkçe (tr)
 
@@ -1361,15 +1361,15 @@ yapılacaklar,görev,liste,hatırlatıcı,notlar,fikir,dikkat,unutkanlık,odak,w
 
 ### 지원 URL
 
-https://m1zz.github.io/Externalize/en/support.html
+https://m1zz.github.io/Externalize/tr/support.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/Externalize/en/
+https://m1zz.github.io/Externalize/tr/
 
 ### 개인정보 처리방침 URL
 
-https://m1zz.github.io/Externalize/en/privacy.html
+https://m1zz.github.io/Externalize/tr/privacy.html
 
 ## 연령 등급
 
