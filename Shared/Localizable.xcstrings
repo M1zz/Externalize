@@ -11813,7 +11813,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "頭が空っぽになりました"
+            "value" : "頭がすっきりしました"
           }
         },
         "ru" : {
@@ -11837,7 +11837,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Votre tête est vide"
+            "value" : "Vous avez l’esprit libre"
           }
         },
         "it" : {
@@ -11885,7 +11885,7 @@
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pää on tyhjä"
+            "value" : "Mieli on kevyt"
           }
         },
         "id" : {
@@ -11897,13 +11897,13 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hodet er tomt"
+            "value" : "Hodet er ryddet"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Je hoofd is leeg"
+            "value" : "Je hoofd is opgeruimd"
           }
         },
         "pl" : {
@@ -11915,7 +11915,7 @@
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Huvudet är tomt"
+            "value" : "Huvudet är rensat"
           }
         },
         "tr" : {
@@ -11959,9 +11959,33 @@
           }
         },
         "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "· Откладывалось %lld раз"
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "· Откладывалось %lld раз"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "· Откладывалось %lld раза"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "· Откладывалось %lld раз"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "· Откладывалось %lld раза"
+                }
+              }
+            }
           }
         },
         "es" : {

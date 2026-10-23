@@ -64,7 +64,7 @@ SHOTS = {
         ("03-review.png", "text-bottom", "夜に、ひとつずつ<br>結論を出す", "今やる・時間を決める・捨てる、から選ぶ"),
         ("04-schedule.png", "flat-rotate", "今できないなら<br>時間を決めよう", "決めた時間に、もう一度お知らせ"),
         ("05-donow.png", "left-text", "2分で終わるなら<br>今すぐ", "タイマーを押して、やってこよう"),
-        ("06-clear.png", "dark", "リストが空なら<br>頭も空っぽ", "たまって腐るものはありません"),
+        ("06-clear.png", "dark", "リストが空なら<br>頭もすっきり", "たまって腐るものはありません"),
     ],
     "ru": [
         ("01-main.png", "hero-bleed", "Вынесите это<br>из головы", "Запишите, как только мысль пришла"),
@@ -96,7 +96,7 @@ SHOTS = {
         ("03-review.png", "text-bottom", "Le soir, réglez<br>chaque chose", "Faire, planifier ou abandonner"),
         ("04-schedule.png", "flat-rotate", "Pas maintenant ?<br>Choisissez l’heure", "Ça revient à l’heure dite"),
         ("05-donow.png", "left-text", "Deux minutes ?<br>Faites-le", "Lancez le minuteur, puis revenez"),
-        ("06-clear.png", "dark", "Liste vide,<br>tête vide", "Rien ne traîne"),
+        ("06-clear.png", "dark", "Liste vide,<br>esprit libre", "Rien ne traîne"),
     ],
     "it": [
         ("01-main.png", "hero-bleed", "Toglilo<br>dalla testa", "Scrivilo appena ti viene in mente"),
@@ -160,7 +160,7 @@ SHOTS = {
         ("03-review.png", "text-bottom", "Päätä asiat<br>illalla", "Tee, ajasta tai hylkää"),
         ("04-schedule.png", "flat-rotate", "Ei nyt?<br>Valitse aika", "Se palaa juuri silloin kuin sovit"),
         ("05-donow.png", "left-text", "Kaksi minuuttia?<br>Tee heti", "Käynnistä ajastin ja palaa"),
-        ("06-clear.png", "dark", "Tyhjä lista,<br>tyhjä pää", "Mikään ei jää lahoamaan"),
+        ("06-clear.png", "dark", "Tyhjä lista,<br>kevyt mieli", "Mikään ei jää lahoamaan"),
     ],
     "id": [
         ("01-main.png", "hero-bleed", "Keluarkan dari<br>kepalamu", "Catat begitu terlintas"),
@@ -176,7 +176,7 @@ SHOTS = {
         ("03-review.png", "text-bottom", "Avgjør alt<br>om kvelden", "Gjør det, sett en tid eller dropp det"),
         ("04-schedule.png", "flat-rotate", "Ikke nå?<br>Velg et tidspunkt", "Det kommer tilbake akkurat da"),
         ("05-donow.png", "left-text", "To minutter?<br>Gjør det nå", "Start timeren og kom tilbake"),
-        ("06-clear.png", "dark", "Tom liste,<br>tomt hode", "Ingenting blir liggende og råtne"),
+        ("06-clear.png", "dark", "Tom liste,<br>ryddig hode", "Ingenting blir liggende og råtne"),
     ],
     "nl": [
         ("01-main.png", "hero-bleed", "Haal het uit<br>je hoofd", "Noteer het meteen als het opkomt"),
@@ -184,7 +184,7 @@ SHOTS = {
         ("03-review.png", "text-bottom", "Los alles op<br>in de avond", "Doe het, plan het of gooi het weg"),
         ("04-schedule.png", "flat-rotate", "Nu niet?<br>Kies een tijd", "Het komt terug precies wanneer jij wilt"),
         ("05-donow.png", "left-text", "Twee minuten?<br>Doe het nu", "Start de timer en kom terug"),
-        ("06-clear.png", "dark", "Lege lijst,<br>leeg hoofd", "Niets blijft liggen rotten"),
+        ("06-clear.png", "dark", "Lege lijst,<br>opgeruimd hoofd", "Niets blijft liggen rotten"),
     ],
     "pl": [
         ("01-main.png", "hero-bleed", "Wyrzuć to<br>z głowy", "Zapisz, gdy tylko przyjdzie do głowy"),
@@ -200,7 +200,7 @@ SHOTS = {
         ("03-review.png", "text-bottom", "Avgör allt<br>på kvällen", "Gör det, välj en tid eller släng"),
         ("04-schedule.png", "flat-rotate", "Inte nu?<br>Välj en tid", "Det kommer tillbaka när du sagt"),
         ("05-donow.png", "left-text", "Två minuter?<br>Gör det nu", "Starta timern och kom tillbaka"),
-        ("06-clear.png", "dark", "Tom lista,<br>tomt huvud", "Inget blir liggande och mögla"),
+        ("06-clear.png", "dark", "Tom lista,<br>rensat huvud", "Inget blir liggande och mögla"),
     ],
     "tr": [
         ("01-main.png", "hero-bleed", "Aklındakini<br>dışarı çıkar", "Aklına geldiği anda not al"),

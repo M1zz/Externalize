@@ -90,6 +90,9 @@ struct ContentView: View {
         .onReceive(NotificationCenter.default.publisher(for: .memosDidChangeExternally)) { _ in
             model.refresh()
         }
+        #if DEBUG
+        .task { await startScreenshotScene() }
+        #endif
         .task {
             // Scheduled memos come back into the open list when their time arrives.
             while !Task.isCancelled {
@@ -252,6 +255,36 @@ struct ContentView: View {
         }
     }
 }
+
+#if DEBUG
+/// 스토어 스크린샷 전용 — Release 빌드에는 들어가지 않는다.
+/// `-shotScene typing|review|schedule|donow|clear` 로 그 화면에서 시작한다.
+/// `-shotDraft "…"` 는 입력 줄에 미리 넣을 글, `-shotSettled N` 은 이미 끝낸 개수.
+enum ScreenshotScene {
+    static var scene: String? { UserDefaults.standard.string(forKey: "shotScene") }
+    static var draft: String { UserDefaults.standard.string(forKey: "shotDraft") ?? "" }
+    static var settled: Int { UserDefaults.standard.integer(forKey: "shotSettled") }
+}
+
+extension ContentView {
+    @MainActor
+    fileprivate func startScreenshotScene() async {
+        guard let scene = ScreenshotScene.scene else { return }
+        try? await Task.sleep(for: .milliseconds(600))
+        switch scene {
+        case "typing":
+            draft = ScreenshotScene.draft
+            isCaptureFocused = true
+        case "schedule":
+            scheduling = model.open.first
+        case "review", "donow", "clear":
+            isReviewing = true
+        default:
+            break
+        }
+    }
+}
+#endif
 
 private enum OnboardingKey {
     static let completed = "onboarding.completed"
@@ -439,7 +472,14 @@ struct SchedulePicker: View {
                 }
             }
         }
-        .presentationDetents([.medium, .large])
+        .presentationDetents(Self.detents)
+    }
+
+    private static var detents: Set<PresentationDetent> {
+        #if DEBUG
+        if ScreenshotScene.scene == "schedule" { return [.large] }
+        #endif
+        return [.medium, .large]
     }
 }
 

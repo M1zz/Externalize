@@ -21,7 +21,7 @@ OUT = ROOT / "docs" / "screenshots" / "creative"
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 # 앱 언어 코드 → App Store Connect 로케일 (make_marketing_screenshots.py 와 같다)
-STORE = {"en": "en-US", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "nb": "no", "nl": "nl-NL"}
+STORE = {"en": "en-US", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "nl": "nl-NL"}
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
@@ -46,7 +46,7 @@ SEARCH = {
     "it": ("Lista di cose da fare", "Toglilo<br>dalla testa", "Chiudi tutto la sera"),
     "pt-BR": ("Lista de tarefas", "Tire isso<br>da cabeça", "Resolva tudo à noite"),
     "th": ("สิ่งที่ต้องทำ", "ดึงออกจากหัว<br>ก่อนลืม", "ตอนเย็นค่อยสะสางให้หมด"),
-    "vi": ("Danh sách việc cần làm", "Đưa việc vừa nghĩ ra<br>khỏi đầu", "Tối đến giải quyết hết"),
+    "vi": ("Danh sách việc cần làm", "Đưa nó ra<br>khỏi đầu", "Tối đến giải quyết hết"),
     "cs": ("seznam úkolů", "Dostaňte to<br>z hlavy", "Večer vyřešte vše po jedné"),
     "da": ("Huskeliste", "Få det ud<br>af hovedet", "Afgør alt om aftenen"),
     "el": ("Λίστα εργασιών", "Βγάλε το από<br>το μυαλό σου", "Κλείσε τα όλα το βράδυ"),

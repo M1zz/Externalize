@@ -30,6 +30,9 @@ struct ReviewView: View {
         .sensoryFeedback(.success, trigger: feedback)
         .onAppear {
             total = model.open.count
+            #if DEBUG
+            startScreenshotScene()
+            #endif
         }
         .sheet(isPresented: $isPickingTime) {
             SchedulePicker { date in
@@ -186,6 +189,18 @@ struct ReviewView: View {
         }
         .padding(.horizontal, 24)
     }
+
+    #if DEBUG
+    private func startScreenshotScene() {
+        guard let scene = ScreenshotScene.scene else { return }
+        settledCount = ScreenshotScene.settled
+        total = model.open.count + settledCount
+        switch scene {
+        case "donow": doingSince = .now.addingTimeInterval(-2)
+        default: break
+        }
+    }
+    #endif
 
     private func settle(_ action: () -> Void) {
         action()

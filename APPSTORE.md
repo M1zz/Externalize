@@ -117,7 +117,7 @@ https://m1zz.github.io/Externalize/en/
 
 https://m1zz.github.io/Externalize/en/privacy.html
 
-## English (en-GB)
+## 영어(영국) (en-GB)
 
 ### 이름
 
@@ -553,7 +553,7 @@ RIEN NE TRAÎNE
 Ce qui attend depuis plus d’un jour et ce que vous repoussez sans cesse sont signalés.
 Quand un élément planifié revient, la notification vous permet de le marquer comme fait, de le reporter à demain matin ou de l’abandonner.
 Le badge de l’icône et le widget indiquent combien il en reste.
-Liste vide, tête vide.
+Liste vide, esprit libre.
 
 Toutes les fonctions sont gratuites. Pas de compte, pas de connexion, et ce que vous écrivez reste sur cet appareil.
 
@@ -1009,7 +1009,7 @@ MIKÄÄN EI JÄÄ LAHOAMAAN
 Yli vuorokauden odottaneet ja yhä uudelleen lykätyt asiat merkitään.
 Kun ajastettu asia palaa, ilmoituksesta voit merkitä sen tehdyksi, siirtää sen huomisaamuun tai hylätä sen.
 Sovelluskuvakkeen merkki ja widget näyttävät, montako on jäljellä.
-Tyhjä lista on tyhjä pää.
+Tyhjä lista, kevyt mieli.
 
 Kaikki ominaisuudet ovat ilmaisia. Ei tiliä, ei kirjautumista, ja kirjoittamasi pysyy tällä laitteella.
 
@@ -1123,7 +1123,7 @@ INGENTING BLIR LIGGENDE OG RÅTNE
 Ting som har ventet over en dag, og ting du stadig utsetter, blir merket.
 Når en planlagt ting kommer tilbake, kan du i varselet markere den som ferdig, flytte den til i morgen tidlig eller droppe den.
 Merket på appikonet og widgeten viser hvor mange som er igjen.
-Tom liste, tomt hode.
+Tom liste, ryddig hode.
 
 Alle funksjoner er gratis. Ingen konto, ingen innlogging, og det du skriver, blir på denne enheten.
 
@@ -1147,7 +1147,7 @@ https://m1zz.github.io/Externalize/nb/privacy.html
 
 ### 이름
 
-Externalize: Leeg hoofd
+Externalize: Hoofd leegmaken
 
 ### 부제
 
@@ -1180,7 +1180,7 @@ NIETS BLIJFT LIGGEN ROTTEN
 Dingen die al langer dan een dag wachten, en dingen die je steeds uitstelt, zijn gemarkeerd.
 Komt een gepland ding terug, dan kun je het in de melding afvinken, naar morgenochtend verplaatsen of weggooien.
 De badge op het appicoon en de widget laten zien hoeveel er nog over zijn.
-Een lege lijst is een leeg hoofd.
+Een lege lijst is een opgeruimd hoofd.
 
 Alle functies zijn gratis. Geen account, geen inlog, en wat je schrijft blijft op dit apparaat.
 
@@ -1294,7 +1294,7 @@ INGET BLIR LIGGANDE OCH MÖGLA
 Sådant som väntat i över ett dygn och sådant du skjuter upp gång på gång markeras.
 När en tidsatt sak kommer tillbaka kan du i aviseringen markera den som klar, flytta den till i morgon bitti eller slänga den.
 Märket på appikonen och widgeten visar hur många som är kvar.
-En tom lista betyder ett tomt huvud.
+En tom lista betyder ett rensat huvud.
 
 Alla funktioner är gratis. Inget konto, ingen inloggning, och det du skriver stannar på den här enheten.
 
