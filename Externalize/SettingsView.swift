@@ -1,3 +1,4 @@
+import LeeoKit
 import SwiftUI
 import UIKit
 import UserNotifications
@@ -33,6 +34,11 @@ struct SettingsView: View {
                     } footer: {
                         Text("Notifications are off, so reminders can't reach you.")
                     }
+                }
+
+                // 친구에게 소개하기 — App Store ID 가 없으면 그리지 않는다
+                Section {
+                    LeeoShareAppLink<ExternalizeSpec>()
                 }
             }
             .navigationTitle("Settings")
