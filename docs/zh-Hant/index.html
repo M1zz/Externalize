@@ -1,93 +1,174 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Externalize — 會自己忘記的備忘錄</title>
-<meta name="description" content="Externalize 幫你暫存只需要用幾個小時的資訊，例如停車位置或置物櫃密碼，時間一到就自動刪除。">
-<link rel="canonical" href="https://m1zz.github.io/Externalize/zh-Hant/">
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/Externalize/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/Externalize/en/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/Externalize/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/Externalize/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/Externalize/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/Externalize/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/Externalize/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/Externalize/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/Externalize/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/Externalize/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/Externalize/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/Externalize/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/Externalize/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/Externalize/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/Externalize/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/Externalize/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/Externalize/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/Externalize/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/Externalize/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/Externalize/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/Externalize/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/Externalize/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/Externalize/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/Externalize/">
-<link rel="icon" href="../icon.png">
-<link rel="apple-touch-icon" href="../icon.png">
-<link rel="stylesheet" href="../style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Externalize：想到就記，晚上了結</title>
+  <meta name="description" content="突然想起要做的事，寫幾個字就放心忘掉。晚上逐項了結：現在做、訂個時間，或是不做了。所有功能都免費。">
+  <meta name="theme-color" content="#5B5BF0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6813393019">
+  <link rel="canonical" href="https://m1zz.github.io/Externalize/zh-Hant/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/Externalize/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/Externalize/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/Externalize/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/Externalize/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/Externalize/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/Externalize/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/Externalize/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/Externalize/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/Externalize/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/Externalize/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/Externalize/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/Externalize/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/Externalize/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/Externalize/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/Externalize/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/Externalize/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/Externalize/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/Externalize/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/Externalize/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/Externalize/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/Externalize/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/Externalize/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/Externalize/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/Externalize/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Externalize：想到就記，晚上了結">
+  <meta property="og:description" content="突然想起要做的事，寫幾個字就放心忘掉。晚上逐項了結：現在做、訂個時間，或是不做了。所有功能都免費。">
+  <meta property="og:url" content="https://m1zz.github.io/Externalize/zh-Hant/">
+  <meta property="og:image" content="https://m1zz.github.io/Externalize/img/zh-Hant/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#5B5BF0}@media (prefers-color-scheme:dark){:root{--accent:#7E86FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<main>
-  <header>
-    <img src="../icon.png" alt="">
-    <div>
-      <h1>Externalize</h1>
-      <p>存起來，然後忘掉。</p>
-    </div>
+  <a class="skip" href="#main">跳到內文</a>
+  <header class="bar">
+    <a class="brand" href="../zh-Hant/"><img src="../icon.png" alt="" width="32" height="32">Externalize</a>
+    <a class="lang-link" href="#languages">語言</a>
   </header>
 
-  <nav class="lang" aria-label="語言">
-    <a href="../index.html" hreflang="ko" lang="ko">한국어</a>
-    <a href="../en/index.html" hreflang="en" lang="en">English</a>
-    <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-    <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant" aria-current="true">繁體中文</a>
-    <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-    <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-    <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-    <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-    <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-    <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-    <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-    <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-    <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-    <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-    <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-    <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-    <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-    <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-    <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-    <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-    <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-    <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-    <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-  </nav>
-  <nav aria-label="頁面">
-    <a href="index.html" aria-current="page">簡介</a>
-    <a href="support.html">支援</a>
-    <a href="privacy.html">隱私權政策</a>
-  </nav>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>想到就記下，<br>晚上再了結</h1>
+        <p class="lead">「啊對了，我得……」想到的那一刻寫幾個字，把它從腦中放下。晚上只要把剩下的事逐項了結就好。</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6813393019">在 App Store 免費下載</a><a class="try" href="#try">馬上試試看 ↓</a></div>
+        <p class="muted small">所有功能都免費，不用註冊也不用登入。</p>
+      </div>
+      <div class="phone"><img src="../img/zh-Hant/01-main.jpg" alt="想到就記下， 晚上再了結" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <section class="card">
-    <p>車停在哪裡、置物櫃密碼、飯店房號。Externalize 幫你暫存這些只需要用幾個小時的資訊，
-    時間一到就自動刪除，在此之前還能一直顯示在鎖定畫面上。</p>
-    <div class="shots">
-      <img src="../screenshots/marketing/en/01-list.png" alt="備忘列表">
-      <img src="../screenshots/marketing/en/02-add.png" alt="新增備忘">
-      <img src="../screenshots/marketing/en/03-onboarding.png" alt="歡迎畫面">
-      <img src="../screenshots/marketing/en/04-forget.png" alt="自動刪除說明">
-    </div>
-    <p class="muted">有疑問嗎？請參閱<a href="support.html">支援</a>。想了解資料如何處理，請閱讀<a href="privacy.html">隱私權政策</a>。</p>
-  </section>
 
-  <footer>© 2026 Externalize</footer>
-</main>
+    <section class="reveal" id="try">
+      <h2>馬上試試看</h2>
+      <p class="muted">寫下腦中的一件事，或點一下範例。接著點「現在就了結」，逐項給它們一個結果。</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;馬上試試看&quot;, &quot;lead&quot;: &quot;寫下腦中的一件事，或點一下範例。接著點「現在就了結」，逐項給它們一個結果。&quot;, &quot;examples&quot;: [&quot;打電話給牙醫約洗牙&quot;, &quot;幫媽媽挑生日禮物&quot;, &quot;換濾水器濾心&quot;, &quot;查一下護照什麼時候到期&quot;], &quot;note&quot;: &quot;這個體驗只在瀏覽器裡執行，不會儲存任何內容。&quot;, &quot;app&quot;: {&quot;input&quot;: &quot;想到什麼了？&quot;, &quot;settle&quot;: &quot;現在就了結（{1}）&quot;, &quot;onMind&quot;: &quot;腦中的事&quot;, &quot;scheduled&quot;: &quot;已排定&quot;, &quot;footer&quot;: &quot;每一項都要有個了結：現在做、訂個時間，或者不做了。&quot;, &quot;of&quot;: &quot;{1} / {2}&quot;, &quot;doNow&quot;: &quot;現在做&quot;, &quot;doNowSub&quot;: &quot;兩分鐘能做完，就直接做&quot;, &quot;pick&quot;: &quot;訂個時間&quot;, &quot;drop&quot;: &quot;不做了 — 本來就不用做&quot;, &quot;goDo&quot;: &quot;去做吧，做完再回來。&quot;, &quot;done&quot;: &quot;完成&quot;, &quot;notNow&quot;: &quot;現在不行 — 返回選擇&quot;, &quot;clear&quot;: &quot;腦袋清空了&quot;, &quot;settled&quot;: &quot;你已了結 {1} 項，沒有懸而未決的事了。&quot;, &quot;close&quot;: &quot;關閉&quot;, &quot;when&quot;: &quot;打算什麼時候做？&quot;, &quot;cancel&quot;: &quot;取消&quot;, &quot;write&quot;: &quot;記下&quot;, &quot;name&quot;: &quot;Externalize&quot;, &quot;stale&quot;: &quot;已超過一天&quot;, &quot;empty&quot;: &quot;想到什麼，就記在下面，然後放下。\n今晚再決定怎麼處理。&quot;, &quot;o1&quot;: &quot;1 小時後&quot;, &quot;o2&quot;: &quot;今晚&quot;, &quot;o3&quot;: &quot;明早&quot;, &quot;o4&quot;: &quot;本週末&quot;, &quot;o5&quot;: &quot;下週&quot;}}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>再小的事，也會佔著腦袋</h2>
+      <p>洗澡時、等紅燈時、快睡著時，「那件事還沒做」突然冒出來。手邊沒地方記，只好一直記掛著，手上的事也跟著分心。待辦 App 又要先建清單、訂截止日，連記一筆都變成負擔。</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>3 秒記下，然後忘掉</h2>
+        <p>打開 App，直接在畫面底部的輸入列裡寫。不用選清單、資料夾，也不用訂截止日。<br>點一下鎖定畫面小工具，就會打開一行空白輸入列。對 Siri 說 <code>在Externalize中記一下</code>，或設定到動作按鈕，不打開 App 也能記下。</p>
+      </div>
+      <div class="phone"><img src="../img/zh-Hant/02-typing.jpg" alt="3 秒記下，然後忘掉" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>晚上逐項了結</h2>
+        <p>還有沒處理的事，晚上 9 點提醒你一次。全部處理完就不打擾。<br>開始了結後，事項會一條一條放大顯示。選「現在做」「訂個時間」或「不做了」，就換下一條。兩分鐘做得完的事，開個計時器馬上搞定。</p>
+      </div>
+      <div class="phone"><img src="../img/zh-Hant/03-review.jpg" alt="晚上逐項了結" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>不會越堆越多</h2>
+        <p>訂時間時可以選「1 小時後」「今晚」「明早」「本週末」或「下週」，時間到再提醒你。在通知裡就能直接選「完成」「明早」或「不做了」。<br>放超過一天的事和一拖再拖的事都會被標出來，一直往後延的事一眼就看得到。</p>
+      </div>
+      <div class="phone"><img src="../img/zh-Hant/04-schedule.jpg" alt="不會越堆越多" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>三步驟開始</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>想到就記</h3><p>在 App、鎖定畫面小工具或 Siri，哪個順手用哪個，寫幾個字就好。</p></li>
+<li class="card"><span class="n">2</span><h3>允許通知</h3><p>第一次記下事項時會問一次，用於晚間提醒和你訂好的時間。</p></li>
+<li class="card"><span class="n">3</span><h3>晚上了結</h3><p>點開提醒或「現在就了結」，給每一項一個結果。</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>在列表裡直接處理</h2>
+      <div class="card table">
+        <dl><div><dt>點一下事項</dt><dd>選擇「完成」「訂個時間」或「不做了」</dd></div><div><dt>向右滑動</dt><dd>完成（從列表中移除）</dd></div><div><dt>向左滑動</dt><dd>不做了，或用「稍後」訂個時間</dd></div><div><dt>現在就了結</dt><dd>把剩下的事一條一條過一遍</dd></div><div><dt>在Externalize中記一下</dt><dd>對 Siri 說，不必打開 App</dd></div><div><dt>設定 ▸ 晚間提醒</dt><dd>更改提醒時間或關閉</dd></div></dl>
+      </div>
+      <p class="muted">訂時間時，「今晚」是晚上 7 點，「明早」是早上 9 點，「本週末」是週六上午 10 點，「下週」是週一上午 9 點。也可以自己選任何日期和時間。</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>常見問題</h2>
+      <div class="faq"><details><summary>不打開 App 也能記嗎？</summary><p>可以。對 Siri 說 <code>在Externalize中記一下</code>，它會問你要記什麼，然後直接儲存。在「設定」的動作按鈕指定「記下來」捷徑，按一下就能記。</p></details>
+<details><summary>怎麼加入鎖定畫面小工具？</summary><p>長按鎖定畫面，點「自訂」並選擇鎖定畫面，點小工具區域後加入 Externalize。點一下會打開一行空白輸入列，也能看到還剩幾項。主畫面上也能放小尺寸小工具。</p></details>
+<details><summary>想更改或關閉晚間提醒。</summary><p>點右上角的齒輪 ▸ 晚間提醒，就能更改時間或關閉。預設是晚上 9 點，沒有剩餘事項的日子不會提醒。</p></details>
+<details><summary>收不到通知。</summary><p>如果 Externalize 的設定顯示通知已關閉，點那裡的按鈕，到 iPhone 設定中開啟通知。沒有剩餘事項的日子本來就不會有晚間提醒。</p></details>
+<details><summary>訂了時間的事會怎麼回來？</summary><p>到了你訂的時間會收到通知。長按通知就能直接選「完成」「明早」或「不做了」。什麼都不選的話，它會回到「腦中的事」，下次了結時再處理。</p></details>
+<details><summary>按了「完成」或「不做了」的事還能找回嗎？</summary><p>不能。了結的事會從列表中移除，也沒有封存。還不確定的話，先選「訂個時間」，別急著丟掉。</p></details>
+<details><summary>換手機後內容會跟著走嗎？</summary><p>不會。內容只儲存在這台裝置上，不會上傳到 iCloud 或伺服器。刪除 App 時也會一併刪除。</p></details>
+<details><summary>支援哪些裝置？</summary><p>執行 iOS 17 或以上版本的 iPhone。</p></details></div>
+      <p class="contact">有問題或發現錯誤，請寄信到 <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>。附上 iPhone 型號和 iOS 版本，能幫我們更快找出原因。</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>今天想到的事，<br>先放到腦袋外面</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6813393019">在 App Store 免費下載</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="語言"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant" aria-current="page">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">隱私權政策</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 Externalize</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

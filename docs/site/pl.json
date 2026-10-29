@@ -1,0 +1,165 @@
+{
+  "title": "Externalize: zapisz teraz, załatw wieczorem",
+  "description": "Co przyjdzie ci do głowy, zapisz kilkoma słowami i odpuść. Wieczorem każda sprawa dostaje zakończenie: zrób, wyznacz czas albo odpuść.",
+  "hero": {
+    "headline": "Zapisz teraz.\nZałatw wieczorem.",
+    "lead": "„A, no tak, muszę…” Wyrzuć to z głowy kilkoma słowami i przestań o tym myśleć. Wieczorem załatw to, co zostało, po kolei.",
+    "cta": "Pobierz za darmo z App Store",
+    "note": "Wszystkie funkcje są bezpłatne. Bez konta i logowania."
+  },
+  "demo": {
+    "title": "Wypróbuj tutaj",
+    "lead": "Wpisz coś, co chodzi ci po głowie, albo stuknij przykład. Potem naciśnij „Załatw teraz” i daj każdej sprawie zakończenie.",
+    "examples": [
+      "Zadzwonić do dentysty w sprawie piaskowania",
+      "Wybrać prezent urodzinowy dla mamy",
+      "Wymienić filtr w dzbanku",
+      "Sprawdzić, kiedy wygasa paszport"
+    ],
+    "note": "To demo działa tylko w twojej przeglądarce i niczego nie zapisuje.",
+    "app": {
+      "input": "Co ci chodzi po głowie?",
+      "settle": "Załatw teraz ({1})",
+      "onMind": "W głowie",
+      "scheduled": "Zaplanowane",
+      "footer": "Każda sprawa potrzebuje zakończenia: zrób ją, wyznacz czas albo odpuść.",
+      "of": "{1} z {2}",
+      "doNow": "Zrób teraz",
+      "doNowSub": "Jeśli zajmie dwie minuty, zrób to od razu",
+      "pick": "Wyznacz czas",
+      "drop": "Odpuść — nie trzeba tego robić",
+      "goDo": "Zrób to i wróć, gdy będzie gotowe.",
+      "done": "Zrobione",
+      "notNow": "Nie teraz — wróć do wyboru",
+      "clear": "Masz czystą głowę",
+      "settled": "Załatwiono {1} sprawy. Nic już nie wisi.",
+      "close": "Zamknij",
+      "when": "Kiedy to zrobisz?",
+      "cancel": "Anuluj",
+      "write": "Zapisz",
+      "name": "Externalize",
+      "stale": "Czeka ponad dobę",
+      "empty": "Gdy coś przyjdzie ci do głowy, zapisz to poniżej i zapomnij.\nCo z tym zrobić, zdecydujesz wieczorem.",
+      "o1": "Za godzinę",
+      "o2": "Dziś wieczorem",
+      "o3": "Jutro rano",
+      "o4": "W ten weekend",
+      "o5": "W przyszłym tygodniu"
+    }
+  },
+  "problem": {
+    "title": "Nawet drobiazgi zajmują miejsce w głowie",
+    "text": "Pod prysznicem, na czerwonym świetle, tuż przed zaśnięciem: „Muszę to zrobić”. Nie masz gdzie zapisać, więc trzymasz to w pamięci, a to, czym się zajmujesz, na tym cierpi. Aplikacje do zadań każą najpierw założyć listę i ustawić termin, więc samo zapisanie staje się zadaniem."
+  },
+  "features": [
+    {
+      "title": "Trzy sekundy i z głowy",
+      "text": "Otwórz aplikację i pisz w wierszu na dole. Bez list, folderów i terminów.\nStuknij widżet na ekranie blokady, a aplikacja otworzy się z pustym wierszem. Powiedz Siri `Zapamiętaj w Externalize` albo przypisz to do przycisku czynności, a zapisze się bez otwierania aplikacji.",
+      "shot": "02-typing"
+    },
+    {
+      "title": "Wieczorem po kolei",
+      "text": "Jeśli coś zostało, dostaniesz jedno przypomnienie o 21:00. Jeśli nic, nic nie przyjdzie.\nPo rozpoczęciu sprawy pojawiają się pojedynczo, dużym tekstem. Wybierz „Zrób teraz”, „Wyznacz czas” albo „Odpuść” i pojawia się następna. Jeśli to dwie minuty, włącz minutnik i zrób to od razu.",
+      "shot": "03-review"
+    },
+    {
+      "title": "Nic nie zalega",
+      "text": "Wybierz „Za godzinę”, „Dziś wieczorem”, „Jutro rano”, „W ten weekend” albo „W przyszłym tygodniu”, a sprawa wróci wtedy. W powiadomieniu od razu stukniesz „Zrobione”, „Jutro rano” albo „Odpuść”.\nTo, co czeka ponad dobę, i to, co ciągle odkładasz, jest oznaczone, więc widać, co ci wciąż umyka.",
+      "shot": "04-schedule"
+    }
+  ],
+  "steps": {
+    "title": "Zacznij w trzech krokach",
+    "items": [
+      {
+        "title": "Zapisz",
+        "text": "Kilka słów w aplikacji, w widżecie na ekranie blokady albo przez Siri, co masz pod ręką."
+      },
+      {
+        "title": "Zezwól na powiadomienia",
+        "text": "Aplikacja zapyta raz, przy pierwszym zapisie. Służą do wieczornego przypomnienia i wyznaczonych godzin."
+      },
+      {
+        "title": "Załatw wieczorem",
+        "text": "Stuknij przypomnienie albo „Załatw teraz” i daj każdej sprawie zakończenie."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Prosto z listy",
+    "rows": [
+      [
+        "Stuknij sprawę",
+        "wybierz „Zrobione”, „Wyznacz czas” albo „Odpuść”"
+      ],
+      [
+        "Przesuń w prawo",
+        "Zrobione (znika z listy)"
+      ],
+      [
+        "Przesuń w lewo",
+        "Odpuść albo „Odłóż”, żeby wyznaczyć czas"
+      ],
+      [
+        "Załatw teraz",
+        "przejdź po kolei przez to, co zostało"
+      ],
+      [
+        "Zapamiętaj w Externalize",
+        "powiedz Siri bez otwierania aplikacji"
+      ],
+      [
+        "Ustawienia ▸ Wieczorne przypomnienie",
+        "zmień godzinę albo wyłącz"
+      ]
+    ],
+    "note": "Przy wyznaczaniu czasu „Dziś wieczorem” to 19:00, „Jutro rano” 9:00, „W ten weekend” sobota 10:00, a „W przyszłym tygodniu” poniedziałek 9:00. Możesz też wybrać dowolną datę i godzinę."
+  },
+  "faq": {
+    "title": "Częste pytania",
+    "items": [
+      {
+        "q": "Czy mogę coś zapisać bez otwierania aplikacji?",
+        "a": "Tak. Powiedz Siri `Zapamiętaj w Externalize`, a zapyta, co zapisać, i to zachowa. Przypisz skrót „Zapisz” do przycisku czynności w Ustawieniach i wystarczy jedno naciśnięcie."
+      },
+      {
+        "q": "Jak dodać widżet na ekran blokady?",
+        "a": "Dotknij i przytrzymaj ekran blokady, stuknij Dostosuj i wybierz ekran blokady, stuknij obszar widżetów i dodaj Externalize. Stuknięcie otwiera pusty wiersz, a widżet pokazuje, ile spraw zostało. Na ekran początkowy jest też mały widżet."
+      },
+      {
+        "q": "Czy mogę zmienić lub wyłączyć wieczorne przypomnienie?",
+        "a": "Stuknij koło zębate w prawym górnym rogu ▸ Wieczorne przypomnienie, żeby zmienić godzinę albo je wyłączyć. Domyślnie to 21:00, a w dni, gdy nic nie zostało, milczy."
+      },
+      {
+        "q": "Nie dostaję powiadomień.",
+        "a": "Jeśli ustawienia Externalize pokazują, że powiadomienia są wyłączone, stuknij tam przycisk i włącz je w Ustawieniach iPhone’a. W dni, gdy nic nie zostało, wieczorne przypomnienie nie przychodzi i to normalne."
+      },
+      {
+        "q": "Jak wraca sprawa z wyznaczonym czasem?",
+        "a": "O wybranej porze przychodzi powiadomienie. Przytrzymaj je, żeby od razu wybrać „Zrobione”, „Jutro rano” albo „Odpuść”. Jeśli nic nie zrobisz, wróci do „W głowie” i załatwisz ją następnym razem."
+      },
+      {
+        "q": "Czy da się przywrócić sprawę oznaczoną jako zrobiona lub odpuszczoną?",
+        "a": "Nie. Załatwione sprawy znikają z listy i nie ma archiwum. Jeśli nie masz pewności, lepiej wyznacz czas, niż odpuszczać."
+      },
+      {
+        "q": "Czy zapiski przejdą na nowego iPhone’a?",
+        "a": "Nie. Wszystko zostaje tylko na tym urządzeniu i nigdy nie trafia do iCloud ani na serwer. Usunięcie aplikacji usuwa też zapiski."
+      },
+      {
+        "q": "Na jakich urządzeniach działa?",
+        "a": "Na iPhonie z iOS 17 lub nowszym."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "To, co dziś przyszło do głowy,\nwyrzuć z niej",
+    "cta": "Pobierz za darmo z App Store"
+  },
+  "ui": {
+    "skip": "Przejdź do treści",
+    "languages": "Język",
+    "privacy": "Polityka prywatności",
+    "contact": "Pytanie albo błąd? Napisz na {email}. Podaj model iPhone’a i wersję iOS, a sprawdzimy to szybciej."
+  }
+}

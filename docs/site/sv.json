@@ -1,0 +1,165 @@
+{
+  "title": "Externalize: skriv ner nu, avgör ikväll",
+  "description": "Det du kommer att tänka på skriver du ner med några ord och släpper. På kvällen får allt ett slut: gör det, välj en tid eller släng det.",
+  "hero": {
+    "headline": "Skriv ner nu.\nAvgör ikväll.",
+    "lead": "”Just det, jag måste …” Få ut det ur huvudet med några ord och släpp det. På kvällen tar du hand om det som är kvar, en sak i taget.",
+    "cta": "Hämta gratis på App Store",
+    "note": "Alla funktioner är gratis. Inget konto, ingen inloggning."
+  },
+  "demo": {
+    "title": "Testa här",
+    "lead": "Skriv något du går och tänker på, eller tryck på ett exempel. Tryck sedan på ”Avgör nu” och ge varje sak ett slut.",
+    "examples": [
+      "Ringa tandläkaren och boka tandhygienist",
+      "Hitta en födelsedagspresent till mamma",
+      "Byta filter i köksfläkten",
+      "Kolla när passet går ut"
+    ],
+    "note": "Demon körs bara i din webbläsare och sparar ingenting.",
+    "app": {
+      "input": "Vad tänker du på?",
+      "settle": "Avgör nu ({1})",
+      "onMind": "I huvudet",
+      "scheduled": "Tidsatta",
+      "footer": "Varje sak behöver ett slut: gör det, välj en tid eller släng det.",
+      "of": "{1} av {2}",
+      "doNow": "Gör det nu",
+      "doNowSub": "Tar det två minuter, gör det bara",
+      "pick": "Välj en tid",
+      "drop": "Släng det – behöver inte göras",
+      "goDo": "Gå och gör det. Kom tillbaka när det är klart.",
+      "done": "Klart",
+      "notNow": "Inte nu – tillbaka till valen",
+      "clear": "Huvudet är rensat",
+      "settled": "Du avgjorde {1} saker. Inget hänger kvar.",
+      "close": "Stäng",
+      "when": "När ska du göra det?",
+      "cancel": "Avbryt",
+      "write": "Skriv ner",
+      "name": "Externalize",
+      "stale": "Väntat i över ett dygn",
+      "empty": "När något dyker upp i huvudet: skriv ner det nedan och släpp det.\nPå kvällen avgör du vad som ska hända med det.",
+      "o1": "Om en timme",
+      "o2": "Ikväll",
+      "o3": "I morgon bitti",
+      "o4": "I helgen",
+      "o5": "Nästa vecka"
+    }
+  },
+  "problem": {
+    "title": "Även småsaker tar plats i huvudet",
+    "text": "I duschen, vid rödljuset, precis innan du somnar: ”Det där måste jag göra.” Det finns ingenstans att skriva, så du håller kvar det i huvudet, och det du håller på med blir lidande. Att göra-appar vill ha en lista och ett datum först, och då blir själva skrivandet en uppgift."
+  },
+  "features": [
+    {
+      "title": "Tre sekunder, sen släpper du det",
+      "text": "Öppna appen och skriv på raden längst ner. Inga listor, mappar eller förfallodatum.\nTryck på widgeten på låsskärmen så öppnas appen med en tom rad. Säg `Kom ihåg i Externalize` till Siri eller lägg det på åtgärdsknappen, så sparas det utan att du öppnar appen.",
+      "shot": "02-typing"
+    },
+    {
+      "title": "På kvällen, en sak i taget",
+      "text": "Finns det något kvar får du en påminnelse kl. 21.00. Är allt klart hörs ingenting.\nNär du börjar visas sakerna en i taget, stort och tydligt. Välj ”Gör det nu”, ”Välj en tid” eller ”Släng det” så kommer nästa. Tar det två minuter, starta timern och gör det direkt.",
+      "shot": "03-review"
+    },
+    {
+      "title": "Inget blir liggande",
+      "text": "Välj ”Om en timme”, ”Ikväll”, ”I morgon bitti”, ”I helgen” eller ”Nästa vecka” så kommer saken tillbaka då. Från notisen trycker du direkt på ”Klart”, ”I morgon bitti” eller ”Släng det”.\nDet som väntat i mer än ett dygn och det du skjuter upp gång på gång markeras, så du ser vad som hela tiden glider undan.",
+      "shot": "04-schedule"
+    }
+  ],
+  "steps": {
+    "title": "Kom igång i tre steg",
+    "items": [
+      {
+        "title": "Skriv ner det",
+        "text": "Några ord i appen, i widgeten på låsskärmen eller via Siri, det som ligger närmast."
+      },
+      {
+        "title": "Tillåt notiser",
+        "text": "Appen frågar en gång, första gången du skriver något. De används för kvällspåminnelsen och tiderna du väljer."
+      },
+      {
+        "title": "Avgör på kvällen",
+        "text": "Tryck på påminnelsen eller ”Avgör nu” och ge varje sak ett slut."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Direkt i listan",
+    "rows": [
+      [
+        "Tryck på en sak",
+        "välj ”Klart”, ”Välj en tid” eller ”Släng det”"
+      ],
+      [
+        "Svep åt höger",
+        "Klart (försvinner från listan)"
+      ],
+      [
+        "Svep åt vänster",
+        "Släng det, eller ”Tidsätt” för att välja tid"
+      ],
+      [
+        "Avgör nu",
+        "gå igenom det som är kvar, en i taget"
+      ],
+      [
+        "Kom ihåg i Externalize",
+        "säg det till Siri utan att öppna appen"
+      ],
+      [
+        "Inställningar ▸ Kvällspåminnelse",
+        "ändra tiden eller stäng av"
+      ]
+    ],
+    "note": "När du väljer tid betyder ”Ikväll” kl. 19.00, ”I morgon bitti” kl. 9.00, ”I helgen” lördag kl. 10.00 och ”Nästa vecka” måndag kl. 9.00. Du kan också välja valfritt datum och klockslag."
+  },
+  "faq": {
+    "title": "Vanliga frågor",
+    "items": [
+      {
+        "q": "Kan jag skriva ner något utan att öppna appen?",
+        "a": "Ja. Säg `Kom ihåg i Externalize` till Siri, så frågar Siri vad du vill skriva och sparar det. Tilldela genvägen ”Skriv ner” till åtgärdsknappen i Inställningar, så räcker ett tryck."
+      },
+      {
+        "q": "Hur lägger jag till widgeten på låsskärmen?",
+        "a": "Håll fingret på låsskärmen, tryck på Anpassa och välj låsskärmen, tryck på widgetområdet och lägg till Externalize. Ett tryck öppnar en tom rad, och widgeten visar hur många saker som är kvar. Det finns också en liten widget för hemskärmen."
+      },
+      {
+        "q": "Kan jag ändra eller stänga av kvällspåminnelsen?",
+        "a": "Tryck på kugghjulet uppe till höger ▸ Kvällspåminnelse för att ändra tiden eller stänga av den. Den är kl. 21.00 som standard och hörs inte de dagar inget är kvar."
+      },
+      {
+        "q": "Jag får inga notiser.",
+        "a": "Om Externalize-inställningarna säger att notiser är avstängda, tryck på knappen där och slå på dem i iPhones inställningar. De dagar inget är kvar kommer ingen kvällspåminnelse, och det är som det ska."
+      },
+      {
+        "q": "Hur kommer en tidsatt sak tillbaka?",
+        "a": "Du får en notis vid tiden du valde. Håll fingret på den för att direkt välja ”Klart”, ”I morgon bitti” eller ”Släng det”. Gör du ingenting hamnar den i ”I huvudet” igen och du avgör den nästa gång."
+      },
+      {
+        "q": "Kan jag få tillbaka något jag markerat som klart eller slängt?",
+        "a": "Nej. Avgjorda saker försvinner från listan och det finns inget arkiv. Är du osäker, välj hellre en tid än att slänga."
+      },
+      {
+        "q": "Följer mina saker med till en ny iPhone?",
+        "a": "Nej. Allt stannar på den här enheten och skickas aldrig till iCloud eller en server. Raderar du appen försvinner det också."
+      },
+      {
+        "q": "Vilka enheter fungerar den på?",
+        "a": "iPhone med iOS 17 eller senare."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Det du kom att tänka på idag,\nfå ut det ur huvudet",
+    "cta": "Hämta gratis på App Store"
+  },
+  "ui": {
+    "skip": "Hoppa till innehållet",
+    "languages": "Språk",
+    "privacy": "Integritetspolicy",
+    "contact": "Frågor eller en bugg? Skriv till {email}. Ange gärna iPhone-modell och iOS-version, så kan vi kolla snabbare."
+  }
+}

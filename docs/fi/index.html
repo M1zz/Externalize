@@ -1,93 +1,174 @@
 <!doctype html>
 <html lang="fi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Externalize — Muistiinpanot, jotka unohtuvat itsestään</title>
-<meta name="description" content="Externalize säilyttää sen, mitä tarvitset vain muutaman tunnin, kuten mihin parkkeerasit tai kaapin koodin, ja poistaa sen sitten itse.">
-<link rel="canonical" href="https://m1zz.github.io/Externalize/fi/">
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/Externalize/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/Externalize/en/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/Externalize/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/Externalize/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/Externalize/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/Externalize/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/Externalize/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/Externalize/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/Externalize/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/Externalize/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/Externalize/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/Externalize/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/Externalize/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/Externalize/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/Externalize/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/Externalize/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/Externalize/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/Externalize/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/Externalize/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/Externalize/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/Externalize/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/Externalize/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/Externalize/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/Externalize/">
-<link rel="icon" href="../icon.png">
-<link rel="apple-touch-icon" href="../icon.png">
-<link rel="stylesheet" href="../style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Externalize: kirjaa nyt, päätä illalla</title>
+  <meta name="description" content="Mieleen pulpahtava asia kirjataan parilla sanalla ja unohdetaan. Illalla jokainen saa päätöksen: tee heti, valitse aika tai hylkää. Kaikki maksutta.">
+  <meta name="theme-color" content="#5B5BF0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6813393019">
+  <link rel="canonical" href="https://m1zz.github.io/Externalize/fi/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/Externalize/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/Externalize/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/Externalize/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/Externalize/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/Externalize/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/Externalize/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/Externalize/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/Externalize/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/Externalize/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/Externalize/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/Externalize/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/Externalize/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/Externalize/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/Externalize/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/Externalize/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/Externalize/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/Externalize/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/Externalize/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/Externalize/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/Externalize/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/Externalize/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/Externalize/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/Externalize/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/Externalize/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Externalize: kirjaa nyt, päätä illalla">
+  <meta property="og:description" content="Mieleen pulpahtava asia kirjataan parilla sanalla ja unohdetaan. Illalla jokainen saa päätöksen: tee heti, valitse aika tai hylkää. Kaikki maksutta.">
+  <meta property="og:url" content="https://m1zz.github.io/Externalize/fi/">
+  <meta property="og:image" content="https://m1zz.github.io/Externalize/img/fi/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#5B5BF0}@media (prefers-color-scheme:dark){:root{--accent:#7E86FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<main>
-  <header>
-    <img src="../icon.png" alt="">
-    <div>
-      <h1>Externalize</h1>
-      <p>Parkkeeraa. Kirjaa. Unohda.</p>
-    </div>
+  <a class="skip" href="#main">Siirry sisältöön</a>
+  <header class="bar">
+    <a class="brand" href="../fi/"><img src="../icon.png" alt="" width="32" height="32">Externalize</a>
+    <a class="lang-link" href="#languages">Kieli</a>
   </header>
 
-  <nav class="lang" aria-label="Kieli">
-    <a href="../index.html" hreflang="ko" lang="ko">한국어</a>
-    <a href="../en/index.html" hreflang="en" lang="en">English</a>
-    <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-    <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-    <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-    <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-    <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-    <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-    <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-    <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-    <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-    <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-    <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-    <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-    <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-    <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-    <a href="../fi/index.html" hreflang="fi" lang="fi" aria-current="true">Suomi</a>
-    <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-    <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-    <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-    <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-    <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-    <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-  </nav>
-  <nav aria-label="Sivut">
-    <a href="index.html" aria-current="page">Tietoa</a>
-    <a href="support.html">Tuki</a>
-    <a href="privacy.html">Tietosuojakäytäntö</a>
-  </nav>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Kirjaa nyt.<br>Päätä illalla.</h1>
+        <p class="lead">”Ai niin, minun pitää vielä…” Saa se pois päästä parilla sanalla ja päästä irti. Illalla hoidat jäljelle jääneet, yksi kerrallaan.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6813393019">Lataa maksutta App Storesta</a><a class="try" href="#try">Kokeile tässä ↓</a></div>
+        <p class="muted small">Kaikki ominaisuudet ovat maksuttomia. Ei tiliä, ei kirjautumista.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/01-main.jpg" alt="Kirjaa nyt. Päätä illalla." width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <section class="card">
-    <p>Mihin parkkeerasit. Kaapin koodi. Hotellihuoneesi numero. Externalize säilyttää sen, mitä tarvitset vain muutaman tunnin,
-    poistaa sen, kun aika on kulunut, ja pitää sen siihen asti lukitusnäytölläsi.</p>
-    <div class="shots">
-      <img src="../screenshots/marketing/en/01-list.png" alt="Muistiinpanolista">
-      <img src="../screenshots/marketing/en/02-add.png" alt="Muistiinpanon lisääminen">
-      <img src="../screenshots/marketing/en/03-onboarding.png" alt="Tervetulonäyttö">
-      <img src="../screenshots/marketing/en/04-forget.png" alt="Automaattinen poisto">
-    </div>
-    <p class="muted">Kysyttävää? Katso <a href="support.html">tukisivu</a>. Jos haluat tietää, miten tietojasi käsitellään, lue <a href="privacy.html">tietosuojakäytäntö</a>.</p>
-  </section>
 
-  <footer>© 2026 Externalize</footer>
-</main>
+    <section class="reveal" id="try">
+      <h2>Kokeile tässä</h2>
+      <p class="muted">Kirjoita jotain, mikä pyörii mielessä, tai napauta esimerkkiä. Paina sitten ”Päätä nyt” ja anna jokaiselle asialle päätös.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Kokeile tässä&quot;, &quot;lead&quot;: &quot;Kirjoita jotain, mikä pyörii mielessä, tai napauta esimerkkiä. Paina sitten ”Päätä nyt” ja anna jokaiselle asialle päätös.&quot;, &quot;examples&quot;: [&quot;Soita hammaslääkärille ja varaa hammaskiven poisto&quot;, &quot;Valitse äidille syntymäpäivälahja&quot;, &quot;Vaihda liesituulettimen suodatin&quot;, &quot;Tarkista, milloin passi vanhenee&quot;], &quot;note&quot;: &quot;Kokeilu toimii vain selaimessasi eikä tallenna mitään.&quot;, &quot;app&quot;: {&quot;input&quot;: &quot;Mitä mielessä on?&quot;, &quot;settle&quot;: &quot;Päätä nyt ({1})&quot;, &quot;onMind&quot;: &quot;Mielessä&quot;, &quot;scheduled&quot;: &quot;Ajastetut&quot;, &quot;footer&quot;: &quot;Jokainen asia tarvitsee lopun: tee se, ajasta se tai hylkää se.&quot;, &quot;of&quot;: &quot;{1} / {2}&quot;, &quot;doNow&quot;: &quot;Tee heti&quot;, &quot;doNowSub&quot;: &quot;Jos se kestää kaksi minuuttia, tee se heti&quot;, &quot;pick&quot;: &quot;Valitse aika&quot;, &quot;drop&quot;: &quot;Hylkää – ei tarvitse tehdä&quot;, &quot;goDo&quot;: &quot;Mene tekemään se. Palaa, kun se on valmis.&quot;, &quot;done&quot;: &quot;Valmis&quot;, &quot;notNow&quot;: &quot;Ei nyt – takaisin valintoihin&quot;, &quot;clear&quot;: &quot;Mieli on kevyt&quot;, &quot;settled&quot;: &quot;Päätit {1} asiaa. Mikään ei jää roikkumaan.&quot;, &quot;close&quot;: &quot;Sulje&quot;, &quot;when&quot;: &quot;Milloin teet sen?&quot;, &quot;cancel&quot;: &quot;Peruuta&quot;, &quot;write&quot;: &quot;Kirjaa ylös&quot;, &quot;name&quot;: &quot;Externalize&quot;, &quot;stale&quot;: &quot;Odottanut yli vuorokauden&quot;, &quot;empty&quot;: &quot;Kun jokin pälkähtää päähän, kirjoita se alle ja unohda.\nIllalla päätät, mitä sille tehdään.&quot;, &quot;o1&quot;: &quot;Tunnin päästä&quot;, &quot;o2&quot;: &quot;Tänä iltana&quot;, &quot;o3&quot;: &quot;Huomenna aamulla&quot;, &quot;o4&quot;: &quot;Tänä viikonloppuna&quot;, &quot;o5&quot;: &quot;Ensi viikolla&quot;}}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Pienetkin asiat vievät tilaa päästä</h2>
+      <p>Suihkussa, punaisissa valoissa, juuri ennen nukahtamista: ”Tuo pitää vielä hoitaa.” Kirjoituspaikkaa ei ole, joten pidät asian mielessä, ja meneillään oleva tekeminen kärsii. Tehtäväsovellukset vaativat ensin listan ja määräajan, joten jo kirjaamisesta tulee tehtävä.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Kolme sekuntia, sitten irti</h2>
+        <p>Avaa sovellus ja kirjoita näytön alareunan riville. Ei listoja, kansioita eikä määräaikoja.<br>Napauta lukitusnäytön widgetiä, niin sovellus avautuu tyhjälle riville. Sano Sirille <code>Muista Externalize-sovelluksessa</code> tai aseta se Toimintopainikkeeseen, niin asia tallentuu avaamatta sovellusta.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/02-typing.jpg" alt="Kolme sekuntia, sitten irti" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Illalla yksi kerrallaan</h2>
+        <p>Jos jotain on jäljellä, saat yhden muistutuksen klo 21.00. Jos kaikki on hoidettu, mitään ei tule.<br>Kun aloitat, asiat tulevat esiin yksi kerrallaan, isolla. Valitse ”Tee heti”, ”Valitse aika” tai ”Hylkää”, niin seuraava tulee esiin. Jos homma vie kaksi minuuttia, käynnistä ajastin ja hoida se saman tien.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/03-review.jpg" alt="Illalla yksi kerrallaan" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Mikään ei jää lojumaan</h2>
+        <p>Valitse ”Tunnin päästä”, ”Tänä iltana”, ”Huomenna aamulla”, ”Tänä viikonloppuna” tai ”Ensi viikolla”, niin asia palaa silloin. Ilmoituksesta voit napauttaa suoraan ”Valmis”, ”Huomenna aamulla” tai ”Hylkää”.<br>Yli vuorokauden odottaneet ja yhä uudelleen siirretyt asiat merkitään, joten näet, mikä lipsuu jatkuvasti.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/04-schedule.jpg" alt="Mikään ei jää lojumaan" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Aloita kolmessa vaiheessa</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Kirjaa ylös</h3><p>Pari sanaa sovelluksessa, lukitusnäytön widgetissä tai Sirin kautta, mikä on lähimpänä.</p></li>
+<li class="card"><span class="n">2</span><h3>Salli ilmoitukset</h3><p>Sovellus kysyy kerran, kun kirjaat ensimmäisen asian. Niillä tulevat iltamuistutus ja valitsemasi ajat.</p></li>
+<li class="card"><span class="n">3</span><h3>Päätä illalla</h3><p>Napauta muistutusta tai ”Päätä nyt” ja anna jokaiselle asialle päätös.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Suoraan listalta</h2>
+      <div class="card table">
+        <dl><div><dt>Napauta asiaa</dt><dd>valitse ”Valmis”, ”Valitse aika” tai ”Hylkää”</dd></div><div><dt>Pyyhkäise oikealle</dt><dd>Valmis (katoaa listalta)</dd></div><div><dt>Pyyhkäise vasemmalle</dt><dd>Hylkää, tai ”Ajasta” ja valitse aika</dd></div><div><dt>Päätä nyt</dt><dd>käy jäljellä olevat läpi yksi kerrallaan</dd></div><div><dt>Muista Externalize-sovelluksessa</dt><dd>sano Sirille avaamatta sovellusta</dd></div><div><dt>Asetukset ▸ Iltamuistutus</dt><dd>vaihda aika tai laita pois</dd></div></dl>
+      </div>
+      <p class="muted">Aikaa valitessa ”Tänä iltana” tarkoittaa klo 19.00, ”Huomenna aamulla” klo 9.00, ”Tänä viikonloppuna” lauantaita klo 10.00 ja ”Ensi viikolla” maanantaita klo 9.00. Voit myös valita minkä tahansa päivän ja kellonajan itse.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Usein kysyttyä</h2>
+      <div class="faq"><details><summary>Voiko asian kirjata avaamatta sovellusta?</summary><p>Voi. Sano Sirille <code>Muista Externalize-sovelluksessa</code>, niin Siri kysyy, mitä kirjataan, ja tallentaa sen. Määritä Asetuksissa ”Kirjaa ylös” -pikakomento Toimintopainikkeeseen, niin yksi painallus riittää.</p></details>
+<details><summary>Miten lisään widgetin lukitusnäyttöön?</summary><p>Pidä sormea lukitusnäytöllä, napauta Muokkaa ja valitse lukitusnäyttö, napauta widget-aluetta ja lisää Externalize. Napautus avaa tyhjän rivin, ja widget näyttää, montako asiaa on jäljellä. Koti-valikkoon on myös pieni widget.</p></details>
+<details><summary>Voiko iltamuistutuksen ajan vaihtaa tai sen laittaa pois?</summary><p>Napauta oikean yläkulman ratasta ▸ Iltamuistutus vaihtaaksesi ajan tai laittaaksesi sen pois. Oletus on klo 21.00, eikä muistutusta tule päivinä, jolloin mitään ei ole jäljellä.</p></details>
+<details><summary>En saa ilmoituksia.</summary><p>Jos Externalizen asetuksissa lukee, että ilmoitukset ovat pois päältä, napauta siellä olevaa painiketta ja laita ne päälle iPhonen asetuksista. Päivinä, jolloin mitään ei ole jäljellä, iltamuistutusta ei tule, ja se on normaalia.</p></details>
+<details><summary>Miten ajastettu asia palaa?</summary><p>Valitsemanasi aikana tulee ilmoitus. Pidä sitä painettuna ja valitse heti ”Valmis”, ”Huomenna aamulla” tai ”Hylkää”. Jos et tee mitään, asia palaa kohtaan ”Mielessä” ja päätät siitä seuraavalla kerralla.</p></details>
+<details><summary>Saako valmiiksi merkityn tai hylätyn asian takaisin?</summary><p>Ei. Päätetyt asiat poistuvat listalta, eikä arkistoa ole. Jos et ole varma, valitse mieluummin aika kuin hylkää.</p></details>
+<details><summary>Siirtyvätkö kirjaukset uuteen iPhoneen?</summary><p>Eivät. Kaikki pysyy tässä laitteessa eikä koskaan lähde iCloudiin tai palvelimelle. Kun poistat sovelluksen, kirjauksetkin poistuvat.</p></details>
+<details><summary>Millä laitteilla sovellus toimii?</summary><p>iPhonella, jossa on iOS 17 tai uudempi.</p></details></div>
+      <p class="contact">Kysyttävää tai löysitkö virheen? Kirjoita osoitteeseen <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>. Kerro mielellään iPhonen malli ja iOS-versio, niin pääsemme asiaan nopeammin.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Tänään mieleen tulleet asiat<br>pois päästä</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6813393019">Lataa maksutta App Storesta</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Kieli"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi" aria-current="page">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Tietosuojakäytäntö</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 Externalize</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

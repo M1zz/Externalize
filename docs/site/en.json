@@ -1,0 +1,165 @@
+{
+  "title": "Externalize: jot it down, settle it tonight",
+  "description": "Write down whatever pops into your head in a few words, then let it go. In the evening, each one gets an ending: do it, schedule it or drop it. Every feature is free.",
+  "hero": {
+    "headline": "Jot it down now.\nSettle it tonight.",
+    "lead": "\"Oh right, I need to...\" Get it out of your head in a few words and let it go. In the evening, give whatever is left an ending, one at a time.",
+    "cta": "Get it free on the App Store",
+    "note": "Every feature is free. No account, no sign-in."
+  },
+  "demo": {
+    "title": "Try it here",
+    "lead": "Type something that's on your mind, or tap an example. Then hit Settle them now and give each one an ending.",
+    "examples": [
+      "Call the dentist to book a cleaning",
+      "Pick a birthday present for Mom",
+      "Replace the furnace filter",
+      "Check when my passport expires"
+    ],
+    "note": "This demo runs only in your browser and saves nothing.",
+    "app": {
+      "input": "What's on your mind?",
+      "settle": "Settle them now ({1})",
+      "onMind": "On your mind",
+      "scheduled": "Scheduled",
+      "footer": "Each one needs an ending: do it, schedule it, or drop it.",
+      "of": "{1} of {2}",
+      "doNow": "Do it now",
+      "doNowSub": "If it takes two minutes, just do it",
+      "pick": "Pick a time",
+      "drop": "Drop it — doesn't need doing",
+      "goDo": "Go do it. Come back when it's done.",
+      "done": "Done",
+      "notNow": "Not now — back to choices",
+      "clear": "Your head is clear",
+      "settled": "You settled {1} things. Nothing is left hanging.",
+      "close": "Close",
+      "when": "When will you do it?",
+      "cancel": "Cancel",
+      "write": "Write it down",
+      "name": "Externalize",
+      "stale": "Waiting over a day",
+      "empty": "When something pops into your head, write it below and let it go.\nTonight you'll decide what to do with it.",
+      "o1": "In an hour",
+      "o2": "This evening",
+      "o3": "Tomorrow morning",
+      "o4": "This weekend",
+      "o5": "Next week"
+    }
+  },
+  "problem": {
+    "title": "Small things still take up room in your head",
+    "text": "In the shower, at a red light, just as you drift off: \"I need to do that thing.\" There's nowhere handy to write it, so you hold on to it, and whatever you were doing gets a little blurrier. To-do apps want a list and a due date first, so even writing it down turns into a chore."
+  },
+  "features": [
+    {
+      "title": "Three seconds, then let go",
+      "text": "Open the app and type into the line at the bottom. No lists, folders or due dates to pick.\nTap the Lock Screen widget and it opens on a blank line. Say `Remember in Externalize` to Siri, or put it on the Action Button, and it's saved without opening the app.",
+      "shot": "02-typing"
+    },
+    {
+      "title": "Settle them in the evening",
+      "text": "If anything is still open, you get one reminder at 9 PM. Nothing open, no nudge.\nStart settling and items come up one at a time, large and clear. Pick Do it now, Pick a time or Drop it and the next one appears. If it takes two minutes, start the timer and get it done.",
+      "shot": "03-review"
+    },
+    {
+      "title": "Nothing is left to rot",
+      "text": "Pick In an hour, This evening, Tomorrow morning, This weekend or Next week and it comes back then. The notification lets you mark it Done, move it to Tomorrow morning or Drop it.\nAnything waiting over a day, and anything you keep putting off, is marked, so the stuff that keeps slipping stands out.",
+      "shot": "04-schedule"
+    }
+  ],
+  "steps": {
+    "title": "Three steps to start",
+    "items": [
+      {
+        "title": "Write it down",
+        "text": "A few words in the app, on the Lock Screen widget or through Siri, whichever is closest."
+      },
+      {
+        "title": "Allow notifications",
+        "text": "It asks once, the first time you write something. They carry the evening reminder and the times you pick."
+      },
+      {
+        "title": "Settle it tonight",
+        "text": "Tap the reminder or Settle them now and give each item an ending."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Handling items from the list",
+    "rows": [
+      [
+        "Tap an item",
+        "choose Done, Pick a time or Drop it"
+      ],
+      [
+        "Swipe right",
+        "Done (it leaves the list)"
+      ],
+      [
+        "Swipe left",
+        "Drop it, or Schedule to pick a time"
+      ],
+      [
+        "Settle them now",
+        "go through what's left, one at a time"
+      ],
+      [
+        "Remember in Externalize",
+        "tell Siri, without opening the app"
+      ],
+      [
+        "Settings ▸ Evening reminder",
+        "change the time or turn it off"
+      ]
+    ],
+    "note": "When you pick a time, This evening means 7 PM, Tomorrow morning means 9 AM, This weekend means Saturday at 10 AM and Next week means Monday at 9 AM. You can also choose any date and time yourself."
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "Can I write something down without opening the app?",
+        "a": "Yes. Say `Remember in Externalize` to Siri; it asks what's on your mind and saves it. Assign the Write It Down shortcut to the Action Button in Settings and it takes one press."
+      },
+      {
+        "q": "How do I add the Lock Screen widget?",
+        "a": "Touch and hold the Lock Screen, tap Customize ▸ Lock Screen, tap the widget area and add Externalize. One tap opens the app on a blank line, and it shows how many items are left. There's a small Home Screen widget too."
+      },
+      {
+        "q": "Can I change or turn off the evening reminder?",
+        "a": "Tap the gear at the top right ▸ Evening reminder to change the time or turn it off. It's 9 PM by default and stays quiet on days when nothing is open."
+      },
+      {
+        "q": "I'm not getting notifications.",
+        "a": "If Externalize's settings say notifications are off, tap the button there to turn them on in iPhone Settings. On days when nothing is open, no evening reminder is expected."
+      },
+      {
+        "q": "How does a scheduled item come back?",
+        "a": "You get a notification at the time you picked. Touch and hold it to choose Done, Tomorrow morning or Drop it. If you do nothing, it goes back to On your mind and you settle it next time."
+      },
+      {
+        "q": "Can I bring back something I marked Done or dropped?",
+        "a": "No. Settled items are removed from the list, and there's no archive. If you aren't sure yet, pick a time instead of dropping it."
+      },
+      {
+        "q": "Will my items move to a new phone?",
+        "a": "No. Everything stays on this device and is never sent to iCloud or a server. Deleting the app deletes it too."
+      },
+      {
+        "q": "Which devices does it run on?",
+        "a": "iPhone with iOS 17 or later."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Get today's thoughts\nout of your head",
+    "cta": "Get it free on the App Store"
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "languages": "Language",
+    "privacy": "Privacy Policy",
+    "contact": "Questions or a bug? Write to {email}. Including your iPhone model and iOS version helps us look into it faster."
+  }
+}

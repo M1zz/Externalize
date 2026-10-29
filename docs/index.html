@@ -1,94 +1,174 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>뇌모리 — 24시간 뒤 사라지는 임시 기억</title>
-<meta name="description" content="주차 위치, 사물함 번호, 방 번호처럼 몇 시간만 필요한 정보를 담았다가 스스로 지우는 메모 앱.">
-<link rel="canonical" href="https://m1zz.github.io/Externalize/">
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/Externalize/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/Externalize/en/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/Externalize/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/Externalize/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/Externalize/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/Externalize/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/Externalize/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/Externalize/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/Externalize/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/Externalize/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/Externalize/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/Externalize/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/Externalize/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/Externalize/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/Externalize/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/Externalize/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/Externalize/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/Externalize/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/Externalize/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/Externalize/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/Externalize/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/Externalize/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/Externalize/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/Externalize/">
-<link rel="icon" href="icon.png">
-<link rel="apple-touch-icon" href="icon.png">
-<link rel="stylesheet" href="style.css">
-<script src="lang.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>뇌모리: 떠오른 할 일, 적고 잊기</title>
+  <meta name="description" content="떠오른 할 일을 몇 글자 적어 두고 잊으세요. 저녁에 남은 것마다 지금 하기, 시간 정하기, 버리기 중 하나로 결말을 냅니다. 모든 기능이 무료예요.">
+  <meta name="theme-color" content="#5B5BF0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6813393019">
+  <link rel="canonical" href="https://m1zz.github.io/Externalize/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/Externalize/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/Externalize/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/Externalize/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/Externalize/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/Externalize/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/Externalize/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/Externalize/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/Externalize/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/Externalize/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/Externalize/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/Externalize/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/Externalize/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/Externalize/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/Externalize/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/Externalize/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/Externalize/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/Externalize/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/Externalize/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/Externalize/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/Externalize/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/Externalize/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/Externalize/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/Externalize/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/Externalize/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="뇌모리: 떠오른 할 일, 적고 잊기">
+  <meta property="og:description" content="떠오른 할 일을 몇 글자 적어 두고 잊으세요. 저녁에 남은 것마다 지금 하기, 시간 정하기, 버리기 중 하나로 결말을 냅니다. 모든 기능이 무료예요.">
+  <meta property="og:url" content="https://m1zz.github.io/Externalize/">
+  <meta property="og:image" content="https://m1zz.github.io/Externalize/img/ko/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="demo.css">
+  <style>:root{--accent:#5B5BF0}@media (prefers-color-scheme:dark){:root{--accent:#7E86FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<main>
-  <header>
-    <img src="icon.png" alt="">
-    <div>
-      <h1>뇌모리</h1>
-      <p>24시간 뒤 사라지는 임시 기억</p>
-    </div>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+  <header class="bar">
+    <a class="brand" href=""><img src="icon.png" alt="" width="32" height="32">뇌모리</a>
+    <a class="lang-link" href="#languages">언어</a>
   </header>
 
-  <nav class="lang" aria-label="언어">
-    <a href="index.html" hreflang="ko" lang="ko" aria-current="true">한국어</a>
-    <a href="en/index.html" hreflang="en" lang="en">English</a>
-    <a href="zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-    <a href="zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-    <a href="ja/index.html" hreflang="ja" lang="ja">日本語</a>
-    <a href="ru/index.html" hreflang="ru" lang="ru">Русский</a>
-    <a href="es/index.html" hreflang="es" lang="es">Español</a>
-    <a href="de/index.html" hreflang="de" lang="de">Deutsch</a>
-    <a href="fr/index.html" hreflang="fr" lang="fr">Français</a>
-    <a href="it/index.html" hreflang="it" lang="it">Italiano</a>
-    <a href="pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-    <a href="th/index.html" hreflang="th" lang="th">ไทย</a>
-    <a href="vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-    <a href="cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-    <a href="da/index.html" hreflang="da" lang="da">Dansk</a>
-    <a href="el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-    <a href="fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-    <a href="id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-    <a href="nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-    <a href="nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-    <a href="pl/index.html" hreflang="pl" lang="pl">Polski</a>
-    <a href="sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-    <a href="tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-  </nav>
-  <nav aria-label="페이지">
-    <a href="index.html" aria-current="page">소개</a>
-    <a href="support.html">지원</a>
-    <a href="privacy.html">개인정보처리방침</a>
-  </nav>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>떠오르면 적고,<br>저녁에 끝내요</h1>
+        <p class="lead">"아 맞다, 그거 해야 하는데." 그 순간 몇 글자 적고 머리에서 내려놓으세요. 저녁에 남은 것만 하나씩 끝내면 됩니다.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6813393019">App Store에서 무료로 받기</a><a class="try" href="#try">직접 해 보세요 ↓</a></div>
+        <p class="muted small">모든 기능이 무료예요. 계정도 로그인도 없어요.</p>
+      </div>
+      <div class="phone"><img src="img/ko/01-main.jpg" alt="떠오르면 적고, 저녁에 끝내요" width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <section class="card">
-    <p>주차한 층, 사물함 번호, 호텔 방 번호. 몇 시간만 기억하면 되는 정보만 담는 메모장입니다.
-    저장한 메모는 정해진 시간이 지나면 스스로 사라지고, 잠금화면 위젯에 늘 떠 있습니다.</p>
-    <div class="shots">
-      <img src="screenshots/marketing/ko/01-list.png" alt="메모 목록">
-      <img src="screenshots/marketing/ko/02-add.png" alt="메모 추가">
-      <img src="screenshots/marketing/ko/03-onboarding.png" alt="소개 화면">
-      <img src="screenshots/marketing/ko/04-forget.png" alt="자동 삭제 안내">
-    </div>
-    <p class="muted">궁금한 점은 <a href="support.html">지원</a>에, 개인정보 처리는 <a href="privacy.html">개인정보처리방침</a>에 정리해 두었습니다.</p>
-  </section>
 
-  <footer>© 2026 뇌모리</footer>
-</main>
+    <section class="reveal" id="try">
+      <h2>직접 해 보세요</h2>
+      <p class="muted">떠오른 일을 적거나 예시를 눌러 보세요. 그다음 지금 끝내기를 누르면 하나씩 결말을 냅니다.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;직접 해 보세요&quot;, &quot;lead&quot;: &quot;떠오른 일을 적거나 예시를 눌러 보세요. 그다음 지금 끝내기를 누르면 하나씩 결말을 냅니다.&quot;, &quot;examples&quot;: [&quot;치과에 전화해서 스케일링 예약&quot;, &quot;엄마 생신 선물 고르기&quot;, &quot;보일러 필터 갈기&quot;, &quot;여권 만료일 확인하기&quot;], &quot;note&quot;: &quot;이 체험은 브라우저 안에서만 돌아가고 아무것도 저장하지 않아요.&quot;, &quot;app&quot;: {&quot;input&quot;: &quot;뭐가 떠올랐어요?&quot;, &quot;settle&quot;: &quot;지금 끝내기 ({1})&quot;, &quot;onMind&quot;: &quot;머릿속에 남은 것&quot;, &quot;scheduled&quot;: &quot;예약됨&quot;, &quot;footer&quot;: &quot;모든 항목은 결말이 필요해요. 하거나, 시간을 정하거나, 버리세요.&quot;, &quot;of&quot;: &quot;{1} / {2}&quot;, &quot;doNow&quot;: &quot;지금 하기&quot;, &quot;doNowSub&quot;: &quot;2분이면 끝날 일이라면 바로 처리&quot;, &quot;pick&quot;: &quot;시간 정하기&quot;, &quot;drop&quot;: &quot;버리기 — 안 해도 되는 일&quot;, &quot;goDo&quot;: &quot;지금 하고 오세요. 끝나면 눌러 주세요.&quot;, &quot;done&quot;: &quot;했어요&quot;, &quot;notNow&quot;: &quot;지금은 못 해요 — 돌아가기&quot;, &quot;clear&quot;: &quot;머리가 비었어요&quot;, &quot;settled&quot;: &quot;{1}개를 끝냈어요. 걸려 있는 게 하나도 없어요.&quot;, &quot;close&quot;: &quot;닫기&quot;, &quot;when&quot;: &quot;언제 할까요?&quot;, &quot;cancel&quot;: &quot;취소&quot;, &quot;write&quot;: &quot;적기&quot;, &quot;name&quot;: &quot;뇌모리&quot;, &quot;stale&quot;: &quot;하루 넘게 남아 있어요&quot;, &quot;empty&quot;: &quot;뭔가 떠오르면 아래에 적고 잊어버리세요.\n어떻게 할지는 저녁에 정하면 돼요.&quot;, &quot;o1&quot;: &quot;1시간 뒤&quot;, &quot;o2&quot;: &quot;오늘 저녁&quot;, &quot;o3&quot;: &quot;내일 아침&quot;, &quot;o4&quot;: &quot;이번 주말&quot;, &quot;o5&quot;: &quot;다음 주&quot;}}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>작은 일도 머릿속에서는 자리를 차지해요</h2>
+      <p>샤워하다가, 운전하다가, 잠들기 직전에 "그거 해야 하는데"가 떠오릅니다. 적을 곳이 마땅치 않으니 기억하려고 붙잡고 있고, 그사이 지금 하던 일에 집중이 흐려집니다. 할 일 앱은 목록과 마감일을 정하라고 하니 적는 것조차 일이 됩니다.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>3초 적고, 잊어버리기</h2>
+        <p>앱을 열면 화면 아래 입력줄에 바로 적습니다. 목록도 폴더도 마감일도 고르지 않아요.<br>잠금화면 위젯을 탭하면 빈 줄로 열리고, 시리에게 <code>뇌모리에 기억해</code>라고 말하거나 액션 버튼에 연결하면 앱을 열지 않고도 적힙니다.</p>
+      </div>
+      <div class="phone"><img src="img/ko/02-typing.jpg" alt="3초 적고, 잊어버리기" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>저녁에 하나씩 결말을 내요</h2>
+        <p>남은 게 있으면 밤 9시에 한 번 알려 드려요. 다 끝냈으면 울리지 않습니다.<br>정리를 시작하면 하나씩 크게 보여 주고, 지금 하기, 시간 정하기, 버리기 중 하나를 고르면 다음으로 넘어갑니다. 2분이면 끝날 일은 타이머를 켜고 바로 처리해요.</p>
+      </div>
+      <div class="phone"><img src="img/ko/03-review.jpg" alt="저녁에 하나씩 결말을 내요" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>쌓여서 썩는 건 없어요</h2>
+        <p>시간을 정한 일은 1시간 뒤, 오늘 저녁, 내일 아침, 이번 주말, 다음 주 중에 고르면 그때 다시 알려 드려요. 알림에서 바로 했어요, 내일 아침, 버리기를 누를 수 있습니다.<br>하루 넘게 남은 것과 여러 번 미룬 것은 표시돼서, 계속 밀리는 일이 눈에 띕니다.</p>
+      </div>
+      <div class="phone"><img src="img/ko/04-schedule.jpg" alt="쌓여서 썩는 건 없어요" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>시작은 세 단계면 돼요</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>떠오르면 적어요</h3><p>입력줄, 잠금화면 위젯, 시리 중 가장 가까운 곳에 몇 글자만 적습니다.</p></li>
+<li class="card"><span class="n">2</span><h3>알림을 허용해요</h3><p>처음 적을 때 한 번 묻습니다. 저녁 알림과 정해 둔 시각 알림에 쓰여요.</p></li>
+<li class="card"><span class="n">3</span><h3>저녁에 끝내요</h3><p>알림을 누르거나 지금 끝내기를 눌러 남은 것마다 결말을 냅니다.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>목록에서 바로 하는 법</h2>
+      <div class="card table">
+        <dl><div><dt>항목을 탭</dt><dd>했어요, 시간 정하기, 버리기 중에 고르기</dd></div><div><dt>오른쪽으로 밀기</dt><dd>했어요 (목록에서 지워져요)</dd></div><div><dt>왼쪽으로 밀기</dt><dd>버리기, 또는 미루기로 시간 정하기</dd></div><div><dt>지금 끝내기</dt><dd>남은 것을 하나씩 크게 보며 정리하기</dd></div><div><dt>뇌모리에 기억해</dt><dd>시리에게 말해서 앱을 열지 않고 적기</dd></div><div><dt>설정 ▸ 저녁 알림</dt><dd>알림 시각 바꾸기, 끄기</dd></div></dl>
+      </div>
+      <p class="muted">시간 정하기의 오늘 저녁은 저녁 7시, 내일 아침은 9시, 이번 주말은 토요일 오전 10시, 다음 주는 월요일 오전 9시예요. 원하는 날짜와 시각을 직접 고를 수도 있어요.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>자주 묻는 질문</h2>
+      <div class="faq"><details><summary>앱을 열지 않고 적을 수 있나요?</summary><p>네. 시리에게 <code>뇌모리에 기억해</code>라고 말하면 무엇을 적을지 묻고 바로 저장합니다. 단축어 앱의 꺼내 두기 동작을 설정 ▸ 동작 버튼에 지정하면 버튼 한 번으로 적을 수 있어요.</p></details>
+<details><summary>잠금화면 위젯은 어떻게 추가하나요?</summary><p>잠금화면을 길게 누르고 사용자화 ▸ 잠금 화면 ▸ 위젯 영역을 누른 뒤 뇌모리 위젯을 추가합니다. 탭하면 앱이 빈 줄로 열리고, 남은 개수도 보여 줘요. 홈 화면에도 작은 위젯을 둘 수 있습니다.</p></details>
+<details><summary>저녁 알림 시각을 바꾸거나 끄고 싶어요.</summary><p>앱 오른쪽 위 톱니바퀴 ▸ 저녁 알림에서 시각을 바꾸거나 끌 수 있어요. 기본은 밤 9시이고, 남은 게 없는 날에는 울리지 않습니다.</p></details>
+<details><summary>알림이 오지 않아요.</summary><p>뇌모리 설정에 알림이 꺼져 있다는 안내가 보이면 그 버튼을 눌러 iPhone 설정에서 알림을 켜 주세요. 남은 게 하나도 없는 날에는 저녁 알림이 오지 않는 것이 정상이에요.</p></details>
+<details><summary>시간을 정한 일은 어떻게 돌아오나요?</summary><p>정한 시각에 알림이 옵니다. 알림을 길게 누르면 했어요, 내일 아침, 버리기를 바로 고를 수 있어요. 아무것도 누르지 않으면 목록의 머릿속에 남은 것으로 돌아와 다음 정리 때 다시 결말을 냅니다.</p></details>
+<details><summary>했어요나 버리기를 누른 일을 되살릴 수 있나요?</summary><p>아니요. 결말을 낸 일은 목록에서 지워지고 보관함이 없습니다. 아직 확실하지 않다면 버리기 대신 시간 정하기를 고르세요.</p></details>
+<details><summary>기기를 바꾸면 적은 내용이 옮겨지나요?</summary><p>아니요. 적은 내용은 이 기기 안에만 저장되고 iCloud나 서버로 보내지 않습니다. 앱을 지우면 함께 지워져요.</p></details>
+<details><summary>어떤 기기에서 쓸 수 있나요?</summary><p>iOS 17 이상의 iPhone에서 쓸 수 있어요.</p></details></div>
+      <p class="contact">궁금한 점이나 버그는 <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>로 보내 주세요. 기기 모델과 iOS 버전을 함께 적어 주시면 빨리 확인할 수 있어요.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>오늘 떠오른 일부터<br>머리 밖에 두세요</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6813393019">App Store에서 무료로 받기</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="언어"><a href="" hreflang="ko" lang="ko" aria-current="page">한국어</a>
+<a href="en/" hreflang="en" lang="en">English</a>
+<a href="zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="es/" hreflang="es" lang="es">Español</a>
+<a href="de/" hreflang="de" lang="de">Deutsch</a>
+<a href="fr/" hreflang="fr" lang="fr">Français</a>
+<a href="it/" hreflang="it" lang="it">Italiano</a>
+<a href="pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="th/" hreflang="th" lang="th">ไทย</a>
+<a href="vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="da/" hreflang="da" lang="da">Dansk</a>
+<a href="el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">개인정보처리방침</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 Externalize</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="demo.js"></script>
 </body>
 </html>

@@ -1,0 +1,165 @@
+{
+  "title": "Externalize: nghĩ ra thì ghi, tối nay giải quyết",
+  "description": "Việc gì chợt nảy ra trong đầu, ghi vài chữ rồi buông. Buổi tối, mỗi việc đều có hồi kết: làm ngay, hẹn giờ hoặc bỏ đi. Mọi tính năng đều miễn phí.",
+  "hero": {
+    "headline": "Nghĩ ra thì ghi.\nTối nay giải quyết.",
+    "lead": "“À đúng rồi, mình phải…” Ghi vài chữ để đưa nó ra khỏi đầu rồi quên đi. Buổi tối, giải quyết từng việc còn lại.",
+    "cta": "Tải miễn phí trên App Store",
+    "note": "Mọi tính năng đều miễn phí. Không cần tài khoản hay đăng nhập."
+  },
+  "demo": {
+    "title": "Thử ngay tại đây",
+    "lead": "Gõ một việc đang lởn vởn trong đầu, hoặc chạm vào ví dụ. Rồi bấm “Giải quyết ngay” để cho từng việc một hồi kết.",
+    "examples": [
+      "Gọi nha sĩ đặt lịch cạo vôi răng",
+      "Chọn quà sinh nhật cho mẹ",
+      "Vệ sinh lưới lọc máy lạnh",
+      "Xem hộ chiếu khi nào hết hạn"
+    ],
+    "note": "Bản thử này chỉ chạy trong trình duyệt của bạn và không lưu gì cả.",
+    "app": {
+      "input": "Bạn đang nghĩ gì?",
+      "settle": "Giải quyết ngay ({1})",
+      "onMind": "Đang trong đầu",
+      "scheduled": "Đã hẹn giờ",
+      "footer": "Mỗi việc cần một cái kết: làm ngay, hẹn giờ hoặc bỏ đi.",
+      "of": "{1}/{2}",
+      "doNow": "Làm ngay",
+      "doNowSub": "Nếu chỉ mất hai phút, cứ làm luôn",
+      "pick": "Hẹn giờ",
+      "drop": "Bỏ đi — không cần làm",
+      "goDo": "Đi làm đi. Xong thì quay lại nhé.",
+      "done": "Xong",
+      "notNow": "Chưa làm được — quay lại",
+      "clear": "Đầu óc đã nhẹ",
+      "settled": "Bạn đã giải quyết {1} việc. Không còn gì dang dở.",
+      "close": "Đóng",
+      "when": "Khi nào bạn làm?",
+      "cancel": "Hủy",
+      "write": "Ghi lại",
+      "name": "Externalize",
+      "stale": "Tồn hơn một ngày",
+      "empty": "Có gì chợt nhớ ra, cứ ghi vào bên dưới rồi buông đi.\nTối nay bạn sẽ quyết định làm gì với nó.",
+      "o1": "Sau 1 giờ",
+      "o2": "Tối nay",
+      "o3": "Sáng mai",
+      "o4": "Cuối tuần này",
+      "o5": "Tuần sau"
+    }
+  },
+  "problem": {
+    "title": "Việc nhỏ đến đâu cũng chiếm chỗ trong đầu",
+    "text": "Lúc tắm, lúc dừng đèn đỏ, lúc sắp ngủ, bỗng nhớ ra “phải làm việc đó”. Không có chỗ ghi nên bạn cố giữ trong đầu, và việc đang làm cũng mất tập trung. Ứng dụng việc cần làm lại bắt tạo danh sách, đặt hạn chót trước, nên chỉ ghi thôi cũng thành một việc."
+  },
+  "features": [
+    {
+      "title": "Ghi 3 giây rồi quên đi",
+      "text": "Mở ứng dụng là gõ ngay vào dòng nhập ở cuối màn hình. Không phải chọn danh sách, thư mục hay hạn chót.\nChạm vào tiện ích trên Màn hình khóa, ứng dụng mở ra với một dòng trống. Nói với Siri `Ghi nhớ trong Externalize` hoặc gán vào nút Tác vụ, là lưu xong mà không cần mở ứng dụng.",
+      "shot": "02-typing"
+    },
+    {
+      "title": "Buổi tối, giải quyết từng việc",
+      "text": "Nếu còn việc chưa xong, bạn nhận một lời nhắc lúc 21:00. Xong hết rồi thì không nhắc.\nKhi bắt đầu, từng việc hiện ra một, chữ to rõ. Chọn “Làm ngay”, “Hẹn giờ” hoặc “Bỏ đi” là sang việc kế tiếp. Việc nào chỉ mất hai phút thì bật hẹn giờ và làm luôn.",
+      "shot": "03-review"
+    },
+    {
+      "title": "Không việc gì bị bỏ quên",
+      "text": "Chọn “Sau 1 giờ”, “Tối nay”, “Sáng mai”, “Cuối tuần này” hoặc “Tuần sau”, việc đó sẽ quay lại đúng lúc. Ngay trong thông báo, bạn có thể bấm “Xong”, “Sáng mai” hoặc “Bỏ đi”.\nViệc chờ quá một ngày và việc bị hoãn nhiều lần đều được đánh dấu, nên dễ thấy việc nào cứ bị đẩy lùi mãi.",
+      "shot": "04-schedule"
+    }
+  ],
+  "steps": {
+    "title": "Bắt đầu với 3 bước",
+    "items": [
+      {
+        "title": "Ghi lại",
+        "text": "Vài chữ trong ứng dụng, trên tiện ích Màn hình khóa hoặc qua Siri, chỗ nào tiện thì dùng."
+      },
+      {
+        "title": "Cho phép thông báo",
+        "text": "Ứng dụng hỏi một lần khi bạn ghi lần đầu. Thông báo dùng cho lời nhắc buổi tối và giờ bạn đã hẹn."
+      },
+      {
+        "title": "Giải quyết buổi tối",
+        "text": "Chạm vào lời nhắc hoặc “Giải quyết ngay” và cho mỗi việc một hồi kết."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Xử lý ngay từ danh sách",
+    "rows": [
+      [
+        "Chạm vào một việc",
+        "chọn “Xong”, “Hẹn giờ” hoặc “Bỏ đi”"
+      ],
+      [
+        "Vuốt sang phải",
+        "Xong (việc biến khỏi danh sách)"
+      ],
+      [
+        "Vuốt sang trái",
+        "Bỏ đi, hoặc “Hẹn lại” để chọn giờ"
+      ],
+      [
+        "Giải quyết ngay",
+        "lần lượt xử lý từng việc còn lại"
+      ],
+      [
+        "Ghi nhớ trong Externalize",
+        "nói với Siri, không cần mở ứng dụng"
+      ],
+      [
+        "Cài đặt ▸ Nhắc buổi tối",
+        "đổi giờ hoặc tắt"
+      ]
+    ],
+    "note": "Khi hẹn giờ, “Tối nay” là 19:00, “Sáng mai” là 9:00, “Cuối tuần này” là 10:00 thứ Bảy và “Tuần sau” là 9:00 thứ Hai. Bạn cũng có thể tự chọn ngày giờ bất kỳ."
+  },
+  "faq": {
+    "title": "Câu hỏi thường gặp",
+    "items": [
+      {
+        "q": "Có ghi được mà không mở ứng dụng không?",
+        "a": "Được. Nói với Siri `Ghi nhớ trong Externalize`, Siri sẽ hỏi bạn muốn ghi gì rồi lưu luôn. Gán phím tắt “Ghi lại” cho nút Tác vụ trong Cài đặt thì chỉ cần bấm một lần."
+      },
+      {
+        "q": "Thêm tiện ích vào Màn hình khóa thế nào?",
+        "a": "Chạm và giữ Màn hình khóa, chạm Tùy chỉnh rồi chọn Màn hình khóa, chạm vào vùng tiện ích và thêm Externalize. Chạm vào tiện ích sẽ mở một dòng trống, và nó cho biết còn bao nhiêu việc. Màn hình chính cũng có tiện ích cỡ nhỏ."
+      },
+      {
+        "q": "Muốn đổi giờ hoặc tắt nhắc buổi tối?",
+        "a": "Chạm biểu tượng bánh răng góc trên bên phải ▸ Nhắc buổi tối để đổi giờ hoặc tắt. Mặc định là 21:00, và những ngày không còn việc gì thì không nhắc."
+      },
+      {
+        "q": "Không nhận được thông báo.",
+        "a": "Nếu phần cài đặt của Externalize báo thông báo đang tắt, hãy chạm nút ở đó để bật trong Cài đặt của iPhone. Ngày không còn việc gì thì không có nhắc buổi tối, đó là bình thường."
+      },
+      {
+        "q": "Việc đã hẹn giờ quay lại thế nào?",
+        "a": "Đến giờ đã chọn bạn sẽ nhận thông báo. Chạm và giữ thông báo để chọn ngay “Xong”, “Sáng mai” hoặc “Bỏ đi”. Nếu không chọn gì, việc đó quay về “Đang trong đầu” và bạn giải quyết ở lần sau."
+      },
+      {
+        "q": "Việc đã bấm Xong hoặc Bỏ đi có lấy lại được không?",
+        "a": "Không. Việc đã giải quyết sẽ biến khỏi danh sách và không có kho lưu trữ. Nếu còn phân vân, hãy hẹn giờ thay vì bỏ đi."
+      },
+      {
+        "q": "Đổi điện thoại thì dữ liệu có chuyển theo không?",
+        "a": "Không. Mọi thứ chỉ lưu trên thiết bị này, không gửi lên iCloud hay máy chủ. Xóa ứng dụng thì dữ liệu cũng bị xóa."
+      },
+      {
+        "q": "Dùng được trên thiết bị nào?",
+        "a": "iPhone chạy iOS 17 trở lên."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Việc nghĩ ra hôm nay,\nđưa ra khỏi đầu đã",
+    "cta": "Tải miễn phí trên App Store"
+  },
+  "ui": {
+    "skip": "Chuyển đến nội dung",
+    "languages": "Ngôn ngữ",
+    "privacy": "Chính sách quyền riêng tư",
+    "contact": "Có câu hỏi hoặc gặp lỗi? Gửi thư đến {email}. Ghi kèm đời iPhone và phiên bản iOS sẽ giúp chúng tôi kiểm tra nhanh hơn."
+  }
+}

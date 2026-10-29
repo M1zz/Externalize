@@ -1,0 +1,165 @@
+{
+  "title": "Externalize: nu noteren, vanavond afhandelen",
+  "description": "Wat er in je opkomt, schrijf je in een paar woorden op en laat je los. ’s Avonds krijgt alles een einde: nu doen, een tijd kiezen of weggooien.",
+  "hero": {
+    "headline": "Nu noteren.\nVanavond afhandelen.",
+    "lead": "“O ja, ik moet nog…” Haal het in een paar woorden uit je hoofd en laat het los. ’s Avonds handel je af wat er over is, één voor één.",
+    "cta": "Gratis in de App Store",
+    "note": "Alle functies zijn gratis. Geen account, niet inloggen."
+  },
+  "demo": {
+    "title": "Probeer het hier",
+    "lead": "Typ iets wat door je hoofd spookt, of tik op een voorbeeld. Druk daarna op ‘Nu afhandelen’ en geef elk punt een einde.",
+    "examples": [
+      "Tandarts bellen voor een gebitsreiniging",
+      "Verjaardagscadeau voor mam uitzoeken",
+      "Filter van de afzuigkap vervangen",
+      "Kijken wanneer mijn paspoort verloopt"
+    ],
+    "note": "Deze demo draait alleen in je browser en bewaart niets.",
+    "app": {
+      "input": "Wat houdt je bezig?",
+      "settle": "Nu afhandelen ({1})",
+      "onMind": "In je hoofd",
+      "scheduled": "Gepland",
+      "footer": "Elk ding heeft een einde nodig: doe het, plan het of gooi het weg.",
+      "of": "{1} van {2}",
+      "doNow": "Nu doen",
+      "doNowSub": "Kost het twee minuten, doe het dan gewoon",
+      "pick": "Kies een tijd",
+      "drop": "Weggooien – hoeft niet",
+      "goDo": "Ga het doen. Kom terug als het klaar is.",
+      "done": "Klaar",
+      "notNow": "Nu niet – terug naar keuzes",
+      "clear": "Je hoofd is opgeruimd",
+      "settled": "Je hebt {1} dingen afgehandeld. Niets blijft hangen.",
+      "close": "Sluit",
+      "when": "Wanneer ga je het doen?",
+      "cancel": "Annuleer",
+      "write": "Noteer",
+      "name": "Externalize",
+      "stale": "Wacht al langer dan een dag",
+      "empty": "Schiet je iets te binnen, noteer het hieronder en laat het los.\nVanavond bepaal je wat je ermee doet.",
+      "o1": "Over een uur",
+      "o2": "Vanavond",
+      "o3": "Morgenochtend",
+      "o4": "Dit weekend",
+      "o5": "Volgende week"
+    }
+  },
+  "problem": {
+    "title": "Zelfs kleine dingen nemen ruimte in je hoofd",
+    "text": "Onder de douche, voor een rood stoplicht, net voor je in slaap valt: ‘Dat moet ik nog doen.’ Nergens om het op te schrijven, dus houd je het vast, en waar je mee bezig bent lijdt eronder. Takenapps willen eerst een lijst en een deadline, en dan wordt opschrijven zelf een klus."
+  },
+  "features": [
+    {
+      "title": "Drie seconden, dan loslaten",
+      "text": "Open de app en typ in de regel onderaan. Geen lijsten, mappen of deadlines.\nTik op de widget op je toegangsscherm en de app opent met een lege regel. Zeg `Onthoud in Externalize` tegen Siri of zet het op de actieknop, en het is bewaard zonder de app te openen.",
+      "shot": "02-typing"
+    },
+    {
+      "title": "’s Avonds, één voor één",
+      "text": "Staat er nog iets open, dan krijg je om 21.00 uur één melding. Niets open, geen melding.\nAls je begint, komen de punten één voor één groot in beeld. Kies ‘Nu doen’, ‘Kies een tijd’ of ‘Weggooien’ en het volgende verschijnt. Kost het twee minuten, start dan de timer en doe het meteen.",
+      "shot": "03-review"
+    },
+    {
+      "title": "Niets ligt te verstoffen",
+      "text": "Kies ‘Over een uur’, ‘Vanavond’, ‘Morgenochtend’, ‘Dit weekend’ of ‘Volgende week’ en het komt op dat moment terug. Vanuit de melding tik je meteen op ‘Klaar’, ‘Morgenochtend’ of ‘Weggooien’.\nWat al langer dan een dag wacht en wat je steeds uitstelt, wordt gemarkeerd, zodat je ziet wat er telkens tussendoor glipt.",
+      "shot": "04-schedule"
+    }
+  ],
+  "steps": {
+    "title": "In drie stappen aan de slag",
+    "items": [
+      {
+        "title": "Schrijf het op",
+        "text": "Een paar woorden in de app, in de widget op het toegangsscherm of via Siri, wat het dichtstbij is."
+      },
+      {
+        "title": "Sta meldingen toe",
+        "text": "De app vraagt het één keer, de eerste keer dat je iets noteert. Ze brengen de avondmelding en de tijden die je kiest."
+      },
+      {
+        "title": "Handel het ’s avonds af",
+        "text": "Tik op de melding of op ‘Nu afhandelen’ en geef elk punt een einde."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Direct vanuit de lijst",
+    "rows": [
+      [
+        "Tik op een punt",
+        "kies ‘Klaar’, ‘Kies een tijd’ of ‘Weggooien’"
+      ],
+      [
+        "Veeg naar rechts",
+        "Klaar (verdwijnt uit de lijst)"
+      ],
+      [
+        "Veeg naar links",
+        "Weggooien, of ‘Plan’ om een tijd te kiezen"
+      ],
+      [
+        "Nu afhandelen",
+        "loop één voor één door wat er over is"
+      ],
+      [
+        "Onthoud in Externalize",
+        "zeg het tegen Siri zonder de app te openen"
+      ],
+      [
+        "Instellingen ▸ Avondmelding",
+        "tijd wijzigen of uitzetten"
+      ]
+    ],
+    "note": "Bij het kiezen van een tijd betekent ‘Vanavond’ 19.00 uur, ‘Morgenochtend’ 9.00 uur, ‘Dit weekend’ zaterdag 10.00 uur en ‘Volgende week’ maandag 9.00 uur. Je kunt ook zelf elke datum en tijd kiezen."
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "items": [
+      {
+        "q": "Kan ik iets noteren zonder de app te openen?",
+        "a": "Ja. Zeg `Onthoud in Externalize` tegen Siri; Siri vraagt wat je wilt noteren en bewaart het. Wijs de opdracht ‘Noteer’ toe aan de actieknop in Instellingen, dan is één druk genoeg."
+      },
+      {
+        "q": "Hoe voeg ik de widget toe aan het toegangsscherm?",
+        "a": "Houd je vinger op het toegangsscherm, tik op ‘Pas aan’ en kies het toegangsscherm, tik op het widgetgebied en voeg Externalize toe. Eén tik opent een lege regel, en de widget toont hoeveel er nog openstaat. Voor het beginscherm is er ook een kleine widget."
+      },
+      {
+        "q": "Kan ik de avondmelding wijzigen of uitzetten?",
+        "a": "Tik op het tandwiel rechtsboven ▸ Avondmelding om de tijd te wijzigen of hem uit te zetten. Standaard is het 21.00 uur, en op dagen dat er niets openstaat blijft hij stil."
+      },
+      {
+        "q": "Ik krijg geen meldingen.",
+        "a": "Als de instellingen van Externalize zeggen dat meldingen uit staan, tik dan op de knop daar om ze aan te zetten in de iPhone-instellingen. Op dagen dat er niets openstaat, komt er geen avondmelding, en dat hoort zo."
+      },
+      {
+        "q": "Hoe komt een gepland punt terug?",
+        "a": "Op de gekozen tijd krijg je een melding. Houd hem ingedrukt om meteen ‘Klaar’, ‘Morgenochtend’ of ‘Weggooien’ te kiezen. Doe je niets, dan gaat het terug naar ‘In je hoofd’ en handel je het de volgende keer af."
+      },
+      {
+        "q": "Kan ik iets terughalen dat ik op klaar zette of weggooide?",
+        "a": "Nee. Afgehandelde punten verdwijnen uit de lijst en er is geen archief. Twijfel je nog, kies dan liever een tijd dan het weg te gooien."
+      },
+      {
+        "q": "Gaan mijn punten mee naar een nieuwe iPhone?",
+        "a": "Nee. Alles blijft op dit apparaat en gaat nooit naar iCloud of een server. Verwijder je de app, dan verdwijnt het ook."
+      },
+      {
+        "q": "Op welke apparaten werkt het?",
+        "a": "Op iPhone met iOS 17 of nieuwer."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Wat er vandaag opkwam,\nhaal het uit je hoofd",
+    "cta": "Gratis in de App Store"
+  },
+  "ui": {
+    "skip": "Naar de inhoud",
+    "languages": "Taal",
+    "privacy": "Privacybeleid",
+    "contact": "Vragen of een fout gevonden? Mail naar {email}. Met je iPhone-model en iOS-versie kunnen we sneller kijken."
+  }
+}

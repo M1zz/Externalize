@@ -1,0 +1,165 @@
+{
+  "title": "Externalize: zapiš teď, vyřeš večer",
+  "description": "Co tě napadne, zapiš pár slovy a pusť z hlavy. Večer dostane každá věc konec: udělat hned, zvolit čas, nebo zahodit. Všechno zdarma.",
+  "hero": {
+    "headline": "Zapiš to teď.\nVyřeš to večer.",
+    "lead": "„Jo vlastně, musím…“ Dostaň to z hlavy pár slovy a přestaň na to myslet. Večer vyřešíš, co zbylo, jednu věc po druhé.",
+    "cta": "Stáhnout zdarma v App Storu",
+    "note": "Všechny funkce jsou zdarma. Bez účtu a přihlašování."
+  },
+  "demo": {
+    "title": "Vyzkoušej si to",
+    "lead": "Napiš, co ti leží v hlavě, nebo klepni na příklad. Pak stiskni „Vyřešit teď“ a dej každé věci konec.",
+    "examples": [
+      "Zavolat zubaři kvůli dentální hygieně",
+      "Vybrat mámě dárek k narozeninám",
+      "Vyměnit filtr v konvici na vodu",
+      "Zjistit, kdy vyprší pas"
+    ],
+    "note": "Ukázka běží jen ve tvém prohlížeči a nic neukládá.",
+    "app": {
+      "input": "Co vám běží hlavou?",
+      "settle": "Vyřešit teď ({1})",
+      "onMind": "V hlavě",
+      "scheduled": "Naplánováno",
+      "footer": "Každá věc potřebuje konec: udělat ji, naplánovat ji, nebo zahodit.",
+      "of": "{1} z {2}",
+      "doNow": "Udělat hned",
+      "doNowSub": "Zabere to dvě minuty? Tak to udělejte hned",
+      "pick": "Zvolit čas",
+      "drop": "Zahodit – dělat to není nutné",
+      "goDo": "Jděte to udělat. Vraťte se, až bude hotovo.",
+      "done": "Hotovo",
+      "notNow": "Teď ne – zpět na výběr",
+      "clear": "Máte čistou hlavu",
+      "settled": "Vyřízeno: {1} věcí. Nic nezůstalo viset.",
+      "close": "Zavřít",
+      "when": "Kdy to uděláte?",
+      "cancel": "Zrušit",
+      "write": "Zapsat",
+      "name": "Externalize",
+      "stale": "Čeká déle než den",
+      "empty": "Když vás něco napadne, zapište to dole a pusťte to z hlavy.\nCo s tím, rozhodnete večer.",
+      "o1": "Za hodinu",
+      "o2": "Dnes večer",
+      "o3": "Zítra ráno",
+      "o4": "Tento víkend",
+      "o5": "Příští týden"
+    }
+  },
+  "problem": {
+    "title": "I drobnosti zabírají v hlavě místo",
+    "text": "Ve sprše, na červené, těsně před usnutím: „Tohle musím udělat.“ Nemáš to kam zapsat, tak si to držíš v hlavě, a to, co zrovna děláš, tím trpí. Aplikace na úkoly chtějí nejdřív seznam a termín, takže i zapsat se stává úkolem."
+  },
+  "features": [
+    {
+      "title": "Tři vteřiny a pustit z hlavy",
+      "text": "Otevři aplikaci a piš do řádku dole. Žádné seznamy, složky ani termíny.\nKlepnutím na widget na zamčené obrazovce se otevře prázdný řádek. Řekni Siri `Zapamatuj si v Externalize` nebo to dej na tlačítko Akce a uloží se to, aniž bys aplikaci otevíral.",
+      "shot": "02-typing"
+    },
+    {
+      "title": "Večer jednu věc po druhé",
+      "text": "Když něco zbývá, přijde jedna připomínka ve 21:00. Když nezbývá nic, ozve se nic.\nPo spuštění se věci ukazují jedna po druhé, velkým písmem. Zvol „Udělat hned“, „Zvolit čas“ nebo „Zahodit“ a přijde další. Jestli to zabere dvě minuty, spusť časovač a udělej to rovnou.",
+      "shot": "03-review"
+    },
+    {
+      "title": "Nic nezůstane hnít",
+      "text": "Vyber „Za hodinu“, „Dnes večer“, „Zítra ráno“, „Tento víkend“ nebo „Příští týden“ a věc se vrátí přesně tehdy. V oznámení rovnou klepneš na „Hotovo“, „Zítra ráno“ nebo „Zahodit“.\nCo čeká déle než den a co pořád odkládáš, je označené, takže hned vidíš, co ti stále uniká.",
+      "shot": "04-schedule"
+    }
+  ],
+  "steps": {
+    "title": "Začni ve třech krocích",
+    "items": [
+      {
+        "title": "Zapiš to",
+        "text": "Pár slov v aplikaci, ve widgetu na zamčené obrazovce nebo přes Siri, co je zrovna po ruce."
+      },
+      {
+        "title": "Povol oznámení",
+        "text": "Aplikace se zeptá jednou, když poprvé něco zapíšeš. Chodí přes ně večerní připomínka a časy, které zvolíš."
+      },
+      {
+        "title": "Večer to vyřeš",
+        "text": "Klepni na připomínku nebo na „Vyřešit teď“ a dej každé věci konec."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Přímo ze seznamu",
+    "rows": [
+      [
+        "Klepnout na položku",
+        "vybrat „Hotovo“, „Zvolit čas“ nebo „Zahodit“"
+      ],
+      [
+        "Přejet doprava",
+        "Hotovo (zmizí ze seznamu)"
+      ],
+      [
+        "Přejet doleva",
+        "Zahodit, nebo „Odložit“ a zvolit čas"
+      ],
+      [
+        "Vyřešit teď",
+        "projít, co zbývá, jednu věc po druhé"
+      ],
+      [
+        "Zapamatuj si v Externalize",
+        "říct Siri bez otevírání aplikace"
+      ],
+      [
+        "Nastavení ▸ Večerní připomínka",
+        "změnit čas nebo vypnout"
+      ]
+    ],
+    "note": "Při volbě času znamená „Dnes večer“ 19:00, „Zítra ráno“ 9:00, „Tento víkend“ sobotu v 10:00 a „Příští týden“ pondělí v 9:00. Můžeš si také vybrat libovolné datum a čas."
+  },
+  "faq": {
+    "title": "Časté dotazy",
+    "items": [
+      {
+        "q": "Můžu něco zapsat bez otevření aplikace?",
+        "a": "Ano. Řekni Siri `Zapamatuj si v Externalize`, zeptá se, co zapsat, a uloží to. V Nastavení přiřaď zkratku „Zapsat“ tlačítku Akce a stačí jedno stisknutí."
+      },
+      {
+        "q": "Jak přidám widget na zamčenou obrazovku?",
+        "a": "Podrž prst na zamčené obrazovce, klepni na Přizpůsobit a vyber zamčenou obrazovku, klepni na oblast widgetů a přidej Externalize. Klepnutím se otevře prázdný řádek a widget ukazuje, kolik věcí zbývá. Na plochu je k dispozici i malý widget."
+      },
+      {
+        "q": "Jak změnit nebo vypnout večerní připomínku?",
+        "a": "Klepni na ozubené kolečko vpravo nahoře ▸ Večerní připomínka a změň čas nebo ji vypni. Výchozí čas je 21:00 a ve dnech, kdy nic nezbývá, se neozve."
+      },
+      {
+        "q": "Nechodí mi oznámení.",
+        "a": "Pokud nastavení Externalize hlásí, že oznámení jsou vypnutá, klepni tam na tlačítko a zapni je v Nastavení iPhonu. Ve dnech, kdy nic nezbývá, večerní připomínka nechodí, a to je v pořádku."
+      },
+      {
+        "q": "Jak se vrátí věc s nastaveným časem?",
+        "a": "Ve zvolený čas přijde oznámení. Podrž ho a rovnou vyber „Hotovo“, „Zítra ráno“ nebo „Zahodit“. Když neuděláš nic, vrátí se do „V hlavě“ a vyřešíš ji příště."
+      },
+      {
+        "q": "Dá se vrátit věc označená jako hotová nebo zahozená?",
+        "a": "Ne. Vyřešené věci zmizí ze seznamu a archiv neexistuje. Pokud si nejsi jistý, zvol raději čas než zahodit."
+      },
+      {
+        "q": "Přenesou se záznamy na nový iPhone?",
+        "a": "Ne. Všechno zůstává jen v tomto zařízení a nikdy se neposílá do iCloudu ani na server. Když aplikaci smažeš, smažou se i záznamy."
+      },
+      {
+        "q": "Na jakých zařízeních funguje?",
+        "a": "Na iPhonu se systémem iOS 17 nebo novějším."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Co tě dnes napadlo,\ndostaň z hlavy",
+    "cta": "Stáhnout zdarma v App Storu"
+  },
+  "ui": {
+    "skip": "Přeskočit na obsah",
+    "languages": "Jazyk",
+    "privacy": "Zásady ochrany soukromí",
+    "contact": "Dotaz nebo chyba? Napiš na {email}. Když uvedeš model iPhonu a verzi iOS, podíváme se na to rychleji."
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "title": "Externalize: Şimdi not al, akşam sonuçlandır",
+  "description": "Aklına geleni birkaç kelimeyle yaz ve bırak. Akşam her birine bir son ver: şimdi yap, saat seç ya da vazgeç. Tüm özellikler ücretsiz.",
+  "hero": {
+    "headline": "Şimdi not al.\nAkşam sonuçlandır.",
+    "lead": "“Hah, şunu yapmam lazımdı…” Birkaç kelimeyle kafandan çıkar ve aklından at. Akşam kalanları tek tek sonuçlandır.",
+    "cta": "App Store’dan ücretsiz indir",
+    "note": "Tüm özellikler ücretsiz. Hesap ya da giriş yok."
+  },
+  "demo": {
+    "title": "Burada dene",
+    "lead": "Aklındaki bir şeyi yaz ya da bir örneğe dokun. Sonra “Şimdi sonuçlandır”a bas ve her birine bir son ver.",
+    "examples": [
+      "Dişçiyi arayıp diş taşı randevusu al",
+      "Annemin doğum günü hediyesini seç",
+      "Kombi filtresini değiştir",
+      "Pasaportun bitiş tarihine bak"
+    ],
+    "note": "Bu deneme yalnızca tarayıcında çalışır ve hiçbir şey kaydetmez.",
+    "app": {
+      "input": "Aklına ne geldi?",
+      "settle": "Şimdi sonuçlandır ({1})",
+      "onMind": "Aklındakiler",
+      "scheduled": "Zamanlandı",
+      "footer": "Her birinin bir sonu olmalı: yap, zamanla ya da vazgeç.",
+      "of": "{1} / {2}",
+      "doNow": "Şimdi yap",
+      "doNowSub": "İki dakika sürüyorsa hemen yap",
+      "pick": "Saat seç",
+      "drop": "Vazgeç: yapılması gerekmiyor",
+      "goDo": "Git yap. Bitince geri gel.",
+      "done": "Bitti",
+      "notNow": "Şimdi olmaz: seçeneklere dön",
+      "clear": "Kafan rahat",
+      "settled": "{1} şeyi sonuçlandırdın. Askıda hiçbir şey kalmadı.",
+      "close": "Kapat",
+      "when": "Ne zaman yapacaksın?",
+      "cancel": "İptal",
+      "write": "Not al",
+      "name": "Externalize",
+      "stale": "Bir günden uzun süredir bekliyor",
+      "empty": "Aklına bir şey gelince aşağıya yaz ve unut.\nNe yapacağına bu akşam karar verirsin.",
+      "o1": "1 saat sonra",
+      "o2": "Bu akşam",
+      "o3": "Yarın sabah",
+      "o4": "Bu hafta sonu",
+      "o5": "Haftaya"
+    }
+  },
+  "problem": {
+    "title": "Küçük işler bile kafada yer kaplar",
+    "text": "Duşta, kırmızı ışıkta, tam uykuya dalarken: “Şunu yapmam lazım.” Yazacak yer yok, aklında tutmaya çalışırsın, o sırada yaptığın iş de aksar. Yapılacaklar uygulamaları önce liste ve son tarih ister, not almak bile iş olur."
+  },
+  "features": [
+    {
+      "title": "Üç saniye yaz, sonra unut",
+      "text": "Uygulamayı aç, ekranın altındaki satıra yaz. Liste, klasör ya da son tarih seçmek yok.\nKilitli Ekran araç takımına dokununca boş bir satırla açılır. Siri’ye `Externalize ile hatırla` de ya da Eylem düğmesine ata, uygulamayı açmadan kaydedilsin.",
+      "shot": "02-typing"
+    },
+    {
+      "title": "Akşam, tek tek sonuçlandır",
+      "text": "Kalan bir şey varsa saat 21.00’de bir kez hatırlatır. Her şey bittiyse rahatsız etmez.\nSonuçlandırmaya başlayınca işler büyük harflerle tek tek gelir. “Şimdi yap”, “Saat seç” ya da “Vazgeç”i seç, sıradaki gelsin. İki dakikalık bir işse zamanlayıcıyı başlat ve hemen bitir.",
+      "shot": "03-review"
+    },
+    {
+      "title": "Hiçbir şey çürümeye bırakılmaz",
+      "text": "“1 saat sonra”, “Bu akşam”, “Yarın sabah”, “Bu hafta sonu” ya da “Haftaya”yı seç, tam o zaman geri gelsin. Bildirimden doğrudan “Bitti”, “Yarın sabah” ya da “Vazgeç” diyebilirsin.\nBir günden fazla bekleyenler ve sürekli ertelediklerin işaretlenir, hep kaçan işler göze çarpar.",
+      "shot": "04-schedule"
+    }
+  ],
+  "steps": {
+    "title": "Üç adımda başla",
+    "items": [
+      {
+        "title": "Yaz",
+        "text": "Uygulamada, Kilitli Ekran araç takımında ya da Siri ile, hangisi yakınsa birkaç kelime."
+      },
+      {
+        "title": "Bildirimlere izin ver",
+        "text": "İlk kez bir şey yazdığında bir kez sorar. Akşam hatırlatması ve seçtiğin saatler için kullanılır."
+      },
+      {
+        "title": "Akşam sonuçlandır",
+        "text": "Hatırlatmaya ya da “Şimdi sonuçlandır”a dokun, her birine bir son ver."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Doğrudan listeden",
+    "rows": [
+      [
+        "Bir öğeye dokun",
+        "“Bitti”, “Saat seç” ya da “Vazgeç”i seç"
+      ],
+      [
+        "Sağa kaydır",
+        "Bitti (listeden çıkar)"
+      ],
+      [
+        "Sola kaydır",
+        "Vazgeç ya da saat seçmek için “Zamanla”"
+      ],
+      [
+        "Şimdi sonuçlandır",
+        "kalanları tek tek gözden geçir"
+      ],
+      [
+        "Externalize ile hatırla",
+        "uygulamayı açmadan Siri’ye söyle"
+      ],
+      [
+        "Ayarlar ▸ Akşam hatırlatması",
+        "saati değiştir ya da kapat"
+      ]
+    ],
+    "note": "Saat seçerken “Bu akşam” 19.00, “Yarın sabah” 09.00, “Bu hafta sonu” cumartesi 10.00, “Haftaya” ise pazartesi 09.00 demektir. İstediğin tarih ve saati kendin de seçebilirsin."
+  },
+  "faq": {
+    "title": "Sık sorulan sorular",
+    "items": [
+      {
+        "q": "Uygulamayı açmadan not alabilir miyim?",
+        "a": "Evet. Siri’ye `Externalize ile hatırla` de; ne yazacağını sorar ve kaydeder. Ayarlar’da “Not Al” kestirmesini Eylem düğmesine atarsan tek basış yeter."
+      },
+      {
+        "q": "Kilitli Ekran araç takımını nasıl eklerim?",
+        "a": "Kilitli Ekran’a dokunup basılı tut, Özelleştir’e dokunup Kilitli Ekran’ı seç, araç takımı alanına dokun ve Externalize’ı ekle. Dokununca boş bir satır açılır ve kaç iş kaldığını gösterir. Ana Ekran için küçük bir araç takımı da var."
+      },
+      {
+        "q": "Akşam hatırlatmasını değiştirebilir ya da kapatabilir miyim?",
+        "a": "Sağ üstteki dişli ▸ Akşam hatırlatması’ndan saati değiştirebilir ya da kapatabilirsin. Varsayılan 21.00’dir ve kalan bir şey olmayan günlerde çalmaz."
+      },
+      {
+        "q": "Bildirim gelmiyor.",
+        "a": "Externalize ayarları bildirimlerin kapalı olduğunu söylüyorsa oradaki düğmeye dokunup iPhone Ayarları’ndan aç. Kalan bir şey olmayan günlerde akşam hatırlatması gelmemesi normaldir."
+      },
+      {
+        "q": "Zamanladığım iş nasıl geri gelir?",
+        "a": "Seçtiğin saatte bildirim gelir. Basılı tutup hemen “Bitti”, “Yarın sabah” ya da “Vazgeç”i seçebilirsin. Hiçbir şey yapmazsan “Aklındakiler”e döner, bir sonraki seferde sonuçlandırırsın."
+      },
+      {
+        "q": "Bitti dediğim ya da vazgeçtiğim bir işi geri getirebilir miyim?",
+        "a": "Hayır. Sonuçlanan işler listeden çıkar ve arşiv yoktur. Emin değilsen vazgeçmek yerine bir saat seç."
+      },
+      {
+        "q": "Yeni iPhone’a geçince notlarım taşınır mı?",
+        "a": "Hayır. Her şey yalnızca bu aygıtta kalır, iCloud’a ya da bir sunucuya gönderilmez. Uygulamayı silersen notlar da silinir."
+      },
+      {
+        "q": "Hangi aygıtlarda çalışır?",
+        "a": "iOS 17 veya sonrası yüklü iPhone’larda."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Bugün aklına geleni\nkafandan çıkar",
+    "cta": "App Store’dan ücretsiz indir"
+  },
+  "ui": {
+    "skip": "İçeriğe geç",
+    "languages": "Dil",
+    "privacy": "Gizlilik Politikası",
+    "contact": "Sorun ya da hata mı var? {email} adresine yaz. iPhone modelini ve iOS sürümünü eklersen daha hızlı bakabiliriz."
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "title": "Externalize: anótalo ahora, resuélvelo esta noche",
+  "description": "Lo que se te pase por la cabeza, anótalo en pocas palabras y olvídate. Por la noche, cada cosa tiene su final: hacerla, programarla o descartarla.",
+  "hero": {
+    "headline": "Anótalo ahora.\nResuélvelo esta noche.",
+    "lead": "«Ah, es verdad, tengo que…». Sácalo de tu cabeza en pocas palabras y suéltalo. Por la noche, resuelve lo que quede, una cosa cada vez.",
+    "cta": "Descárgala gratis en el App Store",
+    "note": "Todas las funciones son gratis. Sin cuenta ni registro."
+  },
+  "demo": {
+    "title": "Pruébalo aquí",
+    "lead": "Escribe algo que tengas en la cabeza o toca un ejemplo. Después pulsa «Resolver ahora» y dale un final a cada cosa.",
+    "examples": [
+      "Llamar al dentista para pedir limpieza",
+      "Elegir el regalo de cumpleaños de mamá",
+      "Cambiar el filtro del aire acondicionado",
+      "Mirar cuándo caduca el pasaporte"
+    ],
+    "note": "Esta demo funciona solo en tu navegador y no guarda nada.",
+    "app": {
+      "input": "¿Qué se te ha ocurrido?",
+      "settle": "Resolver ahora ({1})",
+      "onMind": "En tu cabeza",
+      "scheduled": "Programado",
+      "footer": "Cada cosa necesita un final: hacerla, programarla o descartarla.",
+      "of": "{1} de {2}",
+      "doNow": "Hacerlo ya",
+      "doNowSub": "Si lleva dos minutos, hazlo ya",
+      "pick": "Elegir hora",
+      "drop": "Descartar: no hace falta hacerlo",
+      "goDo": "Ve a hacerlo. Vuelve cuando termines.",
+      "done": "Hecho",
+      "notNow": "Ahora no: volver a las opciones",
+      "clear": "Tu mente está despejada",
+      "settled": "Has resuelto {1} cosas. No queda nada en el aire.",
+      "close": "Cerrar",
+      "when": "¿Cuándo lo harás?",
+      "cancel": "Cancelar",
+      "write": "Anotar",
+      "name": "Externalize",
+      "stale": "Lleva más de un día",
+      "empty": "Cuando se te ocurra algo, anótalo aquí abajo y olvídalo.\nEsta noche decidirás qué hacer con ello.",
+      "o1": "Dentro de una hora",
+      "o2": "Esta noche",
+      "o3": "Mañana por la mañana",
+      "o4": "Este fin de semana",
+      "o5": "La semana que viene"
+    }
+  },
+  "problem": {
+    "title": "Hasta lo más pequeño ocupa sitio en la cabeza",
+    "text": "En la ducha, en un semáforo, justo antes de dormirte: «Tengo que hacer aquello». No tienes dónde apuntarlo, así que lo retienes, y lo que estabas haciendo se resiente. Las apps de tareas te piden antes una lista y una fecha límite, y apuntarlo ya se convierte en otra tarea."
+  },
+  "features": [
+    {
+      "title": "Tres segundos y a otra cosa",
+      "text": "Abre la app y escribe en la línea de abajo. Sin listas, carpetas ni fechas límite.\nToca el widget de la pantalla bloqueada y se abre con una línea en blanco. Di `Recuerda en Externalize` a Siri o asígnalo al botón de acción, y queda guardado sin abrir la app.",
+      "shot": "02-typing"
+    },
+    {
+      "title": "Por la noche, una cosa cada vez",
+      "text": "Si queda algo pendiente, recibes un solo aviso a las 21:00. Si no queda nada, no te molesta.\nAl empezar, las cosas aparecen de una en una, en grande. Elige «Hacerlo ya», «Elegir hora» o «Descartar» y pasa a la siguiente. Si son dos minutos, pon el temporizador y quítatelo de encima.",
+      "shot": "03-review"
+    },
+    {
+      "title": "Nada se queda pudriéndose",
+      "text": "Elige «Dentro de una hora», «Esta noche», «Mañana por la mañana», «Este fin de semana» o «La semana que viene» y volverá en ese momento. Desde la notificación puedes marcar «Hecho», pasarlo a «Mañana por la mañana» o «Descartar».\nLo que lleva más de un día esperando y lo que vas aplazando una y otra vez queda marcado, así ves qué se te escapa siempre.",
+      "shot": "04-schedule"
+    }
+  ],
+  "steps": {
+    "title": "Empieza en tres pasos",
+    "items": [
+      {
+        "title": "Anótalo",
+        "text": "Unas palabras en la app, en el widget de la pantalla bloqueada o con Siri, lo que tengas más a mano."
+      },
+      {
+        "title": "Permite las notificaciones",
+        "text": "Te lo pregunta una vez, la primera vez que anotas algo. Sirven para el aviso de la noche y las horas que elijas."
+      },
+      {
+        "title": "Resuélvelo por la noche",
+        "text": "Toca el aviso o «Resolver ahora» y dale un final a cada cosa."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Desde la propia lista",
+    "rows": [
+      [
+        "Tocar una cosa",
+        "elegir «Hecho», «Elegir hora» o «Descartar»"
+      ],
+      [
+        "Deslizar a la derecha",
+        "Hecho (sale de la lista)"
+      ],
+      [
+        "Deslizar a la izquierda",
+        "Descartar, o «Programar» para elegir hora"
+      ],
+      [
+        "Resolver ahora",
+        "repasar lo que queda, de una en una"
+      ],
+      [
+        "Recuerda en Externalize",
+        "decírselo a Siri sin abrir la app"
+      ],
+      [
+        "Ajustes ▸ Aviso de la noche",
+        "cambiar la hora o desactivarlo"
+      ]
+    ],
+    "note": "Al programar, «Esta noche» son las 19:00, «Mañana por la mañana» las 9:00, «Este fin de semana» el sábado a las 10:00 y «La semana que viene» el lunes a las 9:00. También puedes elegir cualquier fecha y hora."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Puedo anotar algo sin abrir la app?",
+        "a": "Sí. Di `Recuerda en Externalize` a Siri: te preguntará qué anotar y lo guardará. Asigna el atajo «Anotar» al botón de acción en Ajustes y basta con una pulsación."
+      },
+      {
+        "q": "¿Cómo añado el widget de la pantalla bloqueada?",
+        "a": "Mantén pulsada la pantalla bloqueada, toca Personalizar y elige la pantalla bloqueada, toca la zona de widgets y añade Externalize. Al tocarlo se abre una línea en blanco y muestra cuántas cosas quedan. También hay un widget pequeño para la pantalla de inicio."
+      },
+      {
+        "q": "¿Puedo cambiar o desactivar el aviso de la noche?",
+        "a": "Toca el engranaje de arriba a la derecha ▸ Aviso de la noche para cambiar la hora o desactivarlo. Por defecto es a las 21:00 y no suena los días en que no queda nada."
+      },
+      {
+        "q": "No me llegan notificaciones.",
+        "a": "Si los ajustes de Externalize indican que las notificaciones están desactivadas, toca el botón que aparece para activarlas en los Ajustes del iPhone. Los días sin nada pendiente no hay aviso de la noche, y es lo normal."
+      },
+      {
+        "q": "¿Cómo vuelve algo que he programado?",
+        "a": "Te llega una notificación a la hora elegida. Mantenla pulsada para elegir «Hecho», «Mañana por la mañana» o «Descartar». Si no haces nada, vuelve a «En tu cabeza» y lo resuelves la próxima vez."
+      },
+      {
+        "q": "¿Puedo recuperar algo que marqué como hecho o descarté?",
+        "a": "No. Lo resuelto sale de la lista y no hay archivo. Si aún dudas, elige una hora en lugar de descartarlo."
+      },
+      {
+        "q": "¿Lo anotado pasa a un iPhone nuevo?",
+        "a": "No. Todo se queda en este dispositivo y nunca se envía a iCloud ni a un servidor. Si borras la app, se borra también."
+      },
+      {
+        "q": "¿En qué dispositivos funciona?",
+        "a": "En iPhone con iOS 17 o posterior."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Saca de tu cabeza\nlo que tienes hoy",
+    "cta": "Descárgala gratis en el App Store"
+  },
+  "ui": {
+    "skip": "Saltar al contenido",
+    "languages": "Idioma",
+    "privacy": "Política de privacidad",
+    "contact": "¿Dudas o un error? Escribe a {email}. Si nos dices tu modelo de iPhone y la versión de iOS, lo revisaremos antes."
+  }
+}

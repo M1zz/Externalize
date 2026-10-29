@@ -1,0 +1,165 @@
+{
+  "title": "Externalize: Jetzt notieren, heute Abend abschließen",
+  "description": "Was dir durch den Kopf geht, notierst du in ein paar Worten und lässt es los. Abends bekommt jeder Punkt ein Ende: erledigen, planen oder verwerfen.",
+  "hero": {
+    "headline": "Jetzt notieren.\nAbends abschließen.",
+    "lead": "„Ach ja, das muss ich noch …“ Schreib es in ein paar Worten auf und lass es los. Abends gehst du durch, was übrig ist, Punkt für Punkt.",
+    "cta": "Gratis im App Store laden",
+    "note": "Alle Funktionen sind kostenlos. Kein Konto, keine Anmeldung."
+  },
+  "demo": {
+    "title": "Probier es hier aus",
+    "lead": "Schreib etwas auf, das dir im Kopf herumgeht, oder tippe auf ein Beispiel. Dann auf „Jetzt abschließen“ und jedem Punkt ein Ende geben.",
+    "examples": [
+      "Beim Zahnarzt anrufen, Prophylaxe-Termin",
+      "Geburtstagsgeschenk für Mama",
+      "Heizkörper entlüften",
+      "Ablaufdatum vom Reisepass prüfen"
+    ],
+    "note": "Diese Demo läuft nur in deinem Browser und speichert nichts.",
+    "app": {
+      "input": "Was geht dir durch den Kopf?",
+      "settle": "Jetzt abschließen ({1})",
+      "onMind": "Im Kopf",
+      "scheduled": "Geplant",
+      "footer": "Jedes braucht ein Ende: erledigen, Zeit festlegen oder verwerfen.",
+      "of": "{1} von {2}",
+      "doNow": "Jetzt erledigen",
+      "doNowSub": "Dauert es zwei Minuten, mach es einfach gleich",
+      "pick": "Zeit wählen",
+      "drop": "Verwerfen – muss nicht sein",
+      "goDo": "Mach es jetzt. Komm zurück, wenn es erledigt ist.",
+      "done": "Erledigt",
+      "notNow": "Jetzt nicht – zurück zur Auswahl",
+      "clear": "Dein Kopf ist frei",
+      "settled": "{1} Sachen erledigt. Nichts bleibt offen.",
+      "close": "Schließen",
+      "when": "Wann machst du es?",
+      "cancel": "Abbrechen",
+      "write": "Notieren",
+      "name": "Externalize",
+      "stale": "Wartet seit über einem Tag",
+      "empty": "Wenn dir etwas einfällt, schreib es unten auf und lass es los.\nAm Abend entscheidest du, was damit passiert.",
+      "o1": "In einer Stunde",
+      "o2": "Heute Abend",
+      "o3": "Morgen früh",
+      "o4": "Dieses Wochenende",
+      "o5": "Nächste Woche"
+    }
+  },
+  "problem": {
+    "title": "Auch Kleinkram belegt Platz im Kopf",
+    "text": "Unter der Dusche, an der roten Ampel, kurz vorm Einschlafen: „Das muss ich ja noch erledigen.“ Nichts zum Aufschreiben in der Nähe, also hältst du es fest, und das, was du gerade tust, leidet darunter. To-do-Apps wollen erst eine Liste und ein Fälligkeitsdatum, und schon wird das Aufschreiben selbst zur Aufgabe."
+  },
+  "features": [
+    {
+      "title": "Drei Sekunden, dann loslassen",
+      "text": "App öffnen und unten in die Zeile tippen. Keine Liste, kein Ordner, kein Fälligkeitsdatum.\nEin Tipp aufs Sperrbildschirm-Widget öffnet eine leere Zeile. Sag zu Siri `In Externalize merken` oder leg es auf die Aktionstaste, dann ist es gespeichert, ohne die App zu öffnen.",
+      "shot": "02-typing"
+    },
+    {
+      "title": "Abends Punkt für Punkt abschließen",
+      "text": "Ist noch etwas offen, erinnert dich die App einmal um 21 Uhr. Ist alles erledigt, bleibt sie still.\nBeim Abschließen kommt ein Punkt nach dem anderen groß auf den Bildschirm. Wähle „Jetzt erledigen“, „Zeit wählen“ oder „Verwerfen“, und der nächste erscheint. Dauert es nur zwei Minuten, starte den Timer und erledige es sofort.",
+      "shot": "03-review"
+    },
+    {
+      "title": "Nichts bleibt liegen",
+      "text": "Wähle „In einer Stunde“, „Heute Abend“, „Morgen früh“, „Dieses Wochenende“ oder „Nächste Woche“, dann meldet sich der Punkt genau dann wieder. In der Mitteilung tippst du direkt auf „Erledigt“, „Morgen früh“ oder „Verwerfen“.\nWas länger als einen Tag wartet oder immer wieder verschoben wird, ist markiert. So fällt auf, was ständig liegen bleibt.",
+      "shot": "04-schedule"
+    }
+  ],
+  "steps": {
+    "title": "In drei Schritten loslegen",
+    "items": [
+      {
+        "title": "Aufschreiben",
+        "text": "Ein paar Worte in der App, im Sperrbildschirm-Widget oder über Siri, was gerade am nächsten ist."
+      },
+      {
+        "title": "Mitteilungen erlauben",
+        "text": "Die App fragt einmal, wenn du zum ersten Mal etwas notierst. Darüber kommen die Abenderinnerung und deine gewählten Zeiten."
+      },
+      {
+        "title": "Abends abschließen",
+        "text": "Tippe auf die Erinnerung oder auf „Jetzt abschließen“ und gib jedem Punkt ein Ende."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Direkt in der Liste",
+    "rows": [
+      [
+        "Auf einen Punkt tippen",
+        "„Erledigt“, „Zeit wählen“ oder „Verwerfen“ wählen"
+      ],
+      [
+        "Nach rechts streichen",
+        "Erledigt (verschwindet aus der Liste)"
+      ],
+      [
+        "Nach links streichen",
+        "Verwerfen, oder mit „Planen“ eine Zeit wählen"
+      ],
+      [
+        "Jetzt abschließen",
+        "das Übrige Punkt für Punkt durchgehen"
+      ],
+      [
+        "In Externalize merken",
+        "zu Siri sagen, ohne die App zu öffnen"
+      ],
+      [
+        "Einstellungen ▸ Abenderinnerung",
+        "Uhrzeit ändern oder ausschalten"
+      ]
+    ],
+    "note": "Beim Planen heißt „Heute Abend“ 19 Uhr, „Morgen früh“ 9 Uhr, „Dieses Wochenende“ Samstag 10 Uhr und „Nächste Woche“ Montag 9 Uhr. Du kannst auch selbst Datum und Uhrzeit wählen."
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "items": [
+      {
+        "q": "Kann ich etwas notieren, ohne die App zu öffnen?",
+        "a": "Ja. Sag zu Siri `In Externalize merken`, Siri fragt nach, was du notieren willst, und speichert es. Leg den Kurzbefehl „Notieren“ in den Einstellungen auf die Aktionstaste, dann reicht ein Druck."
+      },
+      {
+        "q": "Wie füge ich das Sperrbildschirm-Widget hinzu?",
+        "a": "Halte den Sperrbildschirm gedrückt, tippe auf „Anpassen“ und wähle den Sperrbildschirm, tippe auf den Widget-Bereich und füge Externalize hinzu. Ein Tipp öffnet eine leere Zeile, und du siehst, wie viele Punkte noch offen sind. Für den Home-Bildschirm gibt es ein kleines Widget."
+      },
+      {
+        "q": "Kann ich die Abenderinnerung ändern oder ausschalten?",
+        "a": "Tippe oben rechts auf das Zahnrad ▸ Abenderinnerung, um die Uhrzeit zu ändern oder sie auszuschalten. Standard ist 21 Uhr, und an Tagen ohne offene Punkte bleibt sie still."
+      },
+      {
+        "q": "Ich bekomme keine Mitteilungen.",
+        "a": "Wenn die Einstellungen von Externalize melden, dass Mitteilungen aus sind, tippe dort auf die Taste und schalte sie in den iPhone-Einstellungen ein. An Tagen ohne offene Punkte kommt keine Abenderinnerung, das ist normal."
+      },
+      {
+        "q": "Wie kommt ein geplanter Punkt zurück?",
+        "a": "Zur gewählten Zeit kommt eine Mitteilung. Halte sie gedrückt, um direkt „Erledigt“, „Morgen früh“ oder „Verwerfen“ zu wählen. Tust du nichts, landet er wieder unter „Im Kopf“ und du entscheidest beim nächsten Abschluss."
+      },
+      {
+        "q": "Kann ich etwas zurückholen, das ich erledigt oder verworfen habe?",
+        "a": "Nein. Abgeschlossene Punkte verschwinden aus der Liste, ein Archiv gibt es nicht. Wenn du unsicher bist, wähle lieber eine Zeit, statt zu verwerfen."
+      },
+      {
+        "q": "Nehme ich meine Punkte auf ein neues iPhone mit?",
+        "a": "Nein. Alles bleibt auf diesem Gerät und wird weder an iCloud noch an einen Server geschickt. Löschst du die App, ist es mit weg."
+      },
+      {
+        "q": "Auf welchen Geräten läuft die App?",
+        "a": "Auf dem iPhone ab iOS 17."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Raus aus dem Kopf,\nnoch heute",
+    "cta": "Gratis im App Store laden"
+  },
+  "ui": {
+    "skip": "Zum Inhalt springen",
+    "languages": "Sprache",
+    "privacy": "Datenschutzerklärung",
+    "contact": "Fragen oder einen Fehler gefunden? Schreib an {email}. Mit iPhone-Modell und iOS-Version können wir schneller nachsehen."
+  }
+}

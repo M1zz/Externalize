@@ -1,93 +1,174 @@
 <!doctype html>
 <html lang="pl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Externalize — Notatki, które same się zapominają</title>
-<meta name="description" content="Externalize przechowuje to, czego potrzebujesz tylko przez kilka godzin, na przykład gdzie zaparkowałeś albo kod do szafki, a potem sam to usuwa.">
-<link rel="canonical" href="https://m1zz.github.io/Externalize/pl/">
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/Externalize/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/Externalize/en/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/Externalize/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/Externalize/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/Externalize/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/Externalize/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/Externalize/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/Externalize/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/Externalize/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/Externalize/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/Externalize/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/Externalize/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/Externalize/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/Externalize/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/Externalize/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/Externalize/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/Externalize/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/Externalize/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/Externalize/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/Externalize/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/Externalize/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/Externalize/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/Externalize/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/Externalize/">
-<link rel="icon" href="../icon.png">
-<link rel="apple-touch-icon" href="../icon.png">
-<link rel="stylesheet" href="../style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Externalize: zapisz teraz, załatw wieczorem</title>
+  <meta name="description" content="Co przyjdzie ci do głowy, zapisz kilkoma słowami i odpuść. Wieczorem każda sprawa dostaje zakończenie: zrób, wyznacz czas albo odpuść.">
+  <meta name="theme-color" content="#5B5BF0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6813393019">
+  <link rel="canonical" href="https://m1zz.github.io/Externalize/pl/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/Externalize/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/Externalize/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/Externalize/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/Externalize/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/Externalize/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/Externalize/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/Externalize/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/Externalize/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/Externalize/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/Externalize/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/Externalize/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/Externalize/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/Externalize/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/Externalize/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/Externalize/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/Externalize/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/Externalize/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/Externalize/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/Externalize/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/Externalize/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/Externalize/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/Externalize/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/Externalize/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/Externalize/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Externalize: zapisz teraz, załatw wieczorem">
+  <meta property="og:description" content="Co przyjdzie ci do głowy, zapisz kilkoma słowami i odpuść. Wieczorem każda sprawa dostaje zakończenie: zrób, wyznacz czas albo odpuść.">
+  <meta property="og:url" content="https://m1zz.github.io/Externalize/pl/">
+  <meta property="og:image" content="https://m1zz.github.io/Externalize/img/pl/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#5B5BF0}@media (prefers-color-scheme:dark){:root{--accent:#7E86FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<main>
-  <header>
-    <img src="../icon.png" alt="">
-    <div>
-      <h1>Externalize</h1>
-      <p>Zaparkuj. Zapisz. Zapomnij.</p>
-    </div>
+  <a class="skip" href="#main">Przejdź do treści</a>
+  <header class="bar">
+    <a class="brand" href="../pl/"><img src="../icon.png" alt="" width="32" height="32">Externalize</a>
+    <a class="lang-link" href="#languages">Język</a>
   </header>
 
-  <nav class="lang" aria-label="Język">
-    <a href="../index.html" hreflang="ko" lang="ko">한국어</a>
-    <a href="../en/index.html" hreflang="en" lang="en">English</a>
-    <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-    <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-    <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-    <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-    <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-    <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-    <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-    <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-    <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-    <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-    <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-    <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-    <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-    <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-    <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-    <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-    <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-    <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-    <a href="../pl/index.html" hreflang="pl" lang="pl" aria-current="true">Polski</a>
-    <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-    <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-  </nav>
-  <nav aria-label="Strony">
-    <a href="index.html" aria-current="page">O aplikacji</a>
-    <a href="support.html">Pomoc</a>
-    <a href="privacy.html">Polityka prywatności</a>
-  </nav>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Zapisz teraz.<br>Załatw wieczorem.</h1>
+        <p class="lead">„A, no tak, muszę…” Wyrzuć to z głowy kilkoma słowami i przestań o tym myśleć. Wieczorem załatw to, co zostało, po kolei.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6813393019">Pobierz za darmo z App Store</a><a class="try" href="#try">Wypróbuj tutaj ↓</a></div>
+        <p class="muted small">Wszystkie funkcje są bezpłatne. Bez konta i logowania.</p>
+      </div>
+      <div class="phone"><img src="../img/pl/01-main.jpg" alt="Zapisz teraz. Załatw wieczorem." width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <section class="card">
-    <p>Gdzie zaparkowałeś. Kod do szafki. Numer pokoju w hotelu. Externalize przechowuje to, czego potrzebujesz tylko przez kilka godzin,
-    usuwa to, gdy czas minie, a do tego czasu trzyma na ekranie blokady.</p>
-    <div class="shots">
-      <img src="../screenshots/marketing/en/01-list.png" alt="Lista notatek">
-      <img src="../screenshots/marketing/en/02-add.png" alt="Dodawanie notatki">
-      <img src="../screenshots/marketing/en/03-onboarding.png" alt="Ekran powitalny">
-      <img src="../screenshots/marketing/en/04-forget.png" alt="Automatyczne usuwanie">
-    </div>
-    <p class="muted">Masz pytania? Zajrzyj do sekcji <a href="support.html">Pomoc</a>. Jak postępujemy z Twoimi danymi, przeczytasz w <a href="privacy.html">Polityce prywatności</a>.</p>
-  </section>
 
-  <footer>© 2026 Externalize</footer>
-</main>
+    <section class="reveal" id="try">
+      <h2>Wypróbuj tutaj</h2>
+      <p class="muted">Wpisz coś, co chodzi ci po głowie, albo stuknij przykład. Potem naciśnij „Załatw teraz” i daj każdej sprawie zakończenie.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Wypróbuj tutaj&quot;, &quot;lead&quot;: &quot;Wpisz coś, co chodzi ci po głowie, albo stuknij przykład. Potem naciśnij „Załatw teraz” i daj każdej sprawie zakończenie.&quot;, &quot;examples&quot;: [&quot;Zadzwonić do dentysty w sprawie piaskowania&quot;, &quot;Wybrać prezent urodzinowy dla mamy&quot;, &quot;Wymienić filtr w dzbanku&quot;, &quot;Sprawdzić, kiedy wygasa paszport&quot;], &quot;note&quot;: &quot;To demo działa tylko w twojej przeglądarce i niczego nie zapisuje.&quot;, &quot;app&quot;: {&quot;input&quot;: &quot;Co ci chodzi po głowie?&quot;, &quot;settle&quot;: &quot;Załatw teraz ({1})&quot;, &quot;onMind&quot;: &quot;W głowie&quot;, &quot;scheduled&quot;: &quot;Zaplanowane&quot;, &quot;footer&quot;: &quot;Każda sprawa potrzebuje zakończenia: zrób ją, wyznacz czas albo odpuść.&quot;, &quot;of&quot;: &quot;{1} z {2}&quot;, &quot;doNow&quot;: &quot;Zrób teraz&quot;, &quot;doNowSub&quot;: &quot;Jeśli zajmie dwie minuty, zrób to od razu&quot;, &quot;pick&quot;: &quot;Wyznacz czas&quot;, &quot;drop&quot;: &quot;Odpuść — nie trzeba tego robić&quot;, &quot;goDo&quot;: &quot;Zrób to i wróć, gdy będzie gotowe.&quot;, &quot;done&quot;: &quot;Zrobione&quot;, &quot;notNow&quot;: &quot;Nie teraz — wróć do wyboru&quot;, &quot;clear&quot;: &quot;Masz czystą głowę&quot;, &quot;settled&quot;: &quot;Załatwiono {1} sprawy. Nic już nie wisi.&quot;, &quot;close&quot;: &quot;Zamknij&quot;, &quot;when&quot;: &quot;Kiedy to zrobisz?&quot;, &quot;cancel&quot;: &quot;Anuluj&quot;, &quot;write&quot;: &quot;Zapisz&quot;, &quot;name&quot;: &quot;Externalize&quot;, &quot;stale&quot;: &quot;Czeka ponad dobę&quot;, &quot;empty&quot;: &quot;Gdy coś przyjdzie ci do głowy, zapisz to poniżej i zapomnij.\nCo z tym zrobić, zdecydujesz wieczorem.&quot;, &quot;o1&quot;: &quot;Za godzinę&quot;, &quot;o2&quot;: &quot;Dziś wieczorem&quot;, &quot;o3&quot;: &quot;Jutro rano&quot;, &quot;o4&quot;: &quot;W ten weekend&quot;, &quot;o5&quot;: &quot;W przyszłym tygodniu&quot;}}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Nawet drobiazgi zajmują miejsce w głowie</h2>
+      <p>Pod prysznicem, na czerwonym świetle, tuż przed zaśnięciem: „Muszę to zrobić”. Nie masz gdzie zapisać, więc trzymasz to w pamięci, a to, czym się zajmujesz, na tym cierpi. Aplikacje do zadań każą najpierw założyć listę i ustawić termin, więc samo zapisanie staje się zadaniem.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Trzy sekundy i z głowy</h2>
+        <p>Otwórz aplikację i pisz w wierszu na dole. Bez list, folderów i terminów.<br>Stuknij widżet na ekranie blokady, a aplikacja otworzy się z pustym wierszem. Powiedz Siri <code>Zapamiętaj w Externalize</code> albo przypisz to do przycisku czynności, a zapisze się bez otwierania aplikacji.</p>
+      </div>
+      <div class="phone"><img src="../img/pl/02-typing.jpg" alt="Trzy sekundy i z głowy" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Wieczorem po kolei</h2>
+        <p>Jeśli coś zostało, dostaniesz jedno przypomnienie o 21:00. Jeśli nic, nic nie przyjdzie.<br>Po rozpoczęciu sprawy pojawiają się pojedynczo, dużym tekstem. Wybierz „Zrób teraz”, „Wyznacz czas” albo „Odpuść” i pojawia się następna. Jeśli to dwie minuty, włącz minutnik i zrób to od razu.</p>
+      </div>
+      <div class="phone"><img src="../img/pl/03-review.jpg" alt="Wieczorem po kolei" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Nic nie zalega</h2>
+        <p>Wybierz „Za godzinę”, „Dziś wieczorem”, „Jutro rano”, „W ten weekend” albo „W przyszłym tygodniu”, a sprawa wróci wtedy. W powiadomieniu od razu stukniesz „Zrobione”, „Jutro rano” albo „Odpuść”.<br>To, co czeka ponad dobę, i to, co ciągle odkładasz, jest oznaczone, więc widać, co ci wciąż umyka.</p>
+      </div>
+      <div class="phone"><img src="../img/pl/04-schedule.jpg" alt="Nic nie zalega" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Zacznij w trzech krokach</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Zapisz</h3><p>Kilka słów w aplikacji, w widżecie na ekranie blokady albo przez Siri, co masz pod ręką.</p></li>
+<li class="card"><span class="n">2</span><h3>Zezwól na powiadomienia</h3><p>Aplikacja zapyta raz, przy pierwszym zapisie. Służą do wieczornego przypomnienia i wyznaczonych godzin.</p></li>
+<li class="card"><span class="n">3</span><h3>Załatw wieczorem</h3><p>Stuknij przypomnienie albo „Załatw teraz” i daj każdej sprawie zakończenie.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Prosto z listy</h2>
+      <div class="card table">
+        <dl><div><dt>Stuknij sprawę</dt><dd>wybierz „Zrobione”, „Wyznacz czas” albo „Odpuść”</dd></div><div><dt>Przesuń w prawo</dt><dd>Zrobione (znika z listy)</dd></div><div><dt>Przesuń w lewo</dt><dd>Odpuść albo „Odłóż”, żeby wyznaczyć czas</dd></div><div><dt>Załatw teraz</dt><dd>przejdź po kolei przez to, co zostało</dd></div><div><dt>Zapamiętaj w Externalize</dt><dd>powiedz Siri bez otwierania aplikacji</dd></div><div><dt>Ustawienia ▸ Wieczorne przypomnienie</dt><dd>zmień godzinę albo wyłącz</dd></div></dl>
+      </div>
+      <p class="muted">Przy wyznaczaniu czasu „Dziś wieczorem” to 19:00, „Jutro rano” 9:00, „W ten weekend” sobota 10:00, a „W przyszłym tygodniu” poniedziałek 9:00. Możesz też wybrać dowolną datę i godzinę.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Częste pytania</h2>
+      <div class="faq"><details><summary>Czy mogę coś zapisać bez otwierania aplikacji?</summary><p>Tak. Powiedz Siri <code>Zapamiętaj w Externalize</code>, a zapyta, co zapisać, i to zachowa. Przypisz skrót „Zapisz” do przycisku czynności w Ustawieniach i wystarczy jedno naciśnięcie.</p></details>
+<details><summary>Jak dodać widżet na ekran blokady?</summary><p>Dotknij i przytrzymaj ekran blokady, stuknij Dostosuj i wybierz ekran blokady, stuknij obszar widżetów i dodaj Externalize. Stuknięcie otwiera pusty wiersz, a widżet pokazuje, ile spraw zostało. Na ekran początkowy jest też mały widżet.</p></details>
+<details><summary>Czy mogę zmienić lub wyłączyć wieczorne przypomnienie?</summary><p>Stuknij koło zębate w prawym górnym rogu ▸ Wieczorne przypomnienie, żeby zmienić godzinę albo je wyłączyć. Domyślnie to 21:00, a w dni, gdy nic nie zostało, milczy.</p></details>
+<details><summary>Nie dostaję powiadomień.</summary><p>Jeśli ustawienia Externalize pokazują, że powiadomienia są wyłączone, stuknij tam przycisk i włącz je w Ustawieniach iPhone’a. W dni, gdy nic nie zostało, wieczorne przypomnienie nie przychodzi i to normalne.</p></details>
+<details><summary>Jak wraca sprawa z wyznaczonym czasem?</summary><p>O wybranej porze przychodzi powiadomienie. Przytrzymaj je, żeby od razu wybrać „Zrobione”, „Jutro rano” albo „Odpuść”. Jeśli nic nie zrobisz, wróci do „W głowie” i załatwisz ją następnym razem.</p></details>
+<details><summary>Czy da się przywrócić sprawę oznaczoną jako zrobiona lub odpuszczoną?</summary><p>Nie. Załatwione sprawy znikają z listy i nie ma archiwum. Jeśli nie masz pewności, lepiej wyznacz czas, niż odpuszczać.</p></details>
+<details><summary>Czy zapiski przejdą na nowego iPhone’a?</summary><p>Nie. Wszystko zostaje tylko na tym urządzeniu i nigdy nie trafia do iCloud ani na serwer. Usunięcie aplikacji usuwa też zapiski.</p></details>
+<details><summary>Na jakich urządzeniach działa?</summary><p>Na iPhonie z iOS 17 lub nowszym.</p></details></div>
+      <p class="contact">Pytanie albo błąd? Napisz na <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>. Podaj model iPhone’a i wersję iOS, a sprawdzimy to szybciej.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>To, co dziś przyszło do głowy,<br>wyrzuć z niej</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6813393019">Pobierz za darmo z App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Język"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl" aria-current="page">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Polityka prywatności</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 Externalize</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

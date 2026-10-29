@@ -1,0 +1,165 @@
+{
+  "title": "Externalize: kirjaa nyt, päätä illalla",
+  "description": "Mieleen pulpahtava asia kirjataan parilla sanalla ja unohdetaan. Illalla jokainen saa päätöksen: tee heti, valitse aika tai hylkää. Kaikki maksutta.",
+  "hero": {
+    "headline": "Kirjaa nyt.\nPäätä illalla.",
+    "lead": "”Ai niin, minun pitää vielä…” Saa se pois päästä parilla sanalla ja päästä irti. Illalla hoidat jäljelle jääneet, yksi kerrallaan.",
+    "cta": "Lataa maksutta App Storesta",
+    "note": "Kaikki ominaisuudet ovat maksuttomia. Ei tiliä, ei kirjautumista."
+  },
+  "demo": {
+    "title": "Kokeile tässä",
+    "lead": "Kirjoita jotain, mikä pyörii mielessä, tai napauta esimerkkiä. Paina sitten ”Päätä nyt” ja anna jokaiselle asialle päätös.",
+    "examples": [
+      "Soita hammaslääkärille ja varaa hammaskiven poisto",
+      "Valitse äidille syntymäpäivälahja",
+      "Vaihda liesituulettimen suodatin",
+      "Tarkista, milloin passi vanhenee"
+    ],
+    "note": "Kokeilu toimii vain selaimessasi eikä tallenna mitään.",
+    "app": {
+      "input": "Mitä mielessä on?",
+      "settle": "Päätä nyt ({1})",
+      "onMind": "Mielessä",
+      "scheduled": "Ajastetut",
+      "footer": "Jokainen asia tarvitsee lopun: tee se, ajasta se tai hylkää se.",
+      "of": "{1} / {2}",
+      "doNow": "Tee heti",
+      "doNowSub": "Jos se kestää kaksi minuuttia, tee se heti",
+      "pick": "Valitse aika",
+      "drop": "Hylkää – ei tarvitse tehdä",
+      "goDo": "Mene tekemään se. Palaa, kun se on valmis.",
+      "done": "Valmis",
+      "notNow": "Ei nyt – takaisin valintoihin",
+      "clear": "Mieli on kevyt",
+      "settled": "Päätit {1} asiaa. Mikään ei jää roikkumaan.",
+      "close": "Sulje",
+      "when": "Milloin teet sen?",
+      "cancel": "Peruuta",
+      "write": "Kirjaa ylös",
+      "name": "Externalize",
+      "stale": "Odottanut yli vuorokauden",
+      "empty": "Kun jokin pälkähtää päähän, kirjoita se alle ja unohda.\nIllalla päätät, mitä sille tehdään.",
+      "o1": "Tunnin päästä",
+      "o2": "Tänä iltana",
+      "o3": "Huomenna aamulla",
+      "o4": "Tänä viikonloppuna",
+      "o5": "Ensi viikolla"
+    }
+  },
+  "problem": {
+    "title": "Pienetkin asiat vievät tilaa päästä",
+    "text": "Suihkussa, punaisissa valoissa, juuri ennen nukahtamista: ”Tuo pitää vielä hoitaa.” Kirjoituspaikkaa ei ole, joten pidät asian mielessä, ja meneillään oleva tekeminen kärsii. Tehtäväsovellukset vaativat ensin listan ja määräajan, joten jo kirjaamisesta tulee tehtävä."
+  },
+  "features": [
+    {
+      "title": "Kolme sekuntia, sitten irti",
+      "text": "Avaa sovellus ja kirjoita näytön alareunan riville. Ei listoja, kansioita eikä määräaikoja.\nNapauta lukitusnäytön widgetiä, niin sovellus avautuu tyhjälle riville. Sano Sirille `Muista Externalize-sovelluksessa` tai aseta se Toimintopainikkeeseen, niin asia tallentuu avaamatta sovellusta.",
+      "shot": "02-typing"
+    },
+    {
+      "title": "Illalla yksi kerrallaan",
+      "text": "Jos jotain on jäljellä, saat yhden muistutuksen klo 21.00. Jos kaikki on hoidettu, mitään ei tule.\nKun aloitat, asiat tulevat esiin yksi kerrallaan, isolla. Valitse ”Tee heti”, ”Valitse aika” tai ”Hylkää”, niin seuraava tulee esiin. Jos homma vie kaksi minuuttia, käynnistä ajastin ja hoida se saman tien.",
+      "shot": "03-review"
+    },
+    {
+      "title": "Mikään ei jää lojumaan",
+      "text": "Valitse ”Tunnin päästä”, ”Tänä iltana”, ”Huomenna aamulla”, ”Tänä viikonloppuna” tai ”Ensi viikolla”, niin asia palaa silloin. Ilmoituksesta voit napauttaa suoraan ”Valmis”, ”Huomenna aamulla” tai ”Hylkää”.\nYli vuorokauden odottaneet ja yhä uudelleen siirretyt asiat merkitään, joten näet, mikä lipsuu jatkuvasti.",
+      "shot": "04-schedule"
+    }
+  ],
+  "steps": {
+    "title": "Aloita kolmessa vaiheessa",
+    "items": [
+      {
+        "title": "Kirjaa ylös",
+        "text": "Pari sanaa sovelluksessa, lukitusnäytön widgetissä tai Sirin kautta, mikä on lähimpänä."
+      },
+      {
+        "title": "Salli ilmoitukset",
+        "text": "Sovellus kysyy kerran, kun kirjaat ensimmäisen asian. Niillä tulevat iltamuistutus ja valitsemasi ajat."
+      },
+      {
+        "title": "Päätä illalla",
+        "text": "Napauta muistutusta tai ”Päätä nyt” ja anna jokaiselle asialle päätös."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Suoraan listalta",
+    "rows": [
+      [
+        "Napauta asiaa",
+        "valitse ”Valmis”, ”Valitse aika” tai ”Hylkää”"
+      ],
+      [
+        "Pyyhkäise oikealle",
+        "Valmis (katoaa listalta)"
+      ],
+      [
+        "Pyyhkäise vasemmalle",
+        "Hylkää, tai ”Ajasta” ja valitse aika"
+      ],
+      [
+        "Päätä nyt",
+        "käy jäljellä olevat läpi yksi kerrallaan"
+      ],
+      [
+        "Muista Externalize-sovelluksessa",
+        "sano Sirille avaamatta sovellusta"
+      ],
+      [
+        "Asetukset ▸ Iltamuistutus",
+        "vaihda aika tai laita pois"
+      ]
+    ],
+    "note": "Aikaa valitessa ”Tänä iltana” tarkoittaa klo 19.00, ”Huomenna aamulla” klo 9.00, ”Tänä viikonloppuna” lauantaita klo 10.00 ja ”Ensi viikolla” maanantaita klo 9.00. Voit myös valita minkä tahansa päivän ja kellonajan itse."
+  },
+  "faq": {
+    "title": "Usein kysyttyä",
+    "items": [
+      {
+        "q": "Voiko asian kirjata avaamatta sovellusta?",
+        "a": "Voi. Sano Sirille `Muista Externalize-sovelluksessa`, niin Siri kysyy, mitä kirjataan, ja tallentaa sen. Määritä Asetuksissa ”Kirjaa ylös” -pikakomento Toimintopainikkeeseen, niin yksi painallus riittää."
+      },
+      {
+        "q": "Miten lisään widgetin lukitusnäyttöön?",
+        "a": "Pidä sormea lukitusnäytöllä, napauta Muokkaa ja valitse lukitusnäyttö, napauta widget-aluetta ja lisää Externalize. Napautus avaa tyhjän rivin, ja widget näyttää, montako asiaa on jäljellä. Koti-valikkoon on myös pieni widget."
+      },
+      {
+        "q": "Voiko iltamuistutuksen ajan vaihtaa tai sen laittaa pois?",
+        "a": "Napauta oikean yläkulman ratasta ▸ Iltamuistutus vaihtaaksesi ajan tai laittaaksesi sen pois. Oletus on klo 21.00, eikä muistutusta tule päivinä, jolloin mitään ei ole jäljellä."
+      },
+      {
+        "q": "En saa ilmoituksia.",
+        "a": "Jos Externalizen asetuksissa lukee, että ilmoitukset ovat pois päältä, napauta siellä olevaa painiketta ja laita ne päälle iPhonen asetuksista. Päivinä, jolloin mitään ei ole jäljellä, iltamuistutusta ei tule, ja se on normaalia."
+      },
+      {
+        "q": "Miten ajastettu asia palaa?",
+        "a": "Valitsemanasi aikana tulee ilmoitus. Pidä sitä painettuna ja valitse heti ”Valmis”, ”Huomenna aamulla” tai ”Hylkää”. Jos et tee mitään, asia palaa kohtaan ”Mielessä” ja päätät siitä seuraavalla kerralla."
+      },
+      {
+        "q": "Saako valmiiksi merkityn tai hylätyn asian takaisin?",
+        "a": "Ei. Päätetyt asiat poistuvat listalta, eikä arkistoa ole. Jos et ole varma, valitse mieluummin aika kuin hylkää."
+      },
+      {
+        "q": "Siirtyvätkö kirjaukset uuteen iPhoneen?",
+        "a": "Eivät. Kaikki pysyy tässä laitteessa eikä koskaan lähde iCloudiin tai palvelimelle. Kun poistat sovelluksen, kirjauksetkin poistuvat."
+      },
+      {
+        "q": "Millä laitteilla sovellus toimii?",
+        "a": "iPhonella, jossa on iOS 17 tai uudempi."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Tänään mieleen tulleet asiat\npois päästä",
+    "cta": "Lataa maksutta App Storesta"
+  },
+  "ui": {
+    "skip": "Siirry sisältöön",
+    "languages": "Kieli",
+    "privacy": "Tietosuojakäytäntö",
+    "contact": "Kysyttävää tai löysitkö virheen? Kirjoita osoitteeseen {email}. Kerro mielellään iPhonen malli ja iOS-versio, niin pääsemme asiaan nopeammin."
+  }
+}

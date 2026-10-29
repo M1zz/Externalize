@@ -1,0 +1,165 @@
+{
+  "title": "Externalize: scrivilo ora, chiudilo stasera",
+  "description": "Quello che ti viene in mente lo scrivi in poche parole e lo lasci andare. La sera ogni cosa trova una fine: farla, programmarla o lasciar perdere.",
+  "hero": {
+    "headline": "Scrivilo ora.\nChiudilo stasera.",
+    "lead": "«Ah già, devo…» Toglitelo dalla testa in poche parole e non pensarci più. La sera chiudi quello che resta, una cosa alla volta.",
+    "cta": "Scarica gratis su App Store",
+    "note": "Tutte le funzioni sono gratuite. Niente account, niente accesso."
+  },
+  "demo": {
+    "title": "Provalo qui",
+    "lead": "Scrivi qualcosa che hai in mente o tocca un esempio. Poi premi «Chiudile ora» e dai una fine a ogni cosa.",
+    "examples": [
+      "Chiamare il dentista per la pulizia",
+      "Scegliere il regalo di compleanno per la mamma",
+      "Cambiare il filtro della caraffa",
+      "Controllare quando scade il passaporto"
+    ],
+    "note": "Questa demo funziona solo nel tuo browser e non salva nulla.",
+    "app": {
+      "input": "Cosa ti passa per la testa?",
+      "settle": "Chiudile ora ({1})",
+      "onMind": "In mente",
+      "scheduled": "Programmato",
+      "footer": "Ognuna ha bisogno di una conclusione: farla, programmarla o lasciarla perdere.",
+      "of": "{1} di {2}",
+      "doNow": "Fallo ora",
+      "doNowSub": "Se bastano due minuti, fallo subito",
+      "pick": "Scegli l’orario",
+      "drop": "Lascia perdere – non serve farlo",
+      "goDo": "Fallo adesso. Torna quando hai finito.",
+      "done": "Fatto",
+      "notNow": "Non ora – torna alle scelte",
+      "clear": "Hai la testa libera",
+      "settled": "Hai chiuso {1} cose. Niente resta in sospeso.",
+      "close": "Chiudi",
+      "when": "Quando lo farai?",
+      "cancel": "Annulla",
+      "write": "Scrivi",
+      "name": "Externalize",
+      "stale": "In sospeso da più di un giorno",
+      "empty": "Quando ti viene in mente qualcosa, scrivilo qui sotto e lascia andare.\nStasera deciderai cosa farne.",
+      "o1": "Tra un’ora",
+      "o2": "Questa sera",
+      "o3": "Domani mattina",
+      "o4": "Questo weekend",
+      "o5": "Settimana prossima"
+    }
+  },
+  "problem": {
+    "title": "Anche le piccole cose occupano spazio in testa",
+    "text": "Sotto la doccia, al semaforo, appena prima di addormentarti: «Devo fare quella cosa». Non hai dove scriverla, così la tieni a mente, e quello che stai facendo ne risente. Le app per le attività vogliono prima una lista e una scadenza, e persino scriverla diventa un impegno."
+  },
+  "features": [
+    {
+      "title": "Tre secondi, poi lasci andare",
+      "text": "Apri l’app e scrivi nella riga in basso. Niente liste, cartelle o scadenze da scegliere.\nTocca il widget della schermata di blocco e si apre su una riga vuota. Di’ a Siri `Ricorda in Externalize` o assegnalo al tasto Azione, e viene salvato senza aprire l’app.",
+      "shot": "02-typing"
+    },
+    {
+      "title": "La sera, una cosa alla volta",
+      "text": "Se resta qualcosa, ricevi un solo promemoria alle 21. Se non resta niente, nessun avviso.\nQuando inizi, le cose compaiono una alla volta, in grande. Scegli «Fallo ora», «Scegli l’orario» o «Lascia perdere» e passi alla successiva. Se bastano due minuti, avvia il timer e fallo subito.",
+      "shot": "03-review"
+    },
+    {
+      "title": "Niente resta a marcire",
+      "text": "Scegli «Tra un’ora», «Questa sera», «Domani mattina», «Questo weekend» o «Settimana prossima» e tornerà in quel momento. Dalla notifica puoi segnarla «Fatto», spostarla a «Domani mattina» o «Lascia perdere».\nQuello che aspetta da più di un giorno e quello che rimandi di continuo viene segnalato, così vedi subito cosa ti sfugge sempre.",
+      "shot": "04-schedule"
+    }
+  ],
+  "steps": {
+    "title": "Tre passi per iniziare",
+    "items": [
+      {
+        "title": "Scrivilo",
+        "text": "Poche parole nell’app, nel widget della schermata di blocco o con Siri, quello che hai più vicino."
+      },
+      {
+        "title": "Consenti le notifiche",
+        "text": "Te lo chiede una volta, la prima volta che scrivi qualcosa. Servono per il promemoria serale e per gli orari che scegli."
+      },
+      {
+        "title": "Chiudi la sera",
+        "text": "Tocca il promemoria o «Chiudile ora» e dai una fine a ogni cosa."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Direttamente dalla lista",
+    "rows": [
+      [
+        "Tocca una voce",
+        "scegli «Fatto», «Scegli l’orario» o «Lascia perdere»"
+      ],
+      [
+        "Scorri a destra",
+        "Fatto (esce dalla lista)"
+      ],
+      [
+        "Scorri a sinistra",
+        "Lascia perdere, oppure «Programma» per scegliere l’orario"
+      ],
+      [
+        "Chiudile ora",
+        "passa in rassegna ciò che resta, una alla volta"
+      ],
+      [
+        "Ricorda in Externalize",
+        "dillo a Siri senza aprire l’app"
+      ],
+      [
+        "Impostazioni ▸ Promemoria serale",
+        "cambia l’orario o disattivalo"
+      ]
+    ],
+    "note": "Quando programmi, «Questa sera» vuol dire alle 19, «Domani mattina» alle 9, «Questo weekend» sabato alle 10 e «Settimana prossima» lunedì alle 9. Puoi anche scegliere qualsiasi data e ora."
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      {
+        "q": "Posso scrivere qualcosa senza aprire l’app?",
+        "a": "Sì. Di’ a Siri `Ricorda in Externalize`: ti chiede cosa annotare e lo salva. Assegna la scorciatoia «Scrivi» al tasto Azione in Impostazioni e basta una pressione."
+      },
+      {
+        "q": "Come aggiungo il widget alla schermata di blocco?",
+        "a": "Tieni premuto sulla schermata di blocco, tocca Personalizza e scegli la schermata di blocco, tocca l’area dei widget e aggiungi Externalize. Un tocco apre una riga vuota e il widget mostra quante cose restano. C’è anche un piccolo widget per la schermata Home."
+      },
+      {
+        "q": "Posso cambiare o disattivare il promemoria serale?",
+        "a": "Tocca l’ingranaggio in alto a destra ▸ Promemoria serale per cambiare l’orario o disattivarlo. Di base è alle 21 e non suona nei giorni in cui non resta niente."
+      },
+      {
+        "q": "Non ricevo notifiche.",
+        "a": "Se le impostazioni di Externalize dicono che le notifiche sono disattivate, tocca il pulsante lì per attivarle nelle Impostazioni dell’iPhone. Nei giorni in cui non resta niente il promemoria serale non arriva, ed è normale."
+      },
+      {
+        "q": "Come torna una cosa programmata?",
+        "a": "All’orario scelto arriva una notifica. Tienila premuta per scegliere subito «Fatto», «Domani mattina» o «Lascia perdere». Se non fai nulla, torna in «In mente» e la chiudi la volta dopo."
+      },
+      {
+        "q": "Posso recuperare una voce segnata come fatta o lasciata perdere?",
+        "a": "No. Le voci chiuse escono dalla lista e non c’è un archivio. Se hai dubbi, scegli un orario invece di lasciar perdere."
+      },
+      {
+        "q": "Le mie voci passano su un nuovo iPhone?",
+        "a": "No. Tutto resta su questo dispositivo e non viene mai inviato a iCloud o a un server. Se elimini l’app, si cancella anche il contenuto."
+      },
+      {
+        "q": "Su quali dispositivi funziona?",
+        "a": "Su iPhone con iOS 17 o successivo."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Togliti dalla testa\nquello che hai oggi",
+    "cta": "Scarica gratis su App Store"
+  },
+  "ui": {
+    "skip": "Vai al contenuto",
+    "languages": "Lingua",
+    "privacy": "Informativa sulla privacy",
+    "contact": "Domande o un bug? Scrivi a {email}. Indicare il modello di iPhone e la versione di iOS ci aiuta a controllare prima."
+  }
+}

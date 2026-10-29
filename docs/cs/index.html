@@ -1,93 +1,174 @@
 <!doctype html>
 <html lang="cs">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Externalize — Poznámky, které se samy zapomenou</title>
-<meta name="description" content="Externalize uchová to, co potřebujete jen pár hodin, třeba kde jste zaparkovali nebo kód od skříňky, a pak to samo smaže.">
-<link rel="canonical" href="https://m1zz.github.io/Externalize/cs/">
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/Externalize/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/Externalize/en/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/Externalize/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/Externalize/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/Externalize/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/Externalize/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/Externalize/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/Externalize/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/Externalize/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/Externalize/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/Externalize/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/Externalize/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/Externalize/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/Externalize/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/Externalize/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/Externalize/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/Externalize/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/Externalize/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/Externalize/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/Externalize/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/Externalize/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/Externalize/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/Externalize/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/Externalize/">
-<link rel="icon" href="../icon.png">
-<link rel="apple-touch-icon" href="../icon.png">
-<link rel="stylesheet" href="../style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Externalize: zapiš teď, vyřeš večer</title>
+  <meta name="description" content="Co tě napadne, zapiš pár slovy a pusť z hlavy. Večer dostane každá věc konec: udělat hned, zvolit čas, nebo zahodit. Všechno zdarma.">
+  <meta name="theme-color" content="#5B5BF0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6813393019">
+  <link rel="canonical" href="https://m1zz.github.io/Externalize/cs/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/Externalize/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/Externalize/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/Externalize/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/Externalize/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/Externalize/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/Externalize/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/Externalize/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/Externalize/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/Externalize/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/Externalize/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/Externalize/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/Externalize/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/Externalize/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/Externalize/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/Externalize/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/Externalize/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/Externalize/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/Externalize/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/Externalize/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/Externalize/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/Externalize/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/Externalize/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/Externalize/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/Externalize/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Externalize: zapiš teď, vyřeš večer">
+  <meta property="og:description" content="Co tě napadne, zapiš pár slovy a pusť z hlavy. Večer dostane každá věc konec: udělat hned, zvolit čas, nebo zahodit. Všechno zdarma.">
+  <meta property="og:url" content="https://m1zz.github.io/Externalize/cs/">
+  <meta property="og:image" content="https://m1zz.github.io/Externalize/img/cs/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#5B5BF0}@media (prefers-color-scheme:dark){:root{--accent:#7E86FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<main>
-  <header>
-    <img src="../icon.png" alt="">
-    <div>
-      <h1>Externalize</h1>
-      <p>Zaparkuj. Zapiš. Zapomeň.</p>
-    </div>
+  <a class="skip" href="#main">Přeskočit na obsah</a>
+  <header class="bar">
+    <a class="brand" href="../cs/"><img src="../icon.png" alt="" width="32" height="32">Externalize</a>
+    <a class="lang-link" href="#languages">Jazyk</a>
   </header>
 
-  <nav class="lang" aria-label="Jazyk">
-    <a href="../index.html" hreflang="ko" lang="ko">한국어</a>
-    <a href="../en/index.html" hreflang="en" lang="en">English</a>
-    <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-    <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-    <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-    <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-    <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-    <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-    <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-    <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-    <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-    <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-    <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-    <a href="../cs/index.html" hreflang="cs" lang="cs" aria-current="true">Čeština</a>
-    <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-    <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-    <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-    <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-    <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-    <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-    <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-    <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-    <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-  </nav>
-  <nav aria-label="Stránky">
-    <a href="index.html" aria-current="page">O aplikaci</a>
-    <a href="support.html">Podpora</a>
-    <a href="privacy.html">Zásady ochrany soukromí</a>
-  </nav>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Zapiš to teď.<br>Vyřeš to večer.</h1>
+        <p class="lead">„Jo vlastně, musím…“ Dostaň to z hlavy pár slovy a přestaň na to myslet. Večer vyřešíš, co zbylo, jednu věc po druhé.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6813393019">Stáhnout zdarma v App Storu</a><a class="try" href="#try">Vyzkoušej si to ↓</a></div>
+        <p class="muted small">Všechny funkce jsou zdarma. Bez účtu a přihlašování.</p>
+      </div>
+      <div class="phone"><img src="../img/cs/01-main.jpg" alt="Zapiš to teď. Vyřeš to večer." width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <section class="card">
-    <p>Kde jste zaparkovali. Kód od skříňky. Číslo pokoje v hotelu. Externalize uchová to, co potřebujete jen pár hodin,
-    po uplynutí času to smaže a do té doby to drží na zamčené obrazovce.</p>
-    <div class="shots">
-      <img src="../screenshots/marketing/en/01-list.png" alt="Seznam poznámek">
-      <img src="../screenshots/marketing/en/02-add.png" alt="Přidání poznámky">
-      <img src="../screenshots/marketing/en/03-onboarding.png" alt="Uvítací obrazovka">
-      <img src="../screenshots/marketing/en/04-forget.png" alt="Automatické mazání">
-    </div>
-    <p class="muted">Máte dotaz? Podívejte se na stránku <a href="support.html">Podpora</a>. Jak nakládáme s vašimi daty, zjistíte v <a href="privacy.html">Zásadách ochrany soukromí</a>.</p>
-  </section>
 
-  <footer>© 2026 Externalize</footer>
-</main>
+    <section class="reveal" id="try">
+      <h2>Vyzkoušej si to</h2>
+      <p class="muted">Napiš, co ti leží v hlavě, nebo klepni na příklad. Pak stiskni „Vyřešit teď“ a dej každé věci konec.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Vyzkoušej si to&quot;, &quot;lead&quot;: &quot;Napiš, co ti leží v hlavě, nebo klepni na příklad. Pak stiskni „Vyřešit teď“ a dej každé věci konec.&quot;, &quot;examples&quot;: [&quot;Zavolat zubaři kvůli dentální hygieně&quot;, &quot;Vybrat mámě dárek k narozeninám&quot;, &quot;Vyměnit filtr v konvici na vodu&quot;, &quot;Zjistit, kdy vyprší pas&quot;], &quot;note&quot;: &quot;Ukázka běží jen ve tvém prohlížeči a nic neukládá.&quot;, &quot;app&quot;: {&quot;input&quot;: &quot;Co vám běží hlavou?&quot;, &quot;settle&quot;: &quot;Vyřešit teď ({1})&quot;, &quot;onMind&quot;: &quot;V hlavě&quot;, &quot;scheduled&quot;: &quot;Naplánováno&quot;, &quot;footer&quot;: &quot;Každá věc potřebuje konec: udělat ji, naplánovat ji, nebo zahodit.&quot;, &quot;of&quot;: &quot;{1} z {2}&quot;, &quot;doNow&quot;: &quot;Udělat hned&quot;, &quot;doNowSub&quot;: &quot;Zabere to dvě minuty? Tak to udělejte hned&quot;, &quot;pick&quot;: &quot;Zvolit čas&quot;, &quot;drop&quot;: &quot;Zahodit – dělat to není nutné&quot;, &quot;goDo&quot;: &quot;Jděte to udělat. Vraťte se, až bude hotovo.&quot;, &quot;done&quot;: &quot;Hotovo&quot;, &quot;notNow&quot;: &quot;Teď ne – zpět na výběr&quot;, &quot;clear&quot;: &quot;Máte čistou hlavu&quot;, &quot;settled&quot;: &quot;Vyřízeno: {1} věcí. Nic nezůstalo viset.&quot;, &quot;close&quot;: &quot;Zavřít&quot;, &quot;when&quot;: &quot;Kdy to uděláte?&quot;, &quot;cancel&quot;: &quot;Zrušit&quot;, &quot;write&quot;: &quot;Zapsat&quot;, &quot;name&quot;: &quot;Externalize&quot;, &quot;stale&quot;: &quot;Čeká déle než den&quot;, &quot;empty&quot;: &quot;Když vás něco napadne, zapište to dole a pusťte to z hlavy.\nCo s tím, rozhodnete večer.&quot;, &quot;o1&quot;: &quot;Za hodinu&quot;, &quot;o2&quot;: &quot;Dnes večer&quot;, &quot;o3&quot;: &quot;Zítra ráno&quot;, &quot;o4&quot;: &quot;Tento víkend&quot;, &quot;o5&quot;: &quot;Příští týden&quot;}}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>I drobnosti zabírají v hlavě místo</h2>
+      <p>Ve sprše, na červené, těsně před usnutím: „Tohle musím udělat.“ Nemáš to kam zapsat, tak si to držíš v hlavě, a to, co zrovna děláš, tím trpí. Aplikace na úkoly chtějí nejdřív seznam a termín, takže i zapsat se stává úkolem.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Tři vteřiny a pustit z hlavy</h2>
+        <p>Otevři aplikaci a piš do řádku dole. Žádné seznamy, složky ani termíny.<br>Klepnutím na widget na zamčené obrazovce se otevře prázdný řádek. Řekni Siri <code>Zapamatuj si v Externalize</code> nebo to dej na tlačítko Akce a uloží se to, aniž bys aplikaci otevíral.</p>
+      </div>
+      <div class="phone"><img src="../img/cs/02-typing.jpg" alt="Tři vteřiny a pustit z hlavy" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Večer jednu věc po druhé</h2>
+        <p>Když něco zbývá, přijde jedna připomínka ve 21:00. Když nezbývá nic, ozve se nic.<br>Po spuštění se věci ukazují jedna po druhé, velkým písmem. Zvol „Udělat hned“, „Zvolit čas“ nebo „Zahodit“ a přijde další. Jestli to zabere dvě minuty, spusť časovač a udělej to rovnou.</p>
+      </div>
+      <div class="phone"><img src="../img/cs/03-review.jpg" alt="Večer jednu věc po druhé" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Nic nezůstane hnít</h2>
+        <p>Vyber „Za hodinu“, „Dnes večer“, „Zítra ráno“, „Tento víkend“ nebo „Příští týden“ a věc se vrátí přesně tehdy. V oznámení rovnou klepneš na „Hotovo“, „Zítra ráno“ nebo „Zahodit“.<br>Co čeká déle než den a co pořád odkládáš, je označené, takže hned vidíš, co ti stále uniká.</p>
+      </div>
+      <div class="phone"><img src="../img/cs/04-schedule.jpg" alt="Nic nezůstane hnít" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Začni ve třech krocích</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Zapiš to</h3><p>Pár slov v aplikaci, ve widgetu na zamčené obrazovce nebo přes Siri, co je zrovna po ruce.</p></li>
+<li class="card"><span class="n">2</span><h3>Povol oznámení</h3><p>Aplikace se zeptá jednou, když poprvé něco zapíšeš. Chodí přes ně večerní připomínka a časy, které zvolíš.</p></li>
+<li class="card"><span class="n">3</span><h3>Večer to vyřeš</h3><p>Klepni na připomínku nebo na „Vyřešit teď“ a dej každé věci konec.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Přímo ze seznamu</h2>
+      <div class="card table">
+        <dl><div><dt>Klepnout na položku</dt><dd>vybrat „Hotovo“, „Zvolit čas“ nebo „Zahodit“</dd></div><div><dt>Přejet doprava</dt><dd>Hotovo (zmizí ze seznamu)</dd></div><div><dt>Přejet doleva</dt><dd>Zahodit, nebo „Odložit“ a zvolit čas</dd></div><div><dt>Vyřešit teď</dt><dd>projít, co zbývá, jednu věc po druhé</dd></div><div><dt>Zapamatuj si v Externalize</dt><dd>říct Siri bez otevírání aplikace</dd></div><div><dt>Nastavení ▸ Večerní připomínka</dt><dd>změnit čas nebo vypnout</dd></div></dl>
+      </div>
+      <p class="muted">Při volbě času znamená „Dnes večer“ 19:00, „Zítra ráno“ 9:00, „Tento víkend“ sobotu v 10:00 a „Příští týden“ pondělí v 9:00. Můžeš si také vybrat libovolné datum a čas.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Časté dotazy</h2>
+      <div class="faq"><details><summary>Můžu něco zapsat bez otevření aplikace?</summary><p>Ano. Řekni Siri <code>Zapamatuj si v Externalize</code>, zeptá se, co zapsat, a uloží to. V Nastavení přiřaď zkratku „Zapsat“ tlačítku Akce a stačí jedno stisknutí.</p></details>
+<details><summary>Jak přidám widget na zamčenou obrazovku?</summary><p>Podrž prst na zamčené obrazovce, klepni na Přizpůsobit a vyber zamčenou obrazovku, klepni na oblast widgetů a přidej Externalize. Klepnutím se otevře prázdný řádek a widget ukazuje, kolik věcí zbývá. Na plochu je k dispozici i malý widget.</p></details>
+<details><summary>Jak změnit nebo vypnout večerní připomínku?</summary><p>Klepni na ozubené kolečko vpravo nahoře ▸ Večerní připomínka a změň čas nebo ji vypni. Výchozí čas je 21:00 a ve dnech, kdy nic nezbývá, se neozve.</p></details>
+<details><summary>Nechodí mi oznámení.</summary><p>Pokud nastavení Externalize hlásí, že oznámení jsou vypnutá, klepni tam na tlačítko a zapni je v Nastavení iPhonu. Ve dnech, kdy nic nezbývá, večerní připomínka nechodí, a to je v pořádku.</p></details>
+<details><summary>Jak se vrátí věc s nastaveným časem?</summary><p>Ve zvolený čas přijde oznámení. Podrž ho a rovnou vyber „Hotovo“, „Zítra ráno“ nebo „Zahodit“. Když neuděláš nic, vrátí se do „V hlavě“ a vyřešíš ji příště.</p></details>
+<details><summary>Dá se vrátit věc označená jako hotová nebo zahozená?</summary><p>Ne. Vyřešené věci zmizí ze seznamu a archiv neexistuje. Pokud si nejsi jistý, zvol raději čas než zahodit.</p></details>
+<details><summary>Přenesou se záznamy na nový iPhone?</summary><p>Ne. Všechno zůstává jen v tomto zařízení a nikdy se neposílá do iCloudu ani na server. Když aplikaci smažeš, smažou se i záznamy.</p></details>
+<details><summary>Na jakých zařízeních funguje?</summary><p>Na iPhonu se systémem iOS 17 nebo novějším.</p></details></div>
+      <p class="contact">Dotaz nebo chyba? Napiš na <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>. Když uvedeš model iPhonu a verzi iOS, podíváme se na to rychleji.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Co tě dnes napadlo,<br>dostaň z hlavy</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6813393019">Stáhnout zdarma v App Storu</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Jazyk"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs" aria-current="page">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Zásady ochrany soukromí</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 Externalize</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

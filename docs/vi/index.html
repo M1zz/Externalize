@@ -1,93 +1,174 @@
 <!doctype html>
 <html lang="vi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Externalize — Ghi chú tự quên</title>
-<meta name="description" content="Externalize giữ những thứ bạn chỉ cần trong vài giờ, như chỗ đỗ xe hay mã tủ khóa, rồi tự xóa khi hết thời gian.">
-<link rel="canonical" href="https://m1zz.github.io/Externalize/vi/">
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/Externalize/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/Externalize/en/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/Externalize/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/Externalize/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/Externalize/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/Externalize/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/Externalize/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/Externalize/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/Externalize/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/Externalize/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/Externalize/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/Externalize/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/Externalize/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/Externalize/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/Externalize/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/Externalize/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/Externalize/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/Externalize/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/Externalize/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/Externalize/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/Externalize/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/Externalize/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/Externalize/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/Externalize/">
-<link rel="icon" href="../icon.png">
-<link rel="apple-touch-icon" href="../icon.png">
-<link rel="stylesheet" href="../style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Externalize: nghĩ ra thì ghi, tối nay giải quyết</title>
+  <meta name="description" content="Việc gì chợt nảy ra trong đầu, ghi vài chữ rồi buông. Buổi tối, mỗi việc đều có hồi kết: làm ngay, hẹn giờ hoặc bỏ đi. Mọi tính năng đều miễn phí.">
+  <meta name="theme-color" content="#5B5BF0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6813393019">
+  <link rel="canonical" href="https://m1zz.github.io/Externalize/vi/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/Externalize/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/Externalize/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/Externalize/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/Externalize/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/Externalize/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/Externalize/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/Externalize/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/Externalize/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/Externalize/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/Externalize/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/Externalize/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/Externalize/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/Externalize/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/Externalize/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/Externalize/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/Externalize/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/Externalize/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/Externalize/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/Externalize/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/Externalize/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/Externalize/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/Externalize/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/Externalize/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/Externalize/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Externalize: nghĩ ra thì ghi, tối nay giải quyết">
+  <meta property="og:description" content="Việc gì chợt nảy ra trong đầu, ghi vài chữ rồi buông. Buổi tối, mỗi việc đều có hồi kết: làm ngay, hẹn giờ hoặc bỏ đi. Mọi tính năng đều miễn phí.">
+  <meta property="og:url" content="https://m1zz.github.io/Externalize/vi/">
+  <meta property="og:image" content="https://m1zz.github.io/Externalize/img/vi/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#5B5BF0}@media (prefers-color-scheme:dark){:root{--accent:#7E86FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<main>
-  <header>
-    <img src="../icon.png" alt="">
-    <div>
-      <h1>Externalize</h1>
-      <p>Đỗ xe. Ghi lại. Rồi quên.</p>
-    </div>
+  <a class="skip" href="#main">Chuyển đến nội dung</a>
+  <header class="bar">
+    <a class="brand" href="../vi/"><img src="../icon.png" alt="" width="32" height="32">Externalize</a>
+    <a class="lang-link" href="#languages">Ngôn ngữ</a>
   </header>
 
-  <nav class="lang" aria-label="Ngôn ngữ">
-    <a href="../index.html" hreflang="ko" lang="ko">한국어</a>
-    <a href="../en/index.html" hreflang="en" lang="en">English</a>
-    <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-    <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-    <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-    <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-    <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-    <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-    <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-    <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-    <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-    <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-    <a href="../vi/index.html" hreflang="vi" lang="vi" aria-current="true">Tiếng Việt</a>
-    <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-    <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-    <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-    <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-    <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-    <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-    <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-    <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-    <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-    <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-  </nav>
-  <nav aria-label="Trang">
-    <a href="index.html" aria-current="page">Giới thiệu</a>
-    <a href="support.html">Hỗ trợ</a>
-    <a href="privacy.html">Chính sách quyền riêng tư</a>
-  </nav>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Nghĩ ra thì ghi.<br>Tối nay giải quyết.</h1>
+        <p class="lead">“À đúng rồi, mình phải…” Ghi vài chữ để đưa nó ra khỏi đầu rồi quên đi. Buổi tối, giải quyết từng việc còn lại.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6813393019">Tải miễn phí trên App Store</a><a class="try" href="#try">Thử ngay tại đây ↓</a></div>
+        <p class="muted small">Mọi tính năng đều miễn phí. Không cần tài khoản hay đăng nhập.</p>
+      </div>
+      <div class="phone"><img src="../img/vi/01-main.jpg" alt="Nghĩ ra thì ghi. Tối nay giải quyết." width="720" height="1564" decoding="async"></div>
+    </section>
 
-  <section class="card">
-    <p>Chỗ bạn đỗ xe. Mã tủ khóa. Số phòng khách sạn. Externalize giữ những thứ bạn chỉ cần trong vài giờ,
-    tự xóa khi hết thời gian và hiển thị trên Màn hình khóa cho đến lúc đó.</p>
-    <div class="shots">
-      <img src="../screenshots/marketing/en/01-list.png" alt="Danh sách ghi chú">
-      <img src="../screenshots/marketing/en/02-add.png" alt="Thêm ghi chú">
-      <img src="../screenshots/marketing/en/03-onboarding.png" alt="Màn hình chào mừng">
-      <img src="../screenshots/marketing/en/04-forget.png" alt="Tự động xóa">
-    </div>
-    <p class="muted">Có thắc mắc? Xem trang <a href="support.html">Hỗ trợ</a>. Muốn biết dữ liệu của bạn được xử lý thế nào, hãy đọc <a href="privacy.html">Chính sách quyền riêng tư</a>.</p>
-  </section>
 
-  <footer>© 2026 Externalize</footer>
-</main>
+    <section class="reveal" id="try">
+      <h2>Thử ngay tại đây</h2>
+      <p class="muted">Gõ một việc đang lởn vởn trong đầu, hoặc chạm vào ví dụ. Rồi bấm “Giải quyết ngay” để cho từng việc một hồi kết.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Thử ngay tại đây&quot;, &quot;lead&quot;: &quot;Gõ một việc đang lởn vởn trong đầu, hoặc chạm vào ví dụ. Rồi bấm “Giải quyết ngay” để cho từng việc một hồi kết.&quot;, &quot;examples&quot;: [&quot;Gọi nha sĩ đặt lịch cạo vôi răng&quot;, &quot;Chọn quà sinh nhật cho mẹ&quot;, &quot;Vệ sinh lưới lọc máy lạnh&quot;, &quot;Xem hộ chiếu khi nào hết hạn&quot;], &quot;note&quot;: &quot;Bản thử này chỉ chạy trong trình duyệt của bạn và không lưu gì cả.&quot;, &quot;app&quot;: {&quot;input&quot;: &quot;Bạn đang nghĩ gì?&quot;, &quot;settle&quot;: &quot;Giải quyết ngay ({1})&quot;, &quot;onMind&quot;: &quot;Đang trong đầu&quot;, &quot;scheduled&quot;: &quot;Đã hẹn giờ&quot;, &quot;footer&quot;: &quot;Mỗi việc cần một cái kết: làm ngay, hẹn giờ hoặc bỏ đi.&quot;, &quot;of&quot;: &quot;{1}/{2}&quot;, &quot;doNow&quot;: &quot;Làm ngay&quot;, &quot;doNowSub&quot;: &quot;Nếu chỉ mất hai phút, cứ làm luôn&quot;, &quot;pick&quot;: &quot;Hẹn giờ&quot;, &quot;drop&quot;: &quot;Bỏ đi — không cần làm&quot;, &quot;goDo&quot;: &quot;Đi làm đi. Xong thì quay lại nhé.&quot;, &quot;done&quot;: &quot;Xong&quot;, &quot;notNow&quot;: &quot;Chưa làm được — quay lại&quot;, &quot;clear&quot;: &quot;Đầu óc đã nhẹ&quot;, &quot;settled&quot;: &quot;Bạn đã giải quyết {1} việc. Không còn gì dang dở.&quot;, &quot;close&quot;: &quot;Đóng&quot;, &quot;when&quot;: &quot;Khi nào bạn làm?&quot;, &quot;cancel&quot;: &quot;Hủy&quot;, &quot;write&quot;: &quot;Ghi lại&quot;, &quot;name&quot;: &quot;Externalize&quot;, &quot;stale&quot;: &quot;Tồn hơn một ngày&quot;, &quot;empty&quot;: &quot;Có gì chợt nhớ ra, cứ ghi vào bên dưới rồi buông đi.\nTối nay bạn sẽ quyết định làm gì với nó.&quot;, &quot;o1&quot;: &quot;Sau 1 giờ&quot;, &quot;o2&quot;: &quot;Tối nay&quot;, &quot;o3&quot;: &quot;Sáng mai&quot;, &quot;o4&quot;: &quot;Cuối tuần này&quot;, &quot;o5&quot;: &quot;Tuần sau&quot;}}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Việc nhỏ đến đâu cũng chiếm chỗ trong đầu</h2>
+      <p>Lúc tắm, lúc dừng đèn đỏ, lúc sắp ngủ, bỗng nhớ ra “phải làm việc đó”. Không có chỗ ghi nên bạn cố giữ trong đầu, và việc đang làm cũng mất tập trung. Ứng dụng việc cần làm lại bắt tạo danh sách, đặt hạn chót trước, nên chỉ ghi thôi cũng thành một việc.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Ghi 3 giây rồi quên đi</h2>
+        <p>Mở ứng dụng là gõ ngay vào dòng nhập ở cuối màn hình. Không phải chọn danh sách, thư mục hay hạn chót.<br>Chạm vào tiện ích trên Màn hình khóa, ứng dụng mở ra với một dòng trống. Nói với Siri <code>Ghi nhớ trong Externalize</code> hoặc gán vào nút Tác vụ, là lưu xong mà không cần mở ứng dụng.</p>
+      </div>
+      <div class="phone"><img src="../img/vi/02-typing.jpg" alt="Ghi 3 giây rồi quên đi" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Buổi tối, giải quyết từng việc</h2>
+        <p>Nếu còn việc chưa xong, bạn nhận một lời nhắc lúc 21:00. Xong hết rồi thì không nhắc.<br>Khi bắt đầu, từng việc hiện ra một, chữ to rõ. Chọn “Làm ngay”, “Hẹn giờ” hoặc “Bỏ đi” là sang việc kế tiếp. Việc nào chỉ mất hai phút thì bật hẹn giờ và làm luôn.</p>
+      </div>
+      <div class="phone"><img src="../img/vi/03-review.jpg" alt="Buổi tối, giải quyết từng việc" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Không việc gì bị bỏ quên</h2>
+        <p>Chọn “Sau 1 giờ”, “Tối nay”, “Sáng mai”, “Cuối tuần này” hoặc “Tuần sau”, việc đó sẽ quay lại đúng lúc. Ngay trong thông báo, bạn có thể bấm “Xong”, “Sáng mai” hoặc “Bỏ đi”.<br>Việc chờ quá một ngày và việc bị hoãn nhiều lần đều được đánh dấu, nên dễ thấy việc nào cứ bị đẩy lùi mãi.</p>
+      </div>
+      <div class="phone"><img src="../img/vi/04-schedule.jpg" alt="Không việc gì bị bỏ quên" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Bắt đầu với 3 bước</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Ghi lại</h3><p>Vài chữ trong ứng dụng, trên tiện ích Màn hình khóa hoặc qua Siri, chỗ nào tiện thì dùng.</p></li>
+<li class="card"><span class="n">2</span><h3>Cho phép thông báo</h3><p>Ứng dụng hỏi một lần khi bạn ghi lần đầu. Thông báo dùng cho lời nhắc buổi tối và giờ bạn đã hẹn.</p></li>
+<li class="card"><span class="n">3</span><h3>Giải quyết buổi tối</h3><p>Chạm vào lời nhắc hoặc “Giải quyết ngay” và cho mỗi việc một hồi kết.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Xử lý ngay từ danh sách</h2>
+      <div class="card table">
+        <dl><div><dt>Chạm vào một việc</dt><dd>chọn “Xong”, “Hẹn giờ” hoặc “Bỏ đi”</dd></div><div><dt>Vuốt sang phải</dt><dd>Xong (việc biến khỏi danh sách)</dd></div><div><dt>Vuốt sang trái</dt><dd>Bỏ đi, hoặc “Hẹn lại” để chọn giờ</dd></div><div><dt>Giải quyết ngay</dt><dd>lần lượt xử lý từng việc còn lại</dd></div><div><dt>Ghi nhớ trong Externalize</dt><dd>nói với Siri, không cần mở ứng dụng</dd></div><div><dt>Cài đặt ▸ Nhắc buổi tối</dt><dd>đổi giờ hoặc tắt</dd></div></dl>
+      </div>
+      <p class="muted">Khi hẹn giờ, “Tối nay” là 19:00, “Sáng mai” là 9:00, “Cuối tuần này” là 10:00 thứ Bảy và “Tuần sau” là 9:00 thứ Hai. Bạn cũng có thể tự chọn ngày giờ bất kỳ.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Câu hỏi thường gặp</h2>
+      <div class="faq"><details><summary>Có ghi được mà không mở ứng dụng không?</summary><p>Được. Nói với Siri <code>Ghi nhớ trong Externalize</code>, Siri sẽ hỏi bạn muốn ghi gì rồi lưu luôn. Gán phím tắt “Ghi lại” cho nút Tác vụ trong Cài đặt thì chỉ cần bấm một lần.</p></details>
+<details><summary>Thêm tiện ích vào Màn hình khóa thế nào?</summary><p>Chạm và giữ Màn hình khóa, chạm Tùy chỉnh rồi chọn Màn hình khóa, chạm vào vùng tiện ích và thêm Externalize. Chạm vào tiện ích sẽ mở một dòng trống, và nó cho biết còn bao nhiêu việc. Màn hình chính cũng có tiện ích cỡ nhỏ.</p></details>
+<details><summary>Muốn đổi giờ hoặc tắt nhắc buổi tối?</summary><p>Chạm biểu tượng bánh răng góc trên bên phải ▸ Nhắc buổi tối để đổi giờ hoặc tắt. Mặc định là 21:00, và những ngày không còn việc gì thì không nhắc.</p></details>
+<details><summary>Không nhận được thông báo.</summary><p>Nếu phần cài đặt của Externalize báo thông báo đang tắt, hãy chạm nút ở đó để bật trong Cài đặt của iPhone. Ngày không còn việc gì thì không có nhắc buổi tối, đó là bình thường.</p></details>
+<details><summary>Việc đã hẹn giờ quay lại thế nào?</summary><p>Đến giờ đã chọn bạn sẽ nhận thông báo. Chạm và giữ thông báo để chọn ngay “Xong”, “Sáng mai” hoặc “Bỏ đi”. Nếu không chọn gì, việc đó quay về “Đang trong đầu” và bạn giải quyết ở lần sau.</p></details>
+<details><summary>Việc đã bấm Xong hoặc Bỏ đi có lấy lại được không?</summary><p>Không. Việc đã giải quyết sẽ biến khỏi danh sách và không có kho lưu trữ. Nếu còn phân vân, hãy hẹn giờ thay vì bỏ đi.</p></details>
+<details><summary>Đổi điện thoại thì dữ liệu có chuyển theo không?</summary><p>Không. Mọi thứ chỉ lưu trên thiết bị này, không gửi lên iCloud hay máy chủ. Xóa ứng dụng thì dữ liệu cũng bị xóa.</p></details>
+<details><summary>Dùng được trên thiết bị nào?</summary><p>iPhone chạy iOS 17 trở lên.</p></details></div>
+      <p class="contact">Có câu hỏi hoặc gặp lỗi? Gửi thư đến <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>. Ghi kèm đời iPhone và phiên bản iOS sẽ giúp chúng tôi kiểm tra nhanh hơn.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Việc nghĩ ra hôm nay,<br>đưa ra khỏi đầu đã</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6813393019">Tải miễn phí trên App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Ngôn ngữ"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi" aria-current="page">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Chính sách quyền riêng tư</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 Externalize</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

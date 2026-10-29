@@ -1,0 +1,165 @@
+{
+  "title": "Externalize: anote agora, resolva à noite",
+  "description": "O que vier à cabeça, anote em poucas palavras e deixe para lá. À noite, cada coisa ganha um desfecho: fazer, agendar ou descartar. Tudo grátis.",
+  "hero": {
+    "headline": "Anote agora.\nResolva à noite.",
+    "lead": "“Ah, é mesmo, preciso…” Tire da cabeça em poucas palavras e deixe para lá. À noite, resolva o que sobrou, uma coisa de cada vez.",
+    "cta": "Baixe grátis na App Store",
+    "note": "Todos os recursos são grátis. Sem conta e sem login."
+  },
+  "demo": {
+    "title": "Teste aqui",
+    "lead": "Escreva algo que está na sua cabeça ou toque num exemplo. Depois aperte “Resolver agora” e dê um desfecho para cada coisa.",
+    "examples": [
+      "Ligar para o dentista e marcar limpeza",
+      "Escolher o presente de aniversário da mãe",
+      "Trocar o filtro do purificador",
+      "Ver quando vence o passaporte"
+    ],
+    "note": "Esta demonstração roda só no seu navegador e não salva nada.",
+    "app": {
+      "input": "O que veio à cabeça?",
+      "settle": "Resolver agora ({1})",
+      "onMind": "Na sua cabeça",
+      "scheduled": "Agendado",
+      "footer": "Cada item precisa de um fim: fazer, agendar ou descartar.",
+      "of": "{1} de {2}",
+      "doNow": "Fazer agora",
+      "doNowSub": "Se leva dois minutos, faça logo",
+      "pick": "Escolher horário",
+      "drop": "Descartar: não precisa fazer",
+      "goDo": "Vá fazer. Volte quando terminar.",
+      "done": "Feito",
+      "notNow": "Agora não: voltar às opções",
+      "clear": "Sua cabeça está leve",
+      "settled": "Você resolveu {1} coisas. Nada ficou pendente.",
+      "close": "Fechar",
+      "when": "Quando você vai fazer?",
+      "cancel": "Cancelar",
+      "write": "Anotar",
+      "name": "Externalize",
+      "stale": "Há mais de um dia aqui",
+      "empty": "Quando algo vier à cabeça, anote aqui embaixo e esqueça.\nÀ noite você decide o que fazer com isso.",
+      "o1": "Daqui a 1 hora",
+      "o2": "Hoje à noite",
+      "o3": "Amanhã de manhã",
+      "o4": "Neste fim de semana",
+      "o5": "Semana que vem"
+    }
+  },
+  "problem": {
+    "title": "Até as coisas pequenas ocupam espaço na cabeça",
+    "text": "No banho, no sinal vermelho, logo antes de dormir: “Preciso fazer aquilo.” Não tem onde anotar, então você segura na memória, e o que estava fazendo perde o foco. Os apps de tarefas pedem lista e prazo antes, e até anotar vira mais uma tarefa."
+  },
+  "features": [
+    {
+      "title": "Três segundos e pronto",
+      "text": "Abra o app e digite na linha de baixo. Sem listas, pastas ou prazos para escolher.\nToque no widget da Tela Bloqueada e ele abre numa linha em branco. Diga `Lembre no Externalize` para a Siri ou coloque no botão de Ação, e fica salvo sem abrir o app.",
+      "shot": "02-typing"
+    },
+    {
+      "title": "À noite, uma coisa de cada vez",
+      "text": "Se sobrou algo, você recebe um único aviso às 21h. Se não sobrou nada, nada de aviso.\nAo começar, as coisas aparecem uma por vez, em tamanho grande. Escolha “Fazer agora”, “Escolher horário” ou “Descartar” e vem a próxima. Se leva dois minutos, ligue o timer e resolva na hora.",
+      "shot": "03-review"
+    },
+    {
+      "title": "Nada fica esquecido",
+      "text": "Escolha “Daqui a 1 hora”, “Hoje à noite”, “Amanhã de manhã”, “Neste fim de semana” ou “Semana que vem” e ela volta nessa hora. Na notificação você já marca “Feito”, passa para “Amanhã de manhã” ou escolhe “Descartar”.\nO que espera há mais de um dia e o que você vive adiando fica marcado, e dá para ver o que sempre escapa.",
+      "shot": "04-schedule"
+    }
+  ],
+  "steps": {
+    "title": "Comece em três passos",
+    "items": [
+      {
+        "title": "Anote",
+        "text": "Poucas palavras no app, no widget da Tela Bloqueada ou pela Siri, o que estiver mais à mão."
+      },
+      {
+        "title": "Permita notificações",
+        "text": "O app pergunta uma vez, na primeira anotação. Elas trazem o aviso da noite e os horários que você escolher."
+      },
+      {
+        "title": "Resolva à noite",
+        "text": "Toque no aviso ou em “Resolver agora” e dê um desfecho para cada coisa."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Direto da lista",
+    "rows": [
+      [
+        "Tocar num item",
+        "escolher “Feito”, “Escolher horário” ou “Descartar”"
+      ],
+      [
+        "Deslizar para a direita",
+        "Feito (sai da lista)"
+      ],
+      [
+        "Deslizar para a esquerda",
+        "Descartar, ou “Agendar” para escolher horário"
+      ],
+      [
+        "Resolver agora",
+        "passar pelo que sobrou, um por vez"
+      ],
+      [
+        "Lembre no Externalize",
+        "falar com a Siri sem abrir o app"
+      ],
+      [
+        "Ajustes ▸ Aviso da noite",
+        "mudar o horário ou desligar"
+      ]
+    ],
+    "note": "Ao agendar, “Hoje à noite” é às 19h, “Amanhã de manhã” às 9h, “Neste fim de semana” sábado às 10h e “Semana que vem” segunda às 9h. Você também pode escolher qualquer data e horário."
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "items": [
+      {
+        "q": "Dá para anotar sem abrir o app?",
+        "a": "Dá. Diga `Lembre no Externalize` para a Siri: ela pergunta o que anotar e salva. Atribua o atalho “Anotar” ao botão de Ação em Ajustes e basta um toque."
+      },
+      {
+        "q": "Como adiciono o widget na Tela Bloqueada?",
+        "a": "Toque e segure a Tela Bloqueada, toque em Personalizar e escolha a Tela Bloqueada, toque na área de widgets e adicione o Externalize. Um toque abre uma linha em branco, e ele mostra quantas coisas faltam. Também há um widget pequeno para a Tela de Início."
+      },
+      {
+        "q": "Posso mudar ou desligar o aviso da noite?",
+        "a": "Toque na engrenagem no canto superior direito ▸ Aviso da noite para mudar o horário ou desligar. O padrão é 21h, e ele não toca nos dias em que não sobrou nada."
+      },
+      {
+        "q": "Não recebo notificações.",
+        "a": "Se os ajustes do Externalize disserem que as notificações estão desativadas, toque no botão ali para ativá-las nos Ajustes do iPhone. Nos dias sem nada pendente, não vem aviso da noite, e isso é normal."
+      },
+      {
+        "q": "Como volta uma coisa agendada?",
+        "a": "Chega uma notificação no horário escolhido. Toque e segure para escolher “Feito”, “Amanhã de manhã” ou “Descartar”. Se você não fizer nada, ela volta para “Na sua cabeça” e você resolve na próxima vez."
+      },
+      {
+        "q": "Dá para recuperar algo que marquei como feito ou descartei?",
+        "a": "Não. O que foi resolvido sai da lista e não há arquivo. Se ainda está em dúvida, escolha um horário em vez de descartar."
+      },
+      {
+        "q": "As anotações vão para um iPhone novo?",
+        "a": "Não. Tudo fica neste aparelho e nunca vai para o iCloud nem para um servidor. Se apagar o app, elas são apagadas também."
+      },
+      {
+        "q": "Em quais aparelhos funciona?",
+        "a": "No iPhone com iOS 17 ou mais recente."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Tire da cabeça\no que apareceu hoje",
+    "cta": "Baixe grátis na App Store"
+  },
+  "ui": {
+    "skip": "Pular para o conteúdo",
+    "languages": "Idioma",
+    "privacy": "Política de Privacidade",
+    "contact": "Dúvidas ou algum erro? Escreva para {email}. Informar o modelo do iPhone e a versão do iOS ajuda a gente a verificar mais rápido."
+  }
+}

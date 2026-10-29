@@ -1,0 +1,165 @@
+{
+  "title": "Externalize: skriv det ned nå, avgjør det i kveld",
+  "description": "Det du kommer på, skriver du ned med noen få ord og slipper. Om kvelden får alt en slutt: gjør det, velg tid eller dropp det. Alt er gratis.",
+  "hero": {
+    "headline": "Skriv det ned nå.\nAvgjør det i kveld.",
+    "lead": "«Å ja, jeg må jo …» Få det ut av hodet med noen få ord, og slipp det. Om kvelden tar du det som er igjen, én ting om gangen.",
+    "cta": "Last ned gratis i App Store",
+    "note": "Alle funksjoner er gratis. Ingen konto, ingen innlogging."
+  },
+  "demo": {
+    "title": "Prøv det her",
+    "lead": "Skriv noe du går og tenker på, eller trykk på et eksempel. Trykk så på «Avgjør nå», og gi hver ting en slutt.",
+    "examples": [
+      "Ringe tannlegen og bestille tannrens",
+      "Finne bursdagsgave til mamma",
+      "Bytte filter i kjøkkenviften",
+      "Sjekke når passet går ut"
+    ],
+    "note": "Demoen kjører bare i nettleseren din og lagrer ingenting.",
+    "app": {
+      "input": "Hva tenker du på?",
+      "settle": "Avgjør nå ({1})",
+      "onMind": "I hodet ditt",
+      "scheduled": "Planlagt",
+      "footer": "Alt trenger en avslutning: gjør det, sett en tid eller dropp det.",
+      "of": "{1} av {2}",
+      "doNow": "Gjør det nå",
+      "doNowSub": "Tar det to minutter, gjør det bare",
+      "pick": "Velg tid",
+      "drop": "Dropp det – trenger ikke gjøres",
+      "goDo": "Gjør det nå. Kom tilbake når det er gjort.",
+      "done": "Ferdig",
+      "notNow": "Ikke nå – tilbake til valgene",
+      "clear": "Hodet er ryddet",
+      "settled": "Du avgjorde {1} ting. Ingenting henger igjen.",
+      "close": "Lukk",
+      "when": "Når skal du gjøre det?",
+      "cancel": "Avbryt",
+      "write": "Skriv ned",
+      "name": "Externalize",
+      "stale": "Har ventet over en dag",
+      "empty": "Når noe dukker opp i hodet, skriv det ned her og slipp det.\nI kveld bestemmer du hva du gjør med det.",
+      "o1": "Om én time",
+      "o2": "I kveld",
+      "o3": "I morgen tidlig",
+      "o4": "I helgen",
+      "o5": "Neste uke"
+    }
+  },
+  "problem": {
+    "title": "Selv småting tar plass i hodet",
+    "text": "I dusjen, på rødt lys, rett før du sovner: «Det der må jeg gjøre.» Det er ingen steder å skrive det, så du holder det fast, og det du holder på med, blir lidende. Gjøremålsapper vil ha en liste og en frist først, så selv det å skrive ned blir en oppgave."
+  },
+  "features": [
+    {
+      "title": "Tre sekunder, så slipper du",
+      "text": "Åpne appen, og skriv i linjen nederst. Ingen lister, mapper eller frister.\nTrykk på widgeten på låseskjermen, så åpner appen med en tom linje. Si `Husk i Externalize` til Siri, eller legg det på handlingsknappen, så er det lagret uten at du åpner appen.",
+      "shot": "02-typing"
+    },
+    {
+      "title": "Om kvelden, én ting om gangen",
+      "text": "Er det noe igjen, får du én påminnelse kl. 21.00. Er alt unnagjort, skjer det ingenting.\nNår du begynner, kommer tingene én om gangen, stort og tydelig. Velg «Gjør det nå», «Velg tid» eller «Dropp det», så kommer den neste. Tar det to minutter, start tidtakeren og gjør det med en gang.",
+      "shot": "03-review"
+    },
+    {
+      "title": "Ingenting blir liggende",
+      "text": "Velg «Om én time», «I kveld», «I morgen tidlig», «I helgen» eller «Neste uke», så kommer tingen tilbake da. Fra varselet trykker du rett på «Ferdig», «I morgen tidlig» eller «Dropp det».\nDet som har ventet over et døgn, og det du utsetter gang på gang, blir markert, så du ser hva som stadig glipper.",
+      "shot": "04-schedule"
+    }
+  ],
+  "steps": {
+    "title": "Kom i gang i tre steg",
+    "items": [
+      {
+        "title": "Skriv det ned",
+        "text": "Noen få ord i appen, i widgeten på låseskjermen eller via Siri, det som er nærmest."
+      },
+      {
+        "title": "Tillat varsler",
+        "text": "Appen spør én gang, første gang du skriver noe. De brukes til kveldspåminnelsen og tidene du velger."
+      },
+      {
+        "title": "Avgjør om kvelden",
+        "text": "Trykk på påminnelsen eller «Avgjør nå», og gi hver ting en slutt."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Rett fra listen",
+    "rows": [
+      [
+        "Trykk på en ting",
+        "velg «Ferdig», «Velg tid» eller «Dropp det»"
+      ],
+      [
+        "Sveip til høyre",
+        "Ferdig (forsvinner fra listen)"
+      ],
+      [
+        "Sveip til venstre",
+        "Dropp det, eller «Utsett» for å velge tid"
+      ],
+      [
+        "Avgjør nå",
+        "gå gjennom det som er igjen, én om gangen"
+      ],
+      [
+        "Husk i Externalize",
+        "si det til Siri uten å åpne appen"
+      ],
+      [
+        "Innstillinger ▸ Kveldspåminnelse",
+        "endre tidspunkt eller slå av"
+      ]
+    ],
+    "note": "Når du velger tid, betyr «I kveld» kl. 19.00, «I morgen tidlig» kl. 9.00, «I helgen» lørdag kl. 10.00 og «Neste uke» mandag kl. 9.00. Du kan også velge dato og klokkeslett selv."
+  },
+  "faq": {
+    "title": "Vanlige spørsmål",
+    "items": [
+      {
+        "q": "Kan jeg skrive ned noe uten å åpne appen?",
+        "a": "Ja. Si `Husk i Externalize` til Siri, så spør Siri hva du vil skrive, og lagrer det. Tilordne snarveien «Skriv ned» til handlingsknappen i Innstillinger, så holder det med ett trykk."
+      },
+      {
+        "q": "Hvordan legger jeg til widgeten på låseskjermen?",
+        "a": "Hold fingeren på låseskjermen, trykk på Tilpass og velg låseskjermen, trykk på widgetområdet og legg til Externalize. Ett trykk åpner en tom linje, og widgeten viser hvor mange ting som er igjen. Det finnes også en liten widget for Hjem-skjermen."
+      },
+      {
+        "q": "Kan jeg endre eller slå av kveldspåminnelsen?",
+        "a": "Trykk på tannhjulet øverst til høyre ▸ Kveldspåminnelse for å endre tidspunktet eller slå den av. Den er satt til kl. 21.00 og er stille de dagene ingenting er igjen."
+      },
+      {
+        "q": "Jeg får ingen varsler.",
+        "a": "Hvis innstillingene i Externalize sier at varsler er av, trykker du på knappen der og slår dem på i iPhone-innstillingene. De dagene ingenting er igjen, kommer det ingen kveldspåminnelse, og det er helt normalt."
+      },
+      {
+        "q": "Hvordan kommer en ting med tidspunkt tilbake?",
+        "a": "Du får et varsel på tidspunktet du valgte. Hold fingeren på det for å velge «Ferdig», «I morgen tidlig» eller «Dropp det» med en gang. Gjør du ingenting, havner den i «I hodet ditt» igjen, og du avgjør den neste gang."
+      },
+      {
+        "q": "Kan jeg hente tilbake noe jeg har markert som ferdig eller droppet?",
+        "a": "Nei. Avgjorte ting forsvinner fra listen, og det finnes ikke noe arkiv. Er du usikker, velg heller en tid enn å droppe det."
+      },
+      {
+        "q": "Blir tingene mine med til en ny iPhone?",
+        "a": "Nei. Alt blir på denne enheten og sendes aldri til iCloud eller en server. Sletter du appen, forsvinner det også."
+      },
+      {
+        "q": "Hvilke enheter fungerer den på?",
+        "a": "iPhone med iOS 17 eller nyere."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Det du kom på i dag,\nfå det ut av hodet",
+    "cta": "Last ned gratis i App Store"
+  },
+  "ui": {
+    "skip": "Hopp til innholdet",
+    "languages": "Språk",
+    "privacy": "Personvernerklæring",
+    "contact": "Spørsmål eller en feil? Skriv til {email}. Ta gjerne med iPhone-modell og iOS-versjon, så ser vi raskere på det."
+  }
+}

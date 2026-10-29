@@ -1,0 +1,165 @@
+{
+  "title": "Externalize: catat sekarang, beresin nanti malam",
+  "description": "Apa pun yang tiba-tiba terlintas, catat beberapa kata lalu lepaskan. Malamnya, tiap hal dapat akhir: kerjakan, jadwalkan, atau buang. Semua gratis.",
+  "hero": {
+    "headline": "Catat sekarang.\nBeresin nanti malam.",
+    "lead": "“Oh iya, aku harus…” Keluarkan dari kepala dengan beberapa kata, lalu lupakan. Malamnya, bereskan sisanya satu per satu.",
+    "cta": "Unduh gratis di App Store",
+    "note": "Semua fitur gratis. Tanpa akun dan tanpa login."
+  },
+  "demo": {
+    "title": "Coba di sini",
+    "lead": "Ketik sesuatu yang sedang kamu pikirkan, atau ketuk contoh. Lalu tekan “Selesaikan sekarang” dan beri akhir untuk tiap hal.",
+    "examples": [
+      "Telepon dokter gigi buat jadwal scaling",
+      "Pilih kado ulang tahun Ibu",
+      "Bersihkan filter AC",
+      "Cek kapan paspor habis"
+    ],
+    "note": "Demo ini hanya berjalan di browser kamu dan tidak menyimpan apa pun.",
+    "app": {
+      "input": "Apa yang terlintas?",
+      "settle": "Selesaikan sekarang ({1})",
+      "onMind": "Di pikiranmu",
+      "scheduled": "Terjadwal",
+      "footer": "Tiap hal perlu diselesaikan: kerjakan, jadwalkan, atau buang.",
+      "of": "{1} dari {2}",
+      "doNow": "Kerjakan sekarang",
+      "doNowSub": "Kalau cuma dua menit, langsung kerjakan",
+      "pick": "Pilih waktu",
+      "drop": "Buang — tidak perlu dikerjakan",
+      "goDo": "Kerjakan dulu. Kembali kalau sudah selesai.",
+      "done": "Selesai",
+      "notNow": "Belum bisa — kembali ke pilihan",
+      "clear": "Kepalamu lega",
+      "settled": "Kamu menyelesaikan {1} hal. Tidak ada yang menggantung.",
+      "close": "Tutup",
+      "when": "Kapan mengerjakannya?",
+      "cancel": "Batal",
+      "write": "Catat",
+      "name": "Externalize",
+      "stale": "Menunggu lebih dari sehari",
+      "empty": "Kalau ada yang terlintas, tulis di bawah lalu lepaskan.\nMalam nanti kamu putuskan mau diapakan.",
+      "o1": "1 jam lagi",
+      "o2": "Malam ini",
+      "o3": "Besok pagi",
+      "o4": "Akhir pekan ini",
+      "o5": "Minggu depan"
+    }
+  },
+  "problem": {
+    "title": "Hal kecil pun makan tempat di kepala",
+    "text": "Lagi mandi, lagi nunggu lampu merah, mau tidur: “Aku harus ngerjain itu.” Nggak ada tempat buat mencatat, jadi kamu terus mengingatnya, dan yang sedang kamu kerjakan jadi nggak fokus. Aplikasi to-do minta bikin daftar dan tenggat dulu, jadi mencatat pun jadi pekerjaan."
+  },
+  "features": [
+    {
+      "title": "Tiga detik, lalu lupakan",
+      "text": "Buka aplikasi dan langsung ketik di baris paling bawah. Tanpa daftar, folder, atau tenggat.\nKetuk widget di Layar Terkunci, aplikasi terbuka dengan baris kosong. Bilang `Ingat di Externalize` ke Siri atau pasang di Tombol Tindakan, dan langsung tersimpan tanpa membuka aplikasi.",
+      "shot": "02-typing"
+    },
+    {
+      "title": "Malam hari, satu per satu",
+      "text": "Kalau masih ada yang tersisa, kamu dapat satu pengingat jam 21.00. Kalau semuanya beres, nggak ada pengingat.\nSaat mulai membereskan, tiap hal muncul satu per satu dengan tulisan besar. Pilih “Kerjakan sekarang”, “Pilih waktu”, atau “Buang”, lalu lanjut ke berikutnya. Kalau cuma dua menit, nyalakan timer dan langsung kerjakan.",
+      "shot": "03-review"
+    },
+    {
+      "title": "Nggak ada yang terbengkalai",
+      "text": "Pilih “1 jam lagi”, “Malam ini”, “Besok pagi”, “Akhir pekan ini”, atau “Minggu depan”, dan hal itu akan kembali tepat waktunya. Dari notifikasi, kamu bisa langsung pilih “Selesai”, “Besok pagi”, atau “Buang”.\nYang sudah menunggu lebih dari sehari dan yang terus kamu tunda akan ditandai, jadi kelihatan mana yang selalu terlewat.",
+      "shot": "04-schedule"
+    }
+  ],
+  "steps": {
+    "title": "Mulai dalam tiga langkah",
+    "items": [
+      {
+        "title": "Catat",
+        "text": "Beberapa kata di aplikasi, di widget Layar Terkunci, atau lewat Siri, mana yang paling dekat."
+      },
+      {
+        "title": "Izinkan notifikasi",
+        "text": "Aplikasi bertanya sekali, saat pertama kali kamu mencatat. Dipakai untuk pengingat malam dan waktu yang kamu pilih."
+      },
+      {
+        "title": "Bereskan malamnya",
+        "text": "Ketuk pengingat atau “Selesaikan sekarang” dan beri akhir untuk tiap hal."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Langsung dari daftar",
+    "rows": [
+      [
+        "Ketuk satu hal",
+        "pilih “Selesai”, “Pilih waktu”, atau “Buang”"
+      ],
+      [
+        "Geser ke kanan",
+        "Selesai (hilang dari daftar)"
+      ],
+      [
+        "Geser ke kiri",
+        "Buang, atau “Jadwalkan” untuk memilih waktu"
+      ],
+      [
+        "Selesaikan sekarang",
+        "bereskan sisanya satu per satu"
+      ],
+      [
+        "Ingat di Externalize",
+        "bilang ke Siri tanpa membuka aplikasi"
+      ],
+      [
+        "Pengaturan ▸ Pengingat malam",
+        "ubah jam atau matikan"
+      ]
+    ],
+    "note": "Saat menjadwalkan, “Malam ini” berarti jam 19.00, “Besok pagi” jam 09.00, “Akhir pekan ini” Sabtu jam 10.00, dan “Minggu depan” Senin jam 09.00. Kamu juga bisa memilih tanggal dan jam sendiri."
+  },
+  "faq": {
+    "title": "Pertanyaan umum",
+    "items": [
+      {
+        "q": "Bisa mencatat tanpa membuka aplikasi?",
+        "a": "Bisa. Bilang `Ingat di Externalize` ke Siri, Siri akan menanyakan apa yang mau dicatat lalu menyimpannya. Pasang pintasan “Catat” di Tombol Tindakan lewat Pengaturan, dan cukup sekali tekan."
+      },
+      {
+        "q": "Gimana cara menambah widget di Layar Terkunci?",
+        "a": "Sentuh dan tahan Layar Terkunci, ketuk Sesuaikan lalu pilih Layar Terkunci, ketuk area widget dan tambahkan Externalize. Sekali ketuk membuka baris kosong, dan widget menunjukkan berapa yang tersisa. Ada juga widget kecil untuk Layar Utama."
+      },
+      {
+        "q": "Bisa ubah jam atau mematikan pengingat malam?",
+        "a": "Ketuk ikon roda gigi di kanan atas ▸ Pengingat malam untuk mengubah jam atau mematikannya. Bawaannya jam 21.00, dan di hari tanpa sisa, pengingat tidak muncul."
+      },
+      {
+        "q": "Notifikasi nggak masuk.",
+        "a": "Kalau pengaturan Externalize bilang notifikasi mati, ketuk tombol di situ untuk menyalakannya di Pengaturan iPhone. Di hari tanpa sisa, pengingat malam memang tidak muncul."
+      },
+      {
+        "q": "Bagaimana hal yang dijadwalkan kembali?",
+        "a": "Notifikasi muncul di waktu yang kamu pilih. Sentuh dan tahan untuk langsung pilih “Selesai”, “Besok pagi”, atau “Buang”. Kalau dibiarkan, hal itu kembali ke “Di pikiranmu” dan dibereskan di sesi berikutnya."
+      },
+      {
+        "q": "Bisa mengembalikan yang sudah ditandai selesai atau dibuang?",
+        "a": "Nggak bisa. Yang sudah dibereskan hilang dari daftar dan tidak ada arsip. Kalau masih ragu, pilih waktu saja daripada membuangnya."
+      },
+      {
+        "q": "Kalau ganti HP, catatannya ikut pindah?",
+        "a": "Nggak. Semua tersimpan di perangkat ini saja dan tidak pernah dikirim ke iCloud atau server. Kalau aplikasi dihapus, catatannya ikut terhapus."
+      },
+      {
+        "q": "Bisa dipakai di perangkat apa?",
+        "a": "iPhone dengan iOS 17 atau lebih baru."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Yang terlintas hari ini,\nkeluarkan dulu dari kepala",
+    "cta": "Unduh gratis di App Store"
+  },
+  "ui": {
+    "skip": "Langsung ke konten",
+    "languages": "Bahasa",
+    "privacy": "Kebijakan Privasi",
+    "contact": "Ada pertanyaan atau menemukan bug? Kirim email ke {email}. Sertakan model iPhone dan versi iOS supaya bisa kami cek lebih cepat."
+  }
+}
