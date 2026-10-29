@@ -21,6 +21,7 @@ struct ExternalizeApp: App {
                 .environment(model)
                 .environment(AppRouter.shared)
                 .onOpenURL { AppRouter.shared.handle($0) }
+                .task { await ExternalizeSpec.tipJar.startStandalone() }
         }
     }
 }

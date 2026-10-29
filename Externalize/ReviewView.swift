@@ -1,3 +1,4 @@
+import LeeoKit
 import SwiftUI
 
 /// The evening ritual: one memo at a time, each gets an ending.
@@ -175,6 +176,8 @@ struct ReviewView: View {
                     .multilineTextAlignment(.center)
             }
             Spacer()
+            // 다 정리한 직후 — 지금까지 내려놓은 수가 문턱을 넘었을 때만 응원 부탁 카드가 선다
+            LeeoTipAskSlot<ExternalizeSpec>(tipJar: ExternalizeSpec.tipJar, reached: ExternalizeTipMoments.reachedNow)
             Button {
                 dismiss()
             } label: {

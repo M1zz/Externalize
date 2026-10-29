@@ -111,6 +111,10 @@ struct MemoRepository: Sendable {
 enum ResolvedCounter {
     private static let countKey = "resolved.count"
     private static let dayKey = "resolved.day"
+    private static let totalKey = "resolved.total"
+
+    /// 지금까지 머리에서 내려놓은 것 전부 — 팁을 부탁할 고마운 순간을 고르는 데 쓴다(ExternalizeTipMoments).
+    static var total: Int { AppGroup.defaults.integer(forKey: totalKey) }
 
     static func today(now: Date = .now) -> Int {
         let defaults = AppGroup.defaults
@@ -122,5 +126,6 @@ enum ResolvedCounter {
     static func increment(now: Date = .now) {
         AppGroup.defaults.set(today(now: now) + 1, forKey: countKey)
         AppGroup.defaults.set(now, forKey: dayKey)
+        AppGroup.defaults.set(total + 1, forKey: totalKey)
     }
 }

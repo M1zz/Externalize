@@ -32,6 +32,14 @@ enum ExternalizeSpec: LeeoAppSpec {
     /// 수익모델 (LeeoKit 3.x 부터 필수) — 인앱 결제가 없는 무료 앱.
     static let monetization = LeeoMonetization.free
 
+    /// 팁(개발자 응원하기) — 결제 계약이 없는 무료 앱이라 혼자 돈다. 앱을 열 때 `startStandalone()` (ExternalizeApp).
+    /// 상품은 작은 것부터. 소모성이고 기능을 열지 않는다. App Store Connect 에 아직 없으면 줄·카드가 서지 않는다.
+    @MainActor static let tipJar = LeeoTipJar(config: LeeoTipJarConfig(productIDs: [
+        "com.devkoan.externalize.tip.small",
+        "com.devkoan.externalize.tip.medium",
+        "com.devkoan.externalize.tip.large",
+    ]))
+
     /// 익명 사용 통계 → FeedbackHub(CloudKit). 기본값(Noop)이면 부트스트랩이 아무것도 보내지 않는다.
     static let analytics: any LeeoAnalytics = LeeoUsageAnalytics(spec: ExternalizeSpec.self)
 }
