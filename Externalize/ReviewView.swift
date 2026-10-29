@@ -5,6 +5,7 @@ import SwiftUI
 struct ReviewView: View {
     @Environment(MemoModel.self) private var model
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     @State private var total = 0
     @State private var settledCount = 0
@@ -21,8 +22,10 @@ struct ReviewView: View {
             if let memo = current {
                 card(for: memo)
                     .id(memo.id)
-                    .transition(.asymmetric(insertion: .move(edge: .trailing).combined(with: .opacity),
-                                            removal: .move(edge: .leading).combined(with: .opacity)))
+                    // 동작 줄이기면 옆으로 밀지 않고 겹쳐 바뀐다
+                    .transition(reduceMotion ? .opacity
+                                : .asymmetric(insertion: .move(edge: .trailing).combined(with: .opacity),
+                                              removal: .move(edge: .leading).combined(with: .opacity)))
             } else {
                 finished
             }
@@ -53,6 +56,7 @@ struct ReviewView: View {
                     .foregroundStyle(.secondary)
                 ProgressView(value: Double(settledCount), total: Double(max(total, 1)))
                     .frame(maxWidth: 120)
+                    .accessibilityHidden(true)   // "2 of 5" 가 같은 말을 한다
             }
             Spacer()
             Button {
@@ -69,7 +73,15 @@ struct ReviewView: View {
         .padding(.top, 12)
     }
 
+    /// 글자를 아주 키우면 한 화면에 안 들어간다 — 그때만 스크롤로
     private func card(for memo: Memo) -> some View {
+        ViewThatFits(in: .vertical) {
+            cardContent(for: memo)
+            ScrollView { cardContent(for: memo) }
+        }
+    }
+
+    private func cardContent(for memo: Memo) -> some View {
         VStack(spacing: 24) {
             Spacer(minLength: 0)
 
@@ -137,7 +149,7 @@ struct ReviewView: View {
     private func doing(_ memo: Memo, since start: Date) -> some View {
         VStack(spacing: 14) {
             Text(timerInterval: start...start.addingTimeInterval(120), countsDown: true)
-                .font(.system(size: 44, weight: .semibold, design: .rounded).monospacedDigit())
+                .font(.system(.largeTitle, design: .rounded, weight: .semibold).monospacedDigit())
                 .foregroundStyle(.green)
             Text("Go do it. Come back when it's done.")
                 .font(.subheadline)
@@ -168,8 +180,11 @@ struct ReviewView: View {
             Image(systemName: "sparkles")
                 .font(.system(size: 56))
                 .foregroundStyle(.tint)
+                .accessibilityHidden(true)
             Text("Your head is clear")
                 .font(.largeTitle.bold())
+                .multilineTextAlignment(.center)
+                .accessibilityAddTraits(.isHeader)
             if settledCount > 0 {
                 Text("You settled \(settledCount) things. Nothing is left hanging.")
                     .foregroundStyle(.secondary)

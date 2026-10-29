@@ -207,7 +207,7 @@ struct ContentView: View {
 
             Button(action: capture) {
                 Image(systemName: "arrow.up.circle.fill")
-                    .font(.system(size: 34))
+                    .font(.largeTitle)
             }
             .disabled(draft.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
             .accessibilityLabel("Write it down")

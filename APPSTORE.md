@@ -1377,3 +1377,16 @@ https://m1zz.github.io/Externalize/tr/privacy.html
      애플에 하는 내용 신고이므로 사람이 판단해서 적는다.
 해당 없음
 -->
+
+## 손쉬운 사용
+
+<!-- DeployBar 가 App Store Connect '앱의 손쉬운 사용' 에 올린다. 실제로 확인한 것만 적는다. -->
+
+### iPhone
+voiceOver
+voiceControl
+largerText
+darkInterface
+differentiateWithoutColor
+sufficientContrast
+reducedMotion
