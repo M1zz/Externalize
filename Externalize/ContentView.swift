@@ -1,11 +1,13 @@
 import SwiftUI
 import UIKit
 import UserNotifications
+import LeeoKit
 
 struct ContentView: View {
     @Environment(MemoModel.self) private var model
     @Environment(AppRouter.self) private var router
     @Environment(\.scenePhase) private var scenePhase
+    @Environment(\.foldLayout) private var fold
 
     @AppStorage(OnboardingKey.completed) private var hasCompletedOnboarding = false
     @State private var isShowingOnboarding = !UserDefaults.standard.bool(forKey: OnboardingKey.completed)
@@ -13,65 +15,76 @@ struct ContentView: View {
     @State private var isShowingSettings = false
     @State private var deciding: Memo?
     @State private var scheduling: Memo?
+    /// iPhone Duo unfolded: the memo whose endings stand on the other side of the fold.
+    @State private var focusedID: Memo.ID?
     @State private var draft = ""
     @State private var captureCount = 0
     @State private var resolveCount = 0
     @FocusState private var isCaptureFocused: Bool
 
     var body: some View {
-        NavigationStack {
-            Group {
-                if model.open.isEmpty && model.scheduled.isEmpty {
-                    clearState
-                } else {
-                    memoList
-                }
-            }
-            .navigationTitle("Externalize")
-            .toolbar {
-                ToolbarItemGroup(placement: .topBarTrailing) {
-                    Button {
-                        isShowingOnboarding = true
-                    } label: {
-                        Image(systemName: "questionmark.circle")
+        // Folded (or any ordinary iPhone) this is the list alone, as before.
+        // Unfolded on iPhone Duo: the list and the capture line stay on the choose side,
+        // the picked memo's endings stand on the result side (foldResultPane).
+        FoldSplitView {
+            NavigationStack {
+                Group {
+                    if model.open.isEmpty && model.scheduled.isEmpty {
+                        clearState
+                    } else {
+                        memoList
                     }
-                    .accessibilityLabel("How it works")
+                }
+                .navigationTitle("Externalize")
+                .toolbar {
+                    ToolbarItemGroup(placement: .topBarTrailing) {
+                        Button {
+                            isShowingOnboarding = true
+                        } label: {
+                            Image(systemName: "questionmark.circle")
+                        }
+                        .accessibilityLabel("How it works")
 
-                    Button {
-                        isShowingSettings = true
-                    } label: {
-                        Image(systemName: "gearshape")
+                        Button {
+                            isShowingSettings = true
+                        } label: {
+                            Image(systemName: "gearshape")
+                        }
+                        .accessibilityLabel("Settings")
                     }
-                    .accessibilityLabel("Settings")
+                }
+                .safeAreaInset(edge: .bottom) { captureBar }
+                .sheet(item: $deciding) { memo in
+                    DecisionSheet(memo: memo) { decision in
+                        deciding = nil
+                        apply(decision, to: memo)
+                    }
+                }
+                .sheet(item: $scheduling) { memo in
+                    SchedulePicker { date in
+                        scheduling = nil
+                        model.schedule(memo, at: date)
+                    }
+                }
+                .sheet(isPresented: $isShowingSettings) {
+                    SettingsView()
+                        .environment(model)
+                }
+                .fullScreenCover(isPresented: $isReviewing) {
+                    ReviewView()
+                        .environment(model)
+                        .foldConfined()
+                }
+                .fullScreenCover(isPresented: $isShowingOnboarding) {
+                    OnboardingView {
+                        hasCompletedOnboarding = true
+                        isShowingOnboarding = false
+                    }
+                    .foldConfined()
                 }
             }
-            .safeAreaInset(edge: .bottom) { captureBar }
-            .sheet(item: $deciding) { memo in
-                DecisionSheet(memo: memo) { decision in
-                    deciding = nil
-                    apply(decision, to: memo)
-                }
-            }
-            .sheet(item: $scheduling) { memo in
-                SchedulePicker { date in
-                    scheduling = nil
-                    model.schedule(memo, at: date)
-                }
-            }
-            .sheet(isPresented: $isShowingSettings) {
-                SettingsView()
-                    .environment(model)
-            }
-            .fullScreenCover(isPresented: $isReviewing) {
-                ReviewView()
-                    .environment(model)
-            }
-            .fullScreenCover(isPresented: $isShowingOnboarding) {
-                OnboardingView {
-                    hasCompletedOnboarding = true
-                    isShowingOnboarding = false
-                }
-            }
+        } result: {
+            foldResultPane
         }
         .sensoryFeedback(.impact(weight: .light), trigger: captureCount)
         .sensoryFeedback(.success, trigger: resolveCount)
@@ -166,11 +179,18 @@ struct ContentView: View {
 
     private func row(for memo: Memo) -> some View {
         Button {
-            deciding = memo
+            // Unfolded, the endings already stand beside the list: tapping picks.
+            if fold.isUnfolded {
+                focusedID = memo.id
+            } else {
+                deciding = memo
+            }
         } label: {
             MemoRow(memo: memo)
         }
         .tint(.primary)
+        .listRowBackground(isFocused(memo) ? Color.accentColor.opacity(0.15) : nil)
+        .accessibilityAddTraits(isFocused(memo) ? .isSelected : [])
         .swipeActions(edge: .leading, allowsFullSwipe: true) {
             Button {
                 apply(.done, to: memo)
@@ -215,6 +235,50 @@ struct ContentView: View {
         .padding(.horizontal, 16)
         .padding(.vertical, 8)
         .background(.bar)
+    }
+
+    // MARK: - iPhone Duo result side
+
+    /// The picked memo, or the first one still waiting when nothing (or a settled one) is picked.
+    private var focusedMemo: Memo? {
+        let all = model.open + model.scheduled
+        return all.first { $0.id == focusedID } ?? all.first
+    }
+
+    private func isFocused(_ memo: Memo) -> Bool {
+        fold.isUnfolded && memo.id == focusedMemo?.id
+    }
+
+    /// The same endings the decision sheet offers, standing beside the list.
+    /// With nothing left it shows the Lock Screen tip, so the side is never empty.
+    private var foldResultPane: some View {
+        Group {
+            if let memo = focusedMemo {
+                ScrollView {
+                    MemoDecisionCard(
+                        memo: memo,
+                        onDone: { apply(.done, to: memo) },
+                        onSchedule: { scheduling = memo },
+                        onDrop: { apply(.drop, to: memo) }
+                    )
+                    .padding(.vertical, 28)
+                    .frame(maxWidth: 520)
+                    .frame(maxWidth: .infinity)
+                }
+                .scrollBounceBehavior(.basedOnSize)
+            } else {
+                // The list side already says the head is clear; this side points to the next capture.
+                WidgetTip()
+                    .padding(20)
+                    .background(Color(uiColor: .secondarySystemGroupedBackground),
+                                in: RoundedRectangle(cornerRadius: 16))
+                    .frame(maxWidth: 460)
+                    .padding(24)
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(uiColor: .systemGroupedBackground))
+        .animation(.default, value: focusedMemo?.id)
     }
 
     // MARK: - Actions
@@ -365,22 +429,14 @@ struct DecisionSheet: View {
     @State private var isPickingTime = false
 
     var body: some View {
-        VStack(spacing: 20) {
-            VStack(spacing: 6) {
-                Text(memo.text)
-                    .font(.title2.bold())
-                    .multilineTextAlignment(.center)
-                MemoMeta(memo: memo, now: .now)
-            }
-            .padding(.top, 28)
-            .padding(.horizontal)
-
-            DecisionButtons(
+        VStack(spacing: 0) {
+            MemoDecisionCard(
+                memo: memo,
                 onDone: { onDecide(.done) },
                 onSchedule: { isPickingTime = true },
                 onDrop: { onDecide(.drop) }
             )
-            .padding(.horizontal)
+            .padding(.top, 28)
 
             Spacer(minLength: 0)
         }
@@ -391,6 +447,30 @@ struct DecisionSheet: View {
                 isPickingTime = false
                 onDecide(.schedule(date))
             }
+        }
+    }
+}
+
+/// The memo and its three endings. The decision sheet and, on an unfolded iPhone Duo,
+/// the side beside the list both show this.
+struct MemoDecisionCard: View {
+    let memo: Memo
+    let onDone: () -> Void
+    let onSchedule: () -> Void
+    let onDrop: () -> Void
+
+    var body: some View {
+        VStack(spacing: 20) {
+            VStack(spacing: 6) {
+                Text(memo.text)
+                    .font(.title2.bold())
+                    .multilineTextAlignment(.center)
+                MemoMeta(memo: memo, now: .now)
+            }
+            .padding(.horizontal)
+
+            DecisionButtons(onDone: onDone, onSchedule: onSchedule, onDrop: onDrop)
+                .padding(.horizontal)
         }
     }
 }
@@ -468,7 +548,7 @@ struct SchedulePicker: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") { dismiss() }
+                    Button { dismiss() } label: { Label("Cancel", systemImage: "xmark") }
                 }
             }
         }

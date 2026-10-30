@@ -47,7 +47,7 @@ struct SettingsView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("Close") { dismiss() }
+                    Button { dismiss() } label: { Label("Close", systemImage: "xmark") }
                 }
             }
             .task {

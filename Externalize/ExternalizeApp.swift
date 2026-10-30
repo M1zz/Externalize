@@ -22,6 +22,8 @@ struct ExternalizeApp: App {
                 .environment(AppRouter.shared)
                 .onOpenURL { AppRouter.shared.handle($0) }
                 .task { await ExternalizeSpec.tipJar.startStandalone() }
+                // iPhone Duo: measures the fold and keeps sheets and alerts off it (LeeoKit Fold).
+                .foldAware()
         }
     }
 }
