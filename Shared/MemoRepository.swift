@@ -92,7 +92,8 @@ struct MemoRepository: Sendable {
         }
         let defaults = AppGroup.defaults
         guard let data = defaults.data(forKey: legacyStorageKey) else { return [] }
-        let legacy = (try? JSONDecoder().decode([LegacyMemo].self, from: data)) ?? []
+        // 못 읽으면 옛 기록을 지우지 않고 둔다 — 다음 업데이트가 다시 옮길 수 있게
+        guard let legacy = try? JSONDecoder().decode([LegacyMemo].self, from: data) else { return [] }
         let migrated = legacy
             .filter { $0.expiresAt > .now }
             .map { old -> Memo in
