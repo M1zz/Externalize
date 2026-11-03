@@ -42,6 +42,12 @@ struct SettingsView: View {
                     // 개발자 응원하기 — 판매 중인 팁이 있어야 선다
                     LeeoTipJarLink<ExternalizeSpec>(tipJar: ExternalizeSpec.tipJar)
                 }
+
+                Section {
+                    NavigationLink { LeeoVaultView(appName: ExternalizeSpec.displayName) } label: {
+                        Label(LeeoVaultText.entry, systemImage: "externaldrive.badge.timemachine")
+                    }
+                }
             }
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
