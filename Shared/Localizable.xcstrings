@@ -12658,6 +12658,148 @@
           }
         }
       }
+    },
+    "Got it. I wrote down %lld things. You can let go of them for now." : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapsáno: %lld věcí. Teď je můžete pustit z hlavy."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noteret: %lld ting. Du kan give slip på dem nu."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erledigt, ich habe %lld Dinge notiert. Du kannst sie jetzt loslassen."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σημειώθηκαν %lld πράγματα. Μπορείτε να τα αφήσετε τώρα."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Got it. I wrote down %lld things. You can let go of them for now."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Listo, anoté %lld cosas. Ya puedes soltarlas."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kirjoitin ylös %lld asiaa. Voit päästää niistä irti."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C’est noté : %lld choses. Vous pouvez les oublier pour l’instant."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sudah dicatat %lld hal. Sekarang boleh dilupakan."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fatto, ho annotato %lld cose. Ora puoi lasciarle andare."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld件書き留めました。もう忘れて大丈夫です。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld개 적어 뒀어요. 이제 잊으셔도 돼요."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notert: %lld ting. Du kan slippe dem nå."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Genoteerd: %lld dingen. Je kunt ze nu loslaten."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapisano %lld rzeczy. Możesz teraz o nich zapomnieć."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pronto, anotei %lld coisas. Pode deixá-las de lado por enquanto."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Записал: %lld. Теперь можно отпустить."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antecknat: %lld saker. Du kan släppa dem nu."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จดไว้ %lld เรื่องแล้ว ตอนนี้วางลงได้เลย"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamam, %lld şey not edildi. Artık bırakabilirsin."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đã ghi lại %lld việc. Giờ bạn có thể quên đi."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "好的，记下了 %lld 件事。现在可以先放下了。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "好的，記下了 %lld 件事。現在可以先放下了。"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
