@@ -39,6 +39,8 @@ final class AppRouter {
     enum Destination: Equatable {
         case capture
         case review
+        /// Spotlight · Siri 에서 고른 생각 하나.
+        case memo(UUID)
     }
 
     static let captureURL = URL(string: "externalize://capture")!

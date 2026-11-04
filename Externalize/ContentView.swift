@@ -95,6 +95,8 @@ struct ContentView: View {
                 UNUserNotificationCenter.current().setBadgeCount(model.open.count)
                 routeIfNeeded()
             }
+            // Siri · Spotlight 가 적어 둔 생각을 찾게 다시 색인한다.
+            if phase == .active || phase == .background { Task { await MemoEntity.reindex() } }
         }
         .onChange(of: router.pending) { _, _ in routeIfNeeded() }
         .onChange(of: model.open.count) { _, count in
@@ -287,6 +289,7 @@ struct ContentView: View {
         let text = draft.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !text.isEmpty else { return }
         model.capture(text)
+        RememberIntent.donate(text)
         draft = ""
         captureCount += 1
         isCaptureFocused = true
@@ -316,6 +319,9 @@ struct ContentView: View {
             isCaptureFocused = true
         case .review:
             isReviewing = !model.open.isEmpty
+        case .memo(let id):
+            isReviewing = false
+            deciding = (model.open + model.scheduled).first { $0.id == id }
         }
     }
 }
