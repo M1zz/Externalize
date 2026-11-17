@@ -24,3 +24,8 @@
 - [x] 정리하기 · 첫 안내는 `.foldConfined()`. 툴바의 취소 · 닫기에 아이콘. 새 문자열 없음
 - [ ] 가로로 편 화면 · 실기기 확인
 - 확인: 듀오 시뮬레이터에서 `-FoldPretend` 로 실행하면 세로로 편 배치. 그 인자 없이면 지금 화면 그대로
+
+## 중국 본토 AI 규정 대응 (2026-11-17)
+- [x] 중국 본토 App Store 계정이면 AI 생성 기능을 감춤(`ChinaMainlandGate`, Storefront CHN · 모르면 기기 지역 CN)
+- [ ] 다음 버전 제출
+- [ ] App Store Connect → 앱 → 일반 → App Compliance: AI-Generated or Synthetic Content "No", Security Assessment "No" (2027-01-31 까지)
